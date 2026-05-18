@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "579289553281",
+    "project_id": "mensageria-71000",
+    "storage_bucket": "mensageria-71000.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579289553281:android:8bcbf19c5fe41c66083080",
+        "android_client_info": {
+          "package_name": "com.seuapp.mensageria"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH9tbCWD2zI3BUWxMPRgHtjf57E8VUgLg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
