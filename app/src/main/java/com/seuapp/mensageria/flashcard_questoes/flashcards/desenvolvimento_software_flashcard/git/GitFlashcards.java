@@ -293,6 +293,7 @@ public class GitFlashcards {
         // GIT - COMANDOS AVANÇADOS
         // =========================
 
+
         lista.add(new Flashcard(
                 "📘 Controle de Versão - Git",
                 "GIT_AVANCADO_01",
