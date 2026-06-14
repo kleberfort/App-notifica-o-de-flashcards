@@ -6,18 +6,18 @@ public class Disciplina {
 
     private String nome;
 
-    private List<Categoria> categorias;
+    private List<Secao> secaos;
 
-    public Disciplina(String nome, List<Categoria> categorias) {
+    public Disciplina(String nome, List<Secao> secaos) {
         this.nome = nome;
-        this.categorias = categorias;
+        this.secaos = secaos;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public List<Categoria> getCategorias() {
-        return categorias;
+    public List<Secao> getCategorias() {
+        return secaos;
     }
 }

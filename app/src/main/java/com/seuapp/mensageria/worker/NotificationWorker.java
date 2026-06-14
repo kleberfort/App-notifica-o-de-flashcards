@@ -13,9 +13,9 @@ import androidx.core.app.NotificationCompat;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
 
-import com.seuapp.mensageria.ConteudoActivity;
-import com.seuapp.mensageria.data.AppData;
-import com.seuapp.mensageria.data.AppFlashcards;
+import com.seuapp.mensageria.ui.ConteudoActivity;
+import com.seuapp.mensageria.data.data_menu_principal.MenuPrincipalAppData;
+import com.seuapp.mensageria.data.data_menu_principal.AppFlashcards;
 
 import com.seuapp.mensageria.helper.PreferenceHelper;
 import com.seuapp.mensageria.model.Flashcard;
@@ -51,7 +51,7 @@ public class NotificationWorker extends Worker {
         // IDS VÁLIDOS DO APPDATA
         // =========================
 
-        Set<String> idsValidos = AppData.getIdsValidos();
+        Set<String> idsValidos = MenuPrincipalAppData.getIdsValidos();
 
         // =========================
         // FLASHCARDS ATIVOS

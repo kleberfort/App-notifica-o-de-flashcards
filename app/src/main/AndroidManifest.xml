@@ -15,14 +15,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mensageria">
         <activity
-            android:name=".ConteudoActivity"
+            android:name=".ui.ResponderQuestaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CertoErradoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MultiplaEscolhaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ConteudoActivity"
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

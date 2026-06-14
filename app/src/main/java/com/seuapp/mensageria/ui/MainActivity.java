@@ -2,8 +2,6 @@
 
 package com.seuapp.mensageria.ui;
 
-import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
-
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -25,19 +23,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.work.ExistingPeriodicWorkPolicy;
-import androidx.work.OneTimeWorkRequest;
 import androidx.work.PeriodicWorkRequest;
 import androidx.work.WorkManager;
 
-import com.seuapp.mensageria.ConteudoActivity;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.seuapp.mensageria.R;
-import com.seuapp.mensageria.data.AppData;
+import com.seuapp.mensageria.data.data_menu_principal.MenuPrincipalAppData;
 import com.seuapp.mensageria.helper.PreferenceHelper;
-import com.seuapp.mensageria.model.Assunto;
-import com.seuapp.mensageria.model.Categoria;
+import com.seuapp.mensageria.model.Conteudo;
+import com.seuapp.mensageria.model.Secao;
 import com.seuapp.mensageria.model.Disciplina;
-import com.seuapp.mensageria.model.GrupoAssunto;
-import com.seuapp.mensageria.model.Tema;
+import com.seuapp.mensageria.model.Area;
 import com.seuapp.mensageria.worker.NotificationWorker;
 
 import java.util.ArrayList;
@@ -50,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
 
     private LinearLayout layoutContainer;
 
+    private BottomNavigationView bottomNavigation;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -58,6 +56,34 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //PreferenceHelper.limparTudo(this);
+
+
+        bottomNavigation = findViewById(R.id.bottomNavigation);
+
+        bottomNavigation.setOnItemSelectedListener(item -> {
+
+            if (item.getItemId() == R.id.menu_home) {
+
+                return true;
+
+            } else if (item.getItemId() == R.id.menu_multipla) {
+
+                Intent intent = new Intent(this, MultiplaEscolhaActivity.class);
+                startActivity(intent);
+
+                return true;
+
+            }
+//            else if (item.getItemId() == R.id.menu_certo_errado) {
+//
+//                Intent intent = new Intent(this, CertoErradoActivity.class);
+//                startActivity(intent);
+//
+//                return true;
+//            }
+
+            return false;
+        });
 
         layoutContainer = findViewById(R.id.layoutContainer);
         btnVisualizar = findViewById(R.id.btnVisualizar);
@@ -68,15 +94,15 @@ public class MainActivity extends AppCompatActivity {
 
         btnVisualizar.setOnClickListener(v -> {
             ArrayList<String> assuntosAtivos = new ArrayList<>();
-            List<Tema> temas = AppData.getTemas();
+            List<Area> areas = MenuPrincipalAppData.getAreas();
 
-            for (Tema tema : temas) {
-                for (Disciplina disciplina : tema.getDisciplinas()) {
-                    for (Categoria categoria : disciplina.getCategorias()) {
-                        for (Assunto assunto : categoria.getAssuntos()) {
-                            boolean ativo = PreferenceHelper.assuntoAtivo(this, assunto.getId());
+            for (Area area : areas) {
+                for (Disciplina disciplina : area.getDisciplinas()) {
+                    for (Secao secao : disciplina.getCategorias()) {
+                        for (Conteudo conteudo : secao.getAssuntos()) {
+                            boolean ativo = PreferenceHelper.assuntoAtivo(this, conteudo.getId());
                             if (ativo) {
-                                assuntosAtivos.add(assunto.getId());
+                                assuntosAtivos.add(conteudo.getId());
                             }
                         }
                     }
@@ -103,10 +129,10 @@ public class MainActivity extends AppCompatActivity {
         // CARREGAR TEMAS
         // =========================
 
-        List<Tema> temas = AppData.getTemas();
+        List<Area> areas = MenuPrincipalAppData.getAreas();
 
-        for (Tema tema : temas) {
-            criarTema(tema);
+        for (Area area : areas) {
+            criarTema(area);
         }
 
         // =========================
@@ -122,10 +148,10 @@ public class MainActivity extends AppCompatActivity {
     // CRIAR TEMA
     // =========================
 
-    private void criarTema(Tema tema) {
+    private void criarTema(Area area) {
 
         TextView tituloTema = new TextView(this);
-        tituloTema.setText(tema.getNome());
+        tituloTema.setText(area.getNome());
         tituloTema.setTextSize(26);
         tituloTema.setTypeface(null, Typeface.BOLD);
 
@@ -139,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
         // DISCIPLINAS
         // =========================
 
-        for (Disciplina disciplina : tema.getDisciplinas()) {
+        for (Disciplina disciplina : area.getDisciplinas()) {
             criarDisciplina(disciplina);
         }
     }
@@ -219,8 +245,8 @@ public class MainActivity extends AppCompatActivity {
         // CATEGORIAS
         // =========================
 
-        for (Categoria categoria : disciplina.getCategorias()) {
-            criarCategoria(categoria, conteudo, checks, sw);
+        for (Secao secao : disciplina.getCategorias()) {
+            criarCategoria(secao, conteudo, checks, sw);
         }
 
         // =========================
@@ -271,14 +297,14 @@ public class MainActivity extends AppCompatActivity {
     // CRIAR CATEGORIA
     // =========================
 
-    private void criarCategoria(Categoria categoria, LinearLayout parent, List<CheckBox> checks, Switch sw) {
+    private void criarCategoria(Secao secao, LinearLayout parent, List<CheckBox> checks, Switch sw) {
 
         // =========================
         // TÍTULO CATEGORIA
         // =========================
 
         TextView tituloCategoria = new TextView(this);
-        tituloCategoria.setText(categoria.getNome());
+        tituloCategoria.setText(secao.getNome());
         tituloCategoria.setTextSize(18);
         tituloCategoria.setTypeface(null, Typeface.BOLD);
         tituloCategoria.setBackgroundColor(Color.parseColor("#F3E5F5"));
@@ -289,8 +315,8 @@ public class MainActivity extends AppCompatActivity {
         // ASSUNTOS
         // =========================
 
-        for (Assunto assunto : categoria.getAssuntos()) {
-            criarAssunto(assunto, parent, checks, sw);
+        for (Conteudo conteudo : secao.getAssuntos()) {
+            criarAssunto(conteudo, parent, checks, sw);
         }
     }
 
@@ -298,18 +324,18 @@ public class MainActivity extends AppCompatActivity {
     // CRIAR ASSUNTO
     // =========================
 
-    private void criarAssunto(Assunto assunto, LinearLayout parent, List<CheckBox> checks, Switch sw) {
+    private void criarAssunto(Conteudo conteudo, LinearLayout parent, List<CheckBox> checks, Switch sw) {
 
         CheckBox cb = new CheckBox(this);
-        cb.setText(assunto.getNome());
+        cb.setText(conteudo.getNome());
         cb.setTextSize(16);
-        cb.setTag(assunto);
+        cb.setTag(conteudo);
 
         // =========================
         // RECUPERAR ESTADO
         // =========================
 
-        boolean ativo = PreferenceHelper.assuntoAtivo(this, assunto.getId());
+        boolean ativo = PreferenceHelper.assuntoAtivo(this, conteudo.getId());
         cb.setChecked(ativo);
 
         // =========================
@@ -317,8 +343,8 @@ public class MainActivity extends AppCompatActivity {
         // =========================
 
         cb.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            Assunto assuntoCb = (Assunto) cb.getTag();
-            PreferenceHelper.salvarAssunto(this, assuntoCb.getId(), isChecked);
+            Conteudo conteudoCb = (Conteudo) cb.getTag();
+            PreferenceHelper.salvarAssunto(this, conteudoCb.getId(), isChecked);
             atualizarSwitch(sw, checks);
                 });
 
@@ -409,17 +435,17 @@ public class MainActivity extends AppCompatActivity {
                         // SALVAR
                         // =========================
 
-                        Assunto assunto = (Assunto) cb.getTag();
-                        PreferenceHelper.salvarAssunto(this, assunto.getId(), isChecked);
+                        Conteudo conteudo = (Conteudo) cb.getTag();
+                        PreferenceHelper.salvarAssunto(this, conteudo.getId(), isChecked);
 
                         // =========================
                         // RESTAURAR LISTENER
                         // =========================
 
                         cb.setOnCheckedChangeListener((buttonView1, checked) -> {
-                            Assunto assuntoCb = (Assunto) cb.getTag();
+                            Conteudo conteudoCb = (Conteudo) cb.getTag();
 
-                                    PreferenceHelper.salvarAssunto(this, assuntoCb.getId(), checked);
+                                    PreferenceHelper.salvarAssunto(this, conteudoCb.getId(), checked);
                                     atualizarSwitch(sw, checks);
                                 });
                     }

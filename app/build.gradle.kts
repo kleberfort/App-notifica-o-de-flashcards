@@ -51,5 +51,11 @@ dependencies {
 
     implementation("androidx.work:work-runtime:2.9.0")
 
+    // dependência do Material Design para Navigation Bar
+    implementation("com.google.android.material:material:1.12.0")
+
+    // cardView
+    implementation("androidx.cardview:cardview:1.0.0")
+
 
 }
