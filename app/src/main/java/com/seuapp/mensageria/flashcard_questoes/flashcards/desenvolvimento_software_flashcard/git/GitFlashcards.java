@@ -352,6 +352,21 @@ public class GitFlashcards {
                         "✅ Integração contínua, menos conflitos complexos."
         ));
 
+
+        // =========================
+        // GIT - CENÁRIO DO PROBLEMA - RESOLUÇÃO
+        // =========================
+
+        lista.add(new Flashcard(
+                "📘 Controle de Versão - Git",
+                "CENARIO_01",
+                "🚫 Projeto remoto diferente do local",
+                "📌 Projeto remoto atualizado e local não:\n" +
+                        "1° Passo: teste par mudança .\n" +
+                        "📁 Exemplos: logs, dependências (node_modules/), arquivos de ambiente (.env)."
+        ));
+
+
         // =========================
         // GIT - ARQUIVOS DE CONFIGURAÇÃO
         // =========================

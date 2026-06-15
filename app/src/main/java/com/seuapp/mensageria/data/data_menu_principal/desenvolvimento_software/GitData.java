@@ -199,6 +199,18 @@ public class GitData {
                 new Secao("Fluxo de Trabalho", fluxoTrabalho)
         );
 
+        // =====================================
+        // SEÇÃO: Cenários de Problemas
+        // =====================================
+
+        List<Conteudo> cenariosProblemas = new ArrayList<>();
+
+        cenariosProblemas.add(
+                new Conteudo("CENARIO_01", "Projeto remoto diferente do local")
+        );
+
+        secoes.add(new Secao("Cenários de Problemas", cenariosProblemas));
+
 
         // =====================================
         // SEÇÃO: Arquivos de Configuração
