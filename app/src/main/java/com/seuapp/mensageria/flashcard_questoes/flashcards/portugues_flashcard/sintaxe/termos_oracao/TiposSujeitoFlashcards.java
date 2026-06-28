@@ -31,7 +31,7 @@ public class TiposSujeitoFlashcards {
                 "🧭 Macetes de Acesso Rápido",
                 "📌 SUJEITO: QUEM ou O QUE executa ou Sofre a ação.\n" +
                         "🟢 PODE SER: Ativa ou Passiva.\n" +
-                        "🔵 Pergunte: Quem é que + verbo? \n" +
+                        "🔵 Pergunte: (QUMEM/O QUE É) que + verbo? \n" +
                         " Ex.: O empregado vendeu o carro. \n" +
                         "🟢 ORDEM DIRETA: SVC + Adj. Adverbial no final.\n" +
                         "🔴 ORDEM INVERSA: Fuga do padrão SVC (NÃO É ERRO)."
@@ -55,7 +55,7 @@ public class TiposSujeitoFlashcards {
                 "📌 SUJEITO (sintático): está PRESENTE na oração.\n" +
                         "🔵 REFERENTE (semântico): está FORA da oração.\n" +
                         "🟢 Referente 'recebe a seta' do contexto.\n" +
-                        "📌 Ex: 'Meninos jogam. Jogam todo dia' → verbo 'jogam' tem sujeito oculto (meninos = referente)."
+                        "📌 Ex: 'Meninos jogam futebol. Jogam todo dia' → verbo 'jogam' tem sujeito oculto (meninos = referente)."
         ));
 
         // === VÍDEO 02 - FCC SINTONIA FINA ===
@@ -88,7 +88,7 @@ public class TiposSujeitoFlashcards {
                 "🧭 Um SE Muda Tudo (P.A.P.)",
                 "📌 'Um SE muda tudo' - Partícula Apassivadora.\n" +
                         "🟢 Sem SE: Sujeito agente + Objeto Direto.\n" +
-                        "🔵 Com SE: Objeto Direto vira SUJEITO PACIENTE.\n" +
+                        "🔵 Com SE: Objeto Direto vira SUJEITO PACIENTE(sofre ou recebe) ação do verbo.\n" +
                         "📌 Ex: 'Fez o rio' → rio = OD.\n" +
                         "🔴 'Fez-se o rio' → rio = Sujeito ('O rio foi feito')."
         ));
@@ -120,6 +120,19 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
+                "SUJEITO_INDETERMINADO",
+                "🧭 3 Formas de Indeterminar",
+                "📌 Forma 1: Verbo na 3ª pessoa do plural sem referente.\n" +
+                        "🟢 Ex: 'Falaram bem de você' (quem? não sei).\n" +
+                        "🔵 Forma 2: Verbo na 3ª sing. + SE (IIS - verbo TI ou VI (Não vai para passiva)).\n" +
+                        "📌 Ex: 'Precisa-se de ajudantes' (verbo transitivo indireto).\n"+
+                        "🔵 Forma 3: Infinitivo Impessoal sem sujeito explícito.\n"+
+                        "📌 Ex: 'Fraudar/fazer."
+        ));
+
+
+        lista.add(new Flashcard(
+                "📘 Tipos de Sujeito",
                 "INFINITIVO_IMPESSOAL",
                 "🧭 3ª Forma de Indeterminado",
                 "📌 INFINITIVO IMPESSOAL = sujeito INDETERMINADO.\n" +
@@ -131,32 +144,9 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
-                "FLUXO_DECISAO_SUJEITO",
-                "🧭 Passo a Passo para Classificar",
-                "📌 1º Verbo impessoal? → INEXISTENTE (FIM).\n" +
-                        "🟢 2º Sujeito NÃO aparece na oração? → OCULTO (FIM).\n" +
-                        "🔵 3º Aparece mas NÃO sei quem é? → INDETERMINADO (FIM).\n" +
-                        "📌 4º Aparece e sei: 1 núcleo = SIMPLES | 2+ = COMPOSTO.\n" +
-                        "🔴 CASO ESPECIAL: Sujeito é oração (tem verbo) = ORACIONAL."
-        ));
-
-
-
-        lista.add(new Flashcard(
-                "📘 Tipos de Sujeito",
-                "SUJEITO_INDETERMINADO",
-                "🧭 3 Formas de Indeterminar",
-                "📌 Forma 1: Verbo na 3ª pessoa do plural sem referente.\n" +
-                        "🟢 Ex: 'Falaram bem de você' (quem? não sei).\n" +
-                        "🔵 Forma 2: Verbo na 3ª sing. + SE (IIS - verbo TI ou VI).\n" +
-                        "📌 Ex: 'Precisa-se de ajudantes' (verbo transitivo indireto)."
-        ));
-
-        lista.add(new Flashcard(
-                "📘 Tipos de Sujeito",
                 "SUJEITO_INEXISTENTE",
                 "🧭 Verbos Impessoais (Decore!)",
-                "📌 Situações de Sujeito INEXISTENTE:\n" +
+                "📌 Situações de Sujeito INEXISTENTE - Verbo Impessoal\n" +
                         "🟢 1. Fenômenos da natureza: chover, nevar, ventar.\n" +
                         "🔵 2. Verbo HAVER sentido de existir/ocorrer: 'Há problemas'.\n" +
                         "📌 3. Verbo FAZER/HAVER indicando tempo: 'Faz 3 anos'.\n" +
@@ -173,6 +163,21 @@ public class TiposSujeitoFlashcards {
                         "📌 Ex: 'Que você estudasse era importante' → 'ISSO era importante'.\n" +
                         "🔴 NÃO precisa ter 'QUE'! 'Praticar exercícios é bom' → Oracional."
         ));
+
+
+
+        lista.add(new Flashcard(
+                "📘 Tipos de Sujeito",
+                "FLUXO_DECISAO_SUJEITO",
+                "🧭 Passo a Passo para Classificar",
+                "📌 1º Verbo impessoal? (fenomeno natural, \'faz\' tempo, \'há\' existindo)  → INEXISTENTE. (FIM)\n" +
+                        "📌 2º Sujeito NÃO aparece na oração? → OCULTO > Desinência (1° Sin/Plu) (FIM).\n" +
+                        "📌 3º Aparece mas NÃO sei quem é? → INDETERMINADO (3° Plural ou 3° Singular + SE) (FIM).\n" +
+                        "📌 4º Aparece e sei: 1 núcleo = SIMPLES | 2+ = COMPOSTO.\n" +
+                        "🔴 CASO ESPECIAL: Sujeito é oração (tem verbo) = ORACIONAL. Troque por (ISSO)."
+        ));
+
+
 
         // === VÍDEO 04 - TABELA COMPARATIVA ===
 
@@ -191,8 +196,6 @@ public class TiposSujeitoFlashcards {
         ));
 
         // === VÍDEO 05 - EXERCÍCIOS DE FIXAÇÃO ===
-
-
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",

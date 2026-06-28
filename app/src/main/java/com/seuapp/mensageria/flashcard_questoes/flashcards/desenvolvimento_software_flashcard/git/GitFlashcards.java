@@ -361,9 +361,13 @@ public class GitFlashcards {
                 "📘 Controle de Versão - Git",
                 "CENARIO_01",
                 "🚫 Projeto remoto diferente do local",
-                "📌 Projeto remoto atualizado e local não:\n" +
-                        "1° Passo: teste par mudança .\n" +
-                        "📁 Exemplos: logs, dependências (node_modules/), arquivos de ambiente (.env)."
+                "📌 Projeto remoto atualizado e local não - Situações:  \n" +
+                        "1️⃣ - você criou o repositório no GitHub com um README, .gitignore ou licença .\n" +
+                        "2️⃣ - outra pessoa fez um push .\n" +
+                        "3️⃣ - você está trabalhando em outra máquina e o remoto está mais atualizado.\n" +
+                        "👉 O que fazer?.\n"+
+                        "1° Fazer o pull: git pull origin master.\n" +
+                        " ele atualizará os dados remotos em relação ao local."
         ));
 
 

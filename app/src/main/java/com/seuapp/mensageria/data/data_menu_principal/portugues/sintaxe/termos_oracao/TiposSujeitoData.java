@@ -43,10 +43,10 @@ public class TiposSujeitoData {
         tiposSujeito.add(new Conteudo("SIMPLES_VS_COMPOSTO", "1. Simples e 2. Composto (Núcleo do Sujeito)"));
         tiposSujeito.add(new Conteudo("OCULTO_DESINENCIAL_CONTEXTUAL", "3. Sujeito Oculto (Elíptico)"));
         tiposSujeito.add(new Conteudo("INFINITIVO_IMPESSOAL", "3ª Forma de Indeterminado (Infinitivo Impessoal)"));
-        tiposSujeito.add(new Conteudo("FLUXO_DECISAO_SUJEITO", "Passo a Passo para Classificar"));
         tiposSujeito.add(new Conteudo("SUJEITO_INDETERMINADO", "4. Sujeito Indeterminado (3 Formas)"));
         tiposSujeito.add(new Conteudo("SUJEITO_INEXISTENTE", "5. Sujeito Inexistente (Verbos Impessoais)"));
         tiposSujeito.add(new Conteudo("SUJEITO_ORACIONAL", "6. Sujeito Oracional (Macete do ISSO)"));
+        tiposSujeito.add(new Conteudo("FLUXO_DECISAO_SUJEITO", "Passo a Passo para Classificar"));
 
         secoes.add(new Secao("🔍 Os 6 Tipos de Sujeito", tiposSujeito));
 
