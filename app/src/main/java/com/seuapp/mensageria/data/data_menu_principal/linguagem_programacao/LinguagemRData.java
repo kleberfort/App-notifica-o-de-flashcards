@@ -83,15 +83,11 @@ public class LinguagemRData {
 
         List<Conteudo> matrizes = new ArrayList<>();
 
-        matrizes.add(
-                new Conteudo("R_MATRIZES_CRIACAO",
-                        "R_MATRIZES_CRIACAO")
-        );
+        matrizes.add(new Conteudo("R_MATRIZES_CRIACAO", "R_MATRIZES_CRIACAO"));
+        matrizes.add(new Conteudo("R_MAT_FUNCOES", "R_MAT_FUNCOES"));
+        matrizes.add(new Conteudo("R_MAT_ESPECIAIS", "R_MAT_ESPECIAIS"));
 
-        matrizes.add(
-                new Conteudo("R_MAT_OPERACOES",
-                        "R_MAT_OPERACOES")
-        );
+        matrizes.add(new Conteudo("R_MAT_OPERACOES", "R_MAT_OPERACOES"));
 
         secoes.add(new Secao("Matrizes: Criação e Operações", matrizes));
 

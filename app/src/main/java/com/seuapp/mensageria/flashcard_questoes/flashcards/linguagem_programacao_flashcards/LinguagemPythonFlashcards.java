@@ -29,6 +29,7 @@ public class LinguagemPythonFlashcards {
                 "CONCEITOS_FUNDAMENTAIS",
                 "🧭 Algoritmo e Paradigmas",
                 "📌 ALGORITMO: Sequência lógica de passos (receita de bolo).\n" +
+                        "📌 PARADIGMA: Como organiza o pensamento e a estrutura seu código, temos: \n" +
                         "📐 ESTRUTURADO: Foco em sequências, funções (maioria das provas).\n" +
                         "🏛️ ORIENTADO A OBJETOS: Classes, objetos, herança, encapsulamento, polimorfismo.\n" +
                         "⚡ FUNCIONAL: Funções puras, imutabilidade, lambdas.\n" +
@@ -74,11 +75,11 @@ public class LinguagemPythonFlashcards {
                 "🧭 Tipos Primitivos",
                 "🔢 int: idade = 10\n" +
                         "💲 float: preco = 1.1\n" +
-                        "🔤 str: nome = 'Rafa' (aspas simples ou duplas)\n" +
-                        "✅ bool: ativo = True / False (com maiúscula!)\n" +
+                        "🔤 str: nome = 'Rafa' (aspas simples ou duplas) (imutável)\n" +
+                        "✅ bool: ativo = True / False (Primeira Letra maiúscula!)\n" +
                         "📋 list: [1, 2, 3] (mutável)\n" +
                         "📦 tuple: (1, 2, 3) (imutável)\n" +
-                        "📚 dict: {'chave': 'valor'}\n" +
+                        "📚 dict: {'chave': 'valor'} (mutável)\n" +
                         "🎯 set: {1, 2, 3} (não ordenado, sem duplicatas)"
         ));
 
@@ -90,7 +91,14 @@ public class LinguagemPythonFlashcards {
                         "🔑 class → Define classe\n" +
                         "🔑 if, elif, else → Condicionais\n" +
                         "🔑 for, while → Loops\n" +
-                        "🔑 import → Importa módulos\n" +
+                        "🔑 break, continue → Controle de Loops\n" +
+                        "🔑 import, from → Importa módulos\n" +
+                        "🔑 try, except, finally → Tratamento de Exceções\n" +
+                        "🔑 in, is → Pertecimento/Identidade\n" +
+                        "🔑 yield → Geradores(programação concorrente)\n" +
+                        "🔑 del → Deleta elementos de estruturas\n" +
+                        "🔑 global, nonlocal → Escopo de variáveis\n" +
+                        "🔑 None → Ausência de valor\n" +
                         "🔑 return → Retorna valor em função\n" +
                         "🔑 True, False → Booleanos\n" +
                         "🔑 and, or, not → Lógicos\n" +
@@ -139,8 +147,8 @@ public class LinguagemPythonFlashcards {
                 "📘 Python para Concursos",
                 "OPERADORES_COMPARACAO",
                 "🧭 Comparação e Identidade",
-                "🔍 == (igual a), ≠ != (diferente de).\n" +
-                        "📈 > (maior), 📉 < (menor), ≥ >=, ≤ <=.\n" +
+                "🔍 == (igual a),  != (diferente de).\n" +
+                        "📈 > (maior), 📉 < (menor), >=, <=.\n" +
                         "🔗 is → Compara IDENTIDADE (mesmo objeto).\n" +
                         "🔗 is not → Compara se NÃO é o mesmo objeto.\n" +
                         "🔎 in → Pertence à sequência: 'a' in 'abc' = True.\n" +
@@ -165,7 +173,7 @@ public class LinguagemPythonFlashcards {
                 "📌 PYTHON NÃO TEM ++x NEM x++!\n" +
                         "❌ ++x: Interpreta como sinal positivo (+x). Não altera a variável.\n" +
                         "❌ x++: Gera erro de sintaxe (SyntaxError).\n" +
-                        "✅ CORRETO: x += 1 ou x = x + 1.\n" +
+                        "✅ CORRETO: x += 1 ou x = x + 1. Segue a regra (-, *, /, //, %, **)\n" +
                         "💡 Decisão de design: criadores optaram por não incluir."
         ));
 
@@ -198,16 +206,19 @@ public class LinguagemPythonFlashcards {
                 "📘 Python para Concursos",
                 "METODOS_STRINGS",
                 "🧭 Métodos Mais Cobrados",
-                "🔠 upper() → MAIÚSCULAS\n" +
-                        "🔡 lower() → minúsculas\n" +
-                        "🔤 capitalize() → Primeira maiúscula\n" +
-                        "📝 title() → Primeira de cada palavra\n" +
-                        "🧹 strip() → Remove espaços das pontas\n" +
-                        "✂️ split() → Divide em lista (separador)\n" +
-                        "🔄 replace() → Substitui substring\n" +
-                        "🔢 count() → Conta ocorrências\n" +
-                        "🔍 find() → Retorna índice (ou -1)\n" +
-                        "✅ startswith() / endswith() → True/False"
+                "🔠 upper() → MAIÚSCULAS | \"abc\".upper() = \"ABC\"\n" +
+                        "🔡 lower() → minúsculas | \"ABC\".lower() = \"abc\"\n" +
+                        "🔤 capitalize() → Primeira maiúscula | \"python\".capitalize() = \"Python\"\n" +
+                        "📝 title() → Primeira de cada palavra | \"ola mundo\".title() = \"Ola Mundo\"\n" +
+                        "🧹 strip() → Remove espaços das pontas | \" oi \".strip() = \"oi\"\n" +
+                        "🧹 lstrip() → Remove espaços da esquerda | \" oi\".lstrip() = \"oi\"\n" +
+                        "🧹 rstrip() → Remove espaços da direita | \"oi \".rstrip() = \"oi\"\n" +
+                        "✂️ split() → Divide em lista | \"a,b\".split(\",\") = ['a', 'b']\n" +
+                        "🔄 replace() → Substitui substring | \"ana\".replace(\"a\",\"o\") = \"ono\"\n" +
+                        "🔢 count() → Conta ocorrências | \"banana\".count(\"a\") = 3\n" +
+                        "🔍 find() → Retorna índice (ou -1) | \"python\".find(\"t\") = 2\n" +
+                        "✅ startswith() → True/False | \"python\".startswith(\"py\") = True\n" +
+                        "✅ endswith() → True/False | \"python\".endswith(\"on\") = True"
         ));
 
         lista.add(new Flashcard(
@@ -215,7 +226,7 @@ public class LinguagemPythonFlashcards {
                 "CONCATENACAO_STRINGS",
                 "🧭 Formas de Concatenação",
                 "🔗 1) Operador +: 'texto' + str(var)\n" +
-                        "🔗 2) format(): 'texto {}'.format(var)\n" +
+                        "🔗 2) format(): 'texto1 {} texto2 {}'.format(var1, var2)\n" +
                         "🔗 3) f-strings (Python 3.6+): f'texto {var}'\n" +
                         "⭐ f-strings são MAIS PYTHÔNICAS: mais legíveis, permitem expressões."
         ));
@@ -229,7 +240,7 @@ public class LinguagemPythonFlashcards {
                         "❌ nome1 = 'RAFA'.lower(); nome2 = 'RAFA'.lower();\n" +
                         "📌 nome1 == nome2 → True (conteúdo igual)\n" +
                         "📌 nome1 is nome2 → False (objetos diferentes)\n" +
-                        "⚠️ Literais iguais podem ser reutilizados (internamento)."
+                        "⚠️ Literais iguais podem ser reutilizados (internamento). Ao atribuir o mesmo valor para duas variáveis diferentes."
         ));
 
         // ============================================================
@@ -334,7 +345,8 @@ public class LinguagemPythonFlashcards {
                         "📌 [1:] → do índice 1 até o fim.\n" +
                         "📌 [:3] → do início até índice 2.\n" +
                         "📌 Índices NEGATIVOS: -1 = último. [-3:-1] = [40,50].\n" +
-                        "📌 [2:2] → [] (vazio)."
+                        "📌 [2:2] → [] (vazio).\n"+
+                        "⚠️ [:-2] → Observação: o que está depois dos dois pontos : ele é EXCLUÍDO, ou seja, Ele vaí até o antes do número"
         ));
 
         // ============================================================
@@ -347,13 +359,13 @@ public class LinguagemPythonFlashcards {
                 "🧭 Métodos de Lista",
                 "➕ append(x) → Adiciona ao final.\n" +
                         "📤 pop(i) → Remove e retorna o da posição (ou último).\n" +
-                        "🗑️ remove(x) → Remove primeira ocorrência de x.\n" +
+                        "🗑️ remove(x) → Remove primeira ocorrência de x, devo explicitar o valor.\n" +
                         "🧹 clear() → Remove todos.\n" +
                         "📋 copy() → Retorna cópia superficial.\n" +
                         "🔢 count(x) → Nº de ocorrências.\n" +
-                        "📍 index(x) → Posição da 1ª ocorrência.\n" +
-                        "➕ extend(iteravel) → Adiciona elementos.\n" +
-                        "📌 insert(i, x) → Insere na posição i.\n" +
+                        "📍 index(x) → Posição da 1ª ocorrência, ou seja, o Ìndice.\n" +
+                        "➕ extend(iteravel) → Adiciona elementos dentro desta lista. Ex.: lista.extend([80,90])\n" +
+                        "📌 insert(i, x) → Insere x na posição i.\n" +
                         "📊 sort() → Ordena in-place (retorna None).\n" +
                         "🔄 reverse() → Inverte a ordem (NÃO ordena!)."
         ));
@@ -401,8 +413,8 @@ public class LinguagemPythonFlashcards {
                 "🧭 Sets (Conjuntos)",
                 "🎯 SET: {} (com elementos) ou set() → ELEMENTOS ÚNICOS.\n" +
                         "📌 Não ordenado, mutável, heterogêneo.\n" +
-                        "❌ CILADA: {} → DICIONÁRIO vazio! Set vazio é set().\n" +
-                        "📌 Elimina duplicatas automaticamente: {1,1,2} → {1,2}.\n" +
+                        "❌ CILADA: {} → Quando está sem elemento ele é DICIONÁRIO vazio!  Set vazio é atribuído desta forma: set().\n" +
+                        "📌 Elimina duplicatas automaticamente: {1,1,2} → {1,2} ou seja, ele é ignorado.\n" +
                         "📌 NÃO é indexado: set[0] → TypeError."
         ));
 
@@ -413,7 +425,7 @@ public class LinguagemPythonFlashcards {
                 "➕ add(x) → Adiciona elemento.\n" +
                         "🗑️ remove(x) → Remove (erro se não existir).\n" +
                         "🗑️ discard(x) → Remove (seguro, não gera erro).\n" +
-                        "📤 pop() → Remove e retorna elemento ARBITRÁRIO.\n" +
+                        "📤 pop() → Remove e retorna elemento ARBITRÁRIO, ou seja, O primeiro elemento representado na ordem, ainda que não esteja.\n" +
                         "🔗 union(outro) → União (elementos de ambos).\n" +
                         "🔗 intersection(outro) → Interseção (comuns).\n" +
                         "🔗 difference(outro) → Diferença (do 1º que não está no 2º).\n" +
@@ -440,20 +452,41 @@ public class LinguagemPythonFlashcards {
                 "DICIONARIOS",
                 "🧭 Dicionários (dict)",
                 "📚 DICT: {chave: valor} → Chave VALOR associado.\n" +
-                        "📌 Chaves ÚNICAS e IMUTÁVEIS (str, int, tuple).\n" +
+                        "📌 Chaves ÚNICAS(se houver, a última sobreescreve) e IMUTÁVEIS (str, int, tuple).\n" +
                         "📌 Valores podem ser repetidos e de qualquer tipo.\n" +
                         "📌 Mutável, mantém ordem de inserção (Python 3.7+).\n" +
                         "❌ CILADA: {} → DICIONÁRIO vazio, NÃO set!"
+        ));
+
+
+        lista.add(new Flashcard(
+                "📘 Python para Concursos",
+                "DICIONARIOS_CRIACAO",
+                "🛠️ Sintaxe de Criação de Dicionários",
+                "📌 Chaves {} → Forma mais comum para criar dicionários.\n" +
+                        "Exemplo: pessoa = {\"nome\": \"Rafa\", \"idade\": 38}\n\n" +
+                        "📌 Função dict() → Permite criar usando argumentos nomeados.\n" +
+                        "Exemplo: pessoa = dict(nome=\"Rafa\", idade=38)\n\n" +
+                        "📌 Lista de tuplas → Converte pares (chave, valor) em dicionário.\n" +
+                        "Exemplo: pessoa = dict([(\"nome\", \"Rafa\"), (\"idade\", 38)])\n\n" +
+                        "📌 Dicionário vazio {} → Cria um dicionário sem elementos.\n" +
+                        "Exemplo: pessoas = {}\n\n" +
+                        "⭐ Em provas, a sintaxe com {} é a mais utilizada e a mais cobrada!"
         ));
 
         lista.add(new Flashcard(
                 "📘 Python para Concursos",
                 "DICIONARIOS_ACESSO",
                 "🧭 Acessando Elementos",
-                "📌 dict[chave] → Retorna valor. Gera KeyError se não existir.\n" +
-                        "📌 dict.get(chave) → Retorna valor ou None (seguro).\n" +
-                        "📌 dict.get(chave, padrao) → Retorna valor padrão.\n" +
-                        "⭐ Use get() para evitar erros em provas!"
+                "📌 dict[chave] → Retorna o valor associado à chave. Gera KeyError se não existir.\n" +
+                        "Exemplo: pessoa['nome'] → 'Rafa'\n" +
+                        "Exemplo: pessoa['cidade'] → KeyError\n\n" +
+                        "📌 dict.get(chave) → Retorna o valor da chave ou None, se ela não existir.\n" +
+                        "Exemplo: pessoa.get('nome') → 'Rafa'\n" +
+                        "Exemplo: pessoa.get('cidade') → None\n\n" +
+                        "📌 dict.get(chave, padrao) → Retorna o valor da chave ou o valor padrão informado.\n" +
+                        "Exemplo: pessoa.get('cidade', 'Não informado') → 'Não informado'\n\n" +
+                        "⭐ Use get() para evitar KeyError quando a chave pode não existir."
         ));
 
         lista.add(new Flashcard(
@@ -461,13 +494,22 @@ public class LinguagemPythonFlashcards {
                 "DICIONARIOS_METODOS",
                 "🧭 Métodos de Dict",
                 "🔑 keys() → Retorna todas as chaves.\n" +
+                        "Exemplo: pessoa.keys() → dict_keys(['nome', 'idade'])\n\n" +
                         "💎 values() → Retorna todos os valores.\n" +
+                        "Exemplo: pessoa.values() → dict_values(['Rafa', 38])\n\n" +
                         "📋 items() → Retorna pares (chave, valor).\n" +
-                        "🔄 update(dict) → Adiciona ou atualiza.\n" +
-                        "📤 pop(chave) → Remove e retorna valor.\n" +
-                        "📤 popitem() → Remove e retorna o ÚLTIMO par.\n" +
-                        "🧹 clear() → Remove todos.\n" +
-                        "📋 copy() → Cópia superficial."
+                        "Exemplo: pessoa.items() → dict_items([('nome', 'Rafa'), ('idade', 38)])\n\n" +
+                        "🔄 update(dict) → Adiciona ou atualiza elementos.\n" +
+                        "Exemplo: pessoa.update({'idade': 39, 'cidade': 'Fortaleza'})\n\n" +
+                        "📤 pop(chave) → Remove e retorna o valor da chave.\n" +
+                        "Exemplo: pessoa.pop('idade') → 38\n\n" +
+                        "📤 popitem() → Remove e retorna o ÚLTIMO par inserido.\n" +
+                        "Exemplo: pessoa.popitem() → ('idade', 38)\n\n" +
+                        "🧹 clear() → Remove todos os elementos.\n" +
+                        "Exemplo: pessoa.clear() → {}\n\n" +
+                        "📋 copy() → Cria uma cópia superficial do dicionário.\n" +
+                        "Exemplo: copia = pessoa.copy()\n\n" +
+                        "⭐ Em provas, lembre-se: pop() remove por chave, enquanto popitem() remove o último par inserido."
         ));
 
         // ============================================================

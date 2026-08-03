@@ -83,7 +83,7 @@ public class CicloVidaDadoFlashcards {
         lista.add(new Flashcard(
                 "📦 DW - Tipos e Características",
                 "DW_TIPOS_CARACTERISTICAS",
-                "🧭 EDW, ODS e Data Mart",
+                "🧭 DW, ODS e Data Mart",
                 "📌 EDW: Data Warehouse corporativo (visão holística).\n" +
                         "📊 ODS: Armazenamento intermediário operacional.\n" +
                         "📁 DATA MART: Subconjunto do DW, focado em departamento.\n" +
@@ -101,7 +101,7 @@ public class CicloVidaDadoFlashcards {
                         "📌 METADADOS: 'dados sobre os dados' (dicionário).\n" +
                         "🔄 MIDDLEWARE: 'tradutor' entre tecnologias.\n" +
                         "📊 INMON (Top-Down): EDW → Data Marts.\n" +
-                        "📊 KIMBALL (Bottom-Up): Data Marts → EDW."
+                        "📊 KIMBALL (Bottom-Up): Data Marts → DDW."
         ));
 
         // ===================== VÍDEO 06 =====================
@@ -121,7 +121,7 @@ public class CicloVidaDadoFlashcards {
                 "DW_INMON_KIMBALL",
                 "🧭 Comparação de Abordagens",
                 "📌 INMON (Top-Down): EDW → Data Marts. Mais normalizado.\n" +
-                        "📊 KIMBALL (Bottom-Up): Data Marts → EDW. Desnormalizado.\n" +
+                        "📊 KIMBALL (Bottom-Up): Data Marts → DDW. Desnormalizado.\n" +
                         "💰 Kimball é mais comum (custo inicial menor e ágil).\n" +
                         "🎯 Inmon voltado para TI; Kimball voltado para usuário final.\n" +
                         "📊 Consultas: Inmon no EDW; Kimball nos Data Marts."

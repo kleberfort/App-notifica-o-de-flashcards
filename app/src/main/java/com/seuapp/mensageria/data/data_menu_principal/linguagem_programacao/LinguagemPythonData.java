@@ -143,6 +143,7 @@ public class LinguagemPythonData {
         List<Conteudo> video11 = new ArrayList<>();
 
         video11.add(new Conteudo("DICIONARIOS", "DICIONARIOS"));
+        video11.add(new Conteudo("DICIONARIOS_CRIACAO", "DICIONARIOS_CRIACAO"));
         video11.add(new Conteudo("DICIONARIOS_ACESSO", "DICIONARIOS_ACESSO"));
         video11.add(new Conteudo("DICIONARIOS_METODOS", "DICIONARIOS_METODOS"));
 

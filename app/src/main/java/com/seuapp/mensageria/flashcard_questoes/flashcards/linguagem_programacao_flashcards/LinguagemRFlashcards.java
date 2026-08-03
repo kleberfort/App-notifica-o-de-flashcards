@@ -97,7 +97,7 @@ public class LinguagemRFlashcards {
                 "R_SAMPLE",
                 "🧭 Amostragem Aleatória e Reprodutibilidade",
                 "📌 FUNÇÃO sample() - AMOSTRAGEM:\n" +
-                        "🟢 sample(x, size): Extrai 'size' elementos aleatórios de x.\n" +
+                        "🟢 sample(x, size): Extrai 'size' elementos aleatórios de x, Só assim não retorna valores repetidos.\n" +
                         "🔵 sample(x, size, replace = FALSE): Extrai elementos sem reposição (comum para sorteios). Ex: sample(1:60, 6) para Mega-Sena.\n" +
                         "🟠 set.seed(n): Define uma 'semente' para o gerador de números aleatórios, garantindo reprodutibilidade.\n" +
                         "🔴 REGRA DE OURO: Se um código usa sample(), a banca pode definir set.seed() para fixar o resultado."
@@ -109,22 +109,158 @@ public class LinguagemRFlashcards {
                 "R_MATRIZES_CRIACAO",
                 "🧭 Criação de Matrizes e Combinação",
                 "📌 CRIANDO MATRIZES:\n" +
-                        "🟢 matrix(dados, nrow, ncol): Cria matriz a partir de um vetor. PREENCHIMENTO POR COLUNA (padrão). Use byrow=TRUE para preencher por linha.\n" +
-                        "🔵 cbind(vetor1, vetor2, ...): Combina vetores como COLUNAS.\n" +
-                        "🟠 rbind(vetor1, vetor2, ...): Combina vetores como LINHAS.\n" +
-                        "🔴 dim(vetor) <- c(nrow, ncol): Converte um vetor em matriz.\n" +
+                        "🟢 matrix(dados, nrow, ncol): Cria matriz a partir de um vetor. PREENCHIMENTO POR COLUNA (padrão). Use byrow=TRUE para preencher por linha. Ex.: matrix(1:6, 2,3)\n" +
+                        "🔵 cbind(vetor1, vetor2, ...): Combina vetores como COLUNAS. EX.: cbind(c(1,2),c(3,4))\n" +
+                        "🟠 rbind(vetor1, vetor2, ...): Combina vetores como LINHAS.  EX.: rbind(c(1,2),c(3,4))\n" +
+                        "🔴 dim(vetor) <- c(nrow, ncol): Converte um vetor em matriz. EX.: v <- 1:6 > dim(v) <- c(2,3)\n" +
                         "💡 MATRIZ: Estrutura bidimensional e homogênea (um tipo apenas). Indexação: matriz[linha, coluna]."
+        ));
+
+        lista.add(new Flashcard(
+                "📘 Linguagem R - Funções Úteis para Matrizes",
+                "R_MAT_FUNCOES",
+                "🧭 Principais Funções para Manipular Matrizes e Vetores",
+                "📌 FUNÇÕES ÚTEIS:\n" +
+                        "\n" +
+                        "🟢 dim(mat)\n" +
+                        "➡️ O que faz: Retorna as dimensões da matriz, informando primeiro o número de linhas e depois o número de colunas.\n" +
+                        "💡 Exemplo:\n" +
+                        "mat <- matrix(1:15, 5, 3)\n" +
+                        "dim(mat)\n" +
+                        "Resultado: 5 3\n" +
+                        "✔️ Significa que a matriz possui 5 linhas e 3 colunas.\n" +
+                        "\n" +
+                        "🔵 t(mat)\n" +
+                        "➡️ O que faz: Calcula a transposta da matriz. As linhas passam a ser colunas e as colunas passam a ser linhas.\n" +
+                        "💡 Exemplo:\n" +
+                        "mat <- matrix(1:6, 2, 3)\n" +
+                        "mat =\n" +
+                        "1 3 5\n" +
+                        "2 4 6\n" +
+                        "t(mat)\n" +
+                        "Resultado:\n" +
+                        "1 2\n" +
+                        "3 4\n" +
+                        "5 6\n" +
+                        "✔️ As linhas e colunas trocaram de posição.\n" +
+                        "\n" +
+                        "🟠 rev(vetor)\n" +
+                        "➡️ O que faz: Inverte a ordem dos elementos de um vetor.\n" +
+                        "💡 Exemplo:\n" +
+                        "rev(1:5)\n" +
+                        "Resultado: 5 4 3 2 1\n" +
+                        "✔️ O primeiro elemento vira o último e vice-versa.\n" +
+                        "\n" +
+                        "🟣 sort(vetor)\n" +
+                        "➡️ O que faz: Ordena os elementos do vetor em ordem crescente (do menor para o maior).\n" +
+                        "💡 Exemplo:\n" +
+                        "sort(c(5,2,9))\n" +
+                        "Resultado: 2 5 9\n" +
+                        "✔️ Muito usado para organizar dados antes de analisá-los.\n" +
+                        "\n" +
+                        "🔴 sort(vetor, decreasing=TRUE)\n" +
+                        "➡️ O que faz: Ordena os elementos em ordem decrescente (do maior para o menor).\n" +
+                        "💡 Exemplo:\n" +
+                        "sort(c(5,2,9), decreasing=TRUE)\n" +
+                        "Resultado: 9 5 2\n" +
+                        "✔️ Basta usar decreasing=TRUE para inverter a ordem da classificação."
+        ));
+
+        lista.add(new Flashcard(
+                "📘 Linguagem R - Matrizes Especiais",
+                "R_MAT_ESPECIAIS",
+                "🧭 Principais Tipos de Matrizes",
+                "📌 MATRIZES ESPECIAIS:\n" +
+                        "\n" +
+                        "🟢 MATRIZ QUADRADA\n" +
+                        "➡️ O que é: É uma matriz que possui o mesmo número de linhas e de colunas (n x n).\n" +
+                        "💡 Exemplo:\n" +
+                        "matrix(1:4, 2, 2)\n" +
+                        "Resultado:\n" +
+                        "1 3\n" +
+                        "2 4\n" +
+                        "✔️ Possui 2 linhas e 2 colunas, portanto é uma matriz quadrada.\n" +
+                        "\n" +
+                        "🔵 MATRIZ IDENTIDADE\n" +
+                        "➡️ O que é: Matriz quadrada cuja diagonal principal possui apenas 1 e todos os demais elementos são 0.\n" +
+                        "💡 Exemplo:\n" +
+                        "matrix(c(1,0,0,1), 2, 2)\n" +
+                        "Resultado:\n" +
+                        "1 0\n" +
+                        "0 1\n" +
+                        "✔️ É muito utilizada em operações de álgebra linear e funciona como o número 1 na multiplicação de matrizes.\n" +
+                        "\n" +
+                        "🟠 MATRIZ NULA\n" +
+                        "➡️ O que é: Todos os seus elementos são iguais a zero.\n" +
+                        "💡 Exemplo:\n" +
+                        "matrix(0, 3, 3)\n" +
+                        "Resultado:\n" +
+                        "0 0 0\n" +
+                        "0 0 0\n" +
+                        "0 0 0\n" +
+                        "✔️ Não possui nenhum elemento diferente de zero.\n" +
+                        "\n" +
+                        "🟣 MATRIZ OPOSTA\n" +
+                        "➡️ O que é: É a matriz obtida trocando o sinal de todos os elementos da matriz original. Quando somadas, o resultado é uma matriz nula.\n" +
+                        "💡 Exemplo:\n" +
+                        "A <- matrix(c(1,2,3,4), 2, 2)\n" +
+                        "B <- -A\n" +
+                        "A + B\n" +
+                        "Resultado:\n" +
+                        "0 0\n" +
+                        "0 0\n" +
+                        "✔️ A matriz B é a oposta de A.\n" +
+                        "\n" +
+                        "🔴 MATRIZ TRANSPOSTA\n" +
+                        "➡️ O que é: Obtida trocando as linhas pelas colunas da matriz original.\n" +
+                        "💡 Exemplo:\n" +
+                        "A <- matrix(1:6, 2, 3)\n" +
+                        "t(A)\n" +
+                        "Resultado:\n" +
+                        "1 2\n" +
+                        "3 4\n" +
+                        "5 6\n" +
+                        "✔️ A quantidade de linhas passa a ser a quantidade de colunas e vice-versa."
         ));
 
         lista.add(new Flashcard(
                 "📘 Linguagem R - Operações com Matrizes",
                 "R_MAT_OPERACOES",
                 "🧭 Operações Matemáticas com Matrizes",
-                "📌 OPERAÇÕES COM MATRIZES:\n" +
-                        "🟢 ADIÇÃO/SUBTRAÇÃO: A + B ou A - B (elemento a elemento). Condição: Mesmas dimensões.\n" +
-                        "🔵 MULTIPLICAÇÃO POR ESCALAR: k * A (multiplica cada elemento por k).\n" +
-                        "🟠 MULTIPLICAÇÃO MATRICIAL: A %*% B. Condição: nº colunas de A = nº linhas de B. Resultado: m x p.\n" +
-                        "🔴 NÃO CONFUNDA: A * B é multiplicação elemento a elemento (Hadamard); A %*% B é multiplicação matricial."
+                "📌 OPERAÇÕES COM MATRIZES:\n\n" +
+
+                        "🟢 ADIÇÃO/SUBTRAÇÃO (elemento a elemento)\n" +
+                        "Condição: As matrizes devem ter as mesmas dimensões.\n" +
+                        "Exemplo:\n" +
+                        "A = [1 2; 3 4]\n" +
+                        "B = [5 6; 7 8]\n" +
+                        "A + B = [6 8; 10 12]\n" +
+                        "Cada posição é somada com a posição correspondente.\n\n" +
+
+                        "🔵 MULTIPLICAÇÃO POR ESCALAR\n" +
+                        "Cada elemento da matriz é multiplicado pelo número (escalar).\n" +
+                        "Exemplo:\n" +
+                        "A = [1 2; 3 4]\n" +
+                        "3 * A = [3 6; 9 12]\n\n" +
+
+                        "🟠 MULTIPLICAÇÃO MATRICIAL (%*%)\n" +
+                        "Condição: Nº de colunas de A = Nº de linhas de B.\n" +
+                        "Exemplo:\n" +
+                        "A = [1 2; 3 4] (2x2)\n" +
+                        "B = [5 6; 7 8] (2x2)\n" +
+                        "A %*% B = [19 22; 43 50]\n" +
+                        "Como calcular o primeiro elemento:\n" +
+                        "(1×5) + (2×7) = 19\n" +
+                        "Sempre multiplique uma LINHA de A por uma COLUNA de B.\n\n" +
+
+                        "🔴 NÃO CONFUNDA\n" +
+                        "A * B → Multiplicação elemento a elemento (Hadamard).\n" +
+                        "Exemplo:\n" +
+                        "[1 2; 3 4] * [5 6; 7 8] = [5 12; 21 32]\n\n" +
+
+                        "A %*% B → Multiplicação matricial.\n" +
+                        "Exemplo:\n" +
+                        "[1 2; 3 4] %*% [5 6; 7 8] = [19 22; 43 50]"
         ));
 
         // VÍDEO 05 - MATRIZES AVANÇADAS E DATAFRAMES

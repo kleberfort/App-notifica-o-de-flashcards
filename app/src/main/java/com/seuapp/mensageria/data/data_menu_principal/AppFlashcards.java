@@ -3,13 +3,22 @@ package com.seuapp.mensageria.data.data_menu_principal;
 
 
 import com.seuapp.mensageria.flashcard_questoes.flashcards.analise_dados_flashcards.CicloVidaDadoFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.analise_dados_flashcards.EticaViesesTransparenciaCienciaDadosFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.analise_dados_flashcards.OverfittingUnderfittingValidacaoCruzadaFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosBancosDadosFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosSqlParte1Flashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosSqlParte2Flashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.desenvolvimento_software_flashcard.git.GitFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.direito_flashcard.admnistrativo_flashcard.PrincipiosAdmFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.direito_flashcard.constitucional_flashcard.AplicalidadeHierarquiaNormaFlashcard;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.estatistica_flashcards.ApresentacaoDadosFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.estatistica_flashcards.MediaMedianaModaFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.estatistica_flashcards.MedidasVariabilidadeDispersaoFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.leis_flashcards.LeiAcessoInformacao_12527_2011_Flashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.leis_flashcards.LeiLGPD_13709_2018_Flashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.linguagem_programacao_flashcards.LinguagemPythonFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.linguagem_programacao_flashcards.LinguagemRFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.linguagem_programacao_flashcards.PythonBibliotecasVariadasFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.portugues_flashcard.classe_palavras.ConjuncaoFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.portugues_flashcard.classe_palavras.PreposicaoFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.portugues_flashcard.classe_palavras.VerbosFlashcards;
@@ -44,6 +53,21 @@ public class AppFlashcards {
 
 
         // =========================
+        // LEIS
+        // =========================
+        todos.addAll(LeiAcessoInformacao_12527_2011_Flashcards.getFlashcards());
+        todos.addAll(LeiLGPD_13709_2018_Flashcards.getFlashcards());
+
+        // =========================
+        // ESTATÍSTICA
+        // =========================
+
+        todos.addAll(ApresentacaoDadosFlashcards.getFlashcards());
+        todos.addAll(MediaMedianaModaFlashcards.getFlashcards());
+        todos.addAll(MedidasVariabilidadeDispersaoFlashcards.getFlashcards());
+
+
+        // =========================
         // PORTUGUES
         // =========================
 
@@ -70,18 +94,22 @@ public class AppFlashcards {
         // =========================
         todos.addAll(LinguagemRFlashcards.getFlashcards());
         todos.addAll(LinguagemPythonFlashcards.getFlashcards());
+        todos.addAll(PythonBibliotecasVariadasFlashcards.getFlashcards());
 
         // =========================
         // BANCO DE DADOS
         // =========================
         todos.addAll(FundamentosBancosDadosFlashcards.getFlashcards());
         todos.addAll(FundamentosSqlParte1Flashcards.getFlashcards());
+        todos.addAll(FundamentosSqlParte2Flashcards.getFlashcards());
 
 
         // =========================
         // ANALISE DE DADOS
         // =========================
         todos.addAll(CicloVidaDadoFlashcards.getFlashcards());
+        todos.addAll(EticaViesesTransparenciaCienciaDadosFlashcards.getFlashcards());
+        todos.addAll(OverfittingUnderfittingValidacaoCruzadaFlashcards.getFlashcards());
 
 
 

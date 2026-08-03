@@ -1,21 +1,31 @@
 package com.seuapp.mensageria.data.data_menu_principal;
 
 import com.seuapp.mensageria.data.data_menu_principal.analise_dados.CicloVidaDadoData;
+import com.seuapp.mensageria.data.data_menu_principal.analise_dados.EticaViesesTransparenciaCienciaDadosData;
+import com.seuapp.mensageria.data.data_menu_principal.analise_dados.OverfittingUnderfittingValidacaoCruzadaData;
 import com.seuapp.mensageria.data.data_menu_principal.desenvolvimento_software.GitData;
 import com.seuapp.mensageria.data.data_menu_principal.direito.administrativo.PrincipiosAdmExpressoImplicitoData;
 import com.seuapp.mensageria.data.data_menu_principal.direito.constitucional.AplicabilidadeHierarquiaNormaData;
 import com.seuapp.mensageria.data.data_menu_principal.engenharia_software.ScrumData;
 import com.seuapp.mensageria.data.data_menu_principal.engenharia_software.XpData;
+import com.seuapp.mensageria.data.data_menu_principal.estatistica.ApresentacaoDadosData;
+import com.seuapp.mensageria.data.data_menu_principal.estatistica.MediaMedianaModaData;
+import com.seuapp.mensageria.data.data_menu_principal.estatistica.MedidasVariabilidadeDispersaoData;
 import com.seuapp.mensageria.data.data_menu_principal.fundamentos_banco_dados_sql.FundamentosBancoDadosData;
 import com.seuapp.mensageria.data.data_menu_principal.fundamentos_banco_dados_sql.FundamentosSqlParte1Data;
+import com.seuapp.mensageria.data.data_menu_principal.fundamentos_banco_dados_sql.FundamentosSqlParte2Data;
+import com.seuapp.mensageria.data.data_menu_principal.leis.LeiAcessoInformacao_12527_2011_Data;
+import com.seuapp.mensageria.data.data_menu_principal.leis.LeiLGPD_13709_2018_Data;
 import com.seuapp.mensageria.data.data_menu_principal.linguagem_programacao.LinguagemPythonData;
 import com.seuapp.mensageria.data.data_menu_principal.linguagem_programacao.LinguagemRData;
+import com.seuapp.mensageria.data.data_menu_principal.linguagem_programacao.PythonBibliotecasVariadasData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.classe_palavras.ConjuncaoData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.classe_palavras.PreposicaoData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.classe_palavras.VerbosData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.sintaxe.termos_oracao.TiposPredicadoIntegrantesOracaoData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.sintaxe.termos_oracao.TiposSujeitoData;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosSqlParte1Flashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosSqlParte2Flashcards;
 import com.seuapp.mensageria.model.Conteudo;
 import com.seuapp.mensageria.model.Secao;
 import com.seuapp.mensageria.model.Disciplina;
@@ -52,6 +62,7 @@ public class MenuPrincipalAppData {
 
         disciplinasBancoDados.add(FundamentosBancoDadosData.getDisciplina());
         disciplinasBancoDados.add(FundamentosSqlParte1Data.getDisciplina());
+        disciplinasBancoDados.add(FundamentosSqlParte2Data.getDisciplina());
         areas.add(new Area("Banco de Dados", disciplinasBancoDados));
 
 
@@ -60,6 +71,8 @@ public class MenuPrincipalAppData {
         // =====================================
         List<Disciplina> disciplinasAnaliseDados = new ArrayList<>();
         disciplinasAnaliseDados.add(CicloVidaDadoData.getDisciplina());
+        disciplinasAnaliseDados.add(EticaViesesTransparenciaCienciaDadosData.getDisciplina());
+        disciplinasAnaliseDados.add(OverfittingUnderfittingValidacaoCruzadaData.getDisciplina());
         areas.add(new Area("Análise de Dados", disciplinasAnaliseDados));
 
         // =====================================
@@ -77,6 +90,7 @@ public class MenuPrincipalAppData {
 
         List<Disciplina> disciplinasLinguagemProgramacao = new ArrayList<>();
         disciplinasLinguagemProgramacao.add(LinguagemPythonData.getDisciplina());
+        disciplinasLinguagemProgramacao.add(PythonBibliotecasVariadasData.getDisciplina());
         disciplinasLinguagemProgramacao.add(LinguagemRData.getDisciplina());
         areas.add(new Area("Linguagem de Programação", disciplinasLinguagemProgramacao));
 
@@ -97,6 +111,27 @@ public class MenuPrincipalAppData {
         List<Disciplina> disciplinasConstitucional = new ArrayList<>();
         disciplinasConstitucional.add(AplicabilidadeHierarquiaNormaData.getDisciplina());
         areas.add(new Area("Direito Constitucional", disciplinasConstitucional));
+
+
+        // =====================================
+        // LEIS
+        // =====================================
+
+        List<Disciplina> disciplinasLeiGerais = new ArrayList<>();
+        disciplinasLeiGerais.add(LeiAcessoInformacao_12527_2011_Data.getDisciplina());
+        disciplinasLeiGerais.add(LeiLGPD_13709_2018_Data.getDisciplina());
+        areas.add(new Area("Leis Gerais", disciplinasLeiGerais));
+
+
+        // =====================================
+        // ESTATÍSTICA
+        // =====================================
+        List<Disciplina> disciplinasEstatistica = new ArrayList<>();
+        disciplinasEstatistica.add(ApresentacaoDadosData.getDisciplina());
+        disciplinasEstatistica.add(MediaMedianaModaData.getDisciplina());
+        disciplinasEstatistica.add(MedidasVariabilidadeDispersaoData.getDisciplina());
+
+        areas.add(new Area("Estatística", disciplinasEstatistica));
 
 
         // =====================================
