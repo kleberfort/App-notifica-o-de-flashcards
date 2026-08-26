@@ -20,17 +20,17 @@ public class MedidasVariabilidadeDispersaoData {
         List<Conteudo> conceitosGerais = new ArrayList<>();
 
         conceitosGerais.add(
-                new Conteudo("CONCEITOS_GERAIS",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_CONCEITOS_GERAIS",
                         "CONCEITOS_GERAIS")
         );
 
         conceitosGerais.add(
-                new Conteudo("LISTA_COMPLETA",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_LISTA_COMPLETA",
                         "LISTA_COMPLETA")
         );
 
         conceitosGerais.add(
-                new Conteudo("FALSIAS_COMUNS",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_FALSIAS_COMUNS",
                         "FALSIAS_COMUNS")
         );
 
@@ -46,12 +46,12 @@ public class MedidasVariabilidadeDispersaoData {
         List<Conteudo> amplitudeTotal = new ArrayList<>();
 
         amplitudeTotal.add(
-                new Conteudo("AMPLITUDE_TOTAL",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_AMPLITUDE_TOTAL",
                         "AMPLITUDE_TOTAL")
         );
 
         amplitudeTotal.add(
-                new Conteudo("VANTAGENS_DESVANTAGENS",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_VANTAGENS_DESVANTAGENS",
                         "VANTAGENS_DESVANTAGENS")
         );
 
@@ -67,17 +67,17 @@ public class MedidasVariabilidadeDispersaoData {
         List<Conteudo> medidasQuartis = new ArrayList<>();
 
         medidasQuartis.add(
-                new Conteudo("QUARTIS_REVISAO",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_QUARTIS_REVISAO",
                         "QUARTIS_REVISAO")
         );
 
         medidasQuartis.add(
-                new Conteudo("MEDIDAS_QUARTIS",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_MEDIDAS_QUARTIS",
                         "MEDIDAS_QUARTIS")
         );
 
         medidasQuartis.add(
-                new Conteudo("CILADAS_QUARTIS",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_CILADAS_QUARTIS",
                         "CILADAS_QUARTIS")
         );
 
@@ -93,12 +93,12 @@ public class MedidasVariabilidadeDispersaoData {
         List<Conteudo> desviosMedia = new ArrayList<>();
 
         desviosMedia.add(
-                new Conteudo("DESVIO_MEDIA",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_DESVIO_MEDIA",
                         "DESVIO_MEDIA")
         );
 
         desviosMedia.add(
-                new Conteudo("PROPRIEDADE_SOMA",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_PROPRIEDADE_SOMA",
                         "PROPRIEDADE_SOMA")
         );
 
@@ -114,12 +114,12 @@ public class MedidasVariabilidadeDispersaoData {
         List<Conteudo> desvioAbsolutoMedio = new ArrayList<>();
 
         desvioAbsolutoMedio.add(
-                new Conteudo("DESVIO_ABSOLUTO_MEDIO",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_DESVIO_ABSOLUTO_MEDIO",
                         "DESVIO_ABSOLUTO_MEDIO")
         );
 
         desvioAbsolutoMedio.add(
-                new Conteudo("DADOS_SIMPLES_TABELA",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_DADOS_SIMPLES_TABELA",
                         "DADOS_SIMPLES_TABELA")
         );
 
@@ -135,17 +135,17 @@ public class MedidasVariabilidadeDispersaoData {
         List<Conteudo> variancia = new ArrayList<>();
 
         variancia.add(
-                new Conteudo("VARIANCIA_CONCEITO",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_VARIANCIA_CONCEITO",
                         "VARIANCIA_CONCEITO")
         );
 
         variancia.add(
-                new Conteudo("POPULACIONAL_AMOSTRAL",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_POPULACIONAL_AMOSTRAL",
                         "POPULACIONAL_AMOSTRAL")
         );
 
         variancia.add(
-                new Conteudo("CILADAS_VARIANCIA",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_CILADAS_VARIANCIA",
                         "CILADAS_VARIANCIA")
         );
 
@@ -161,12 +161,12 @@ public class MedidasVariabilidadeDispersaoData {
         List<Conteudo> varianciaTabelas = new ArrayList<>();
 
         varianciaTabelas.add(
-                new Conteudo("TABELA_ABSOLUTA",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_TABELA_ABSOLUTA",
                         "TABELA_ABSOLUTA")
         );
 
         varianciaTabelas.add(
-                new Conteudo("TABELA_RELATIVA",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_TABELA_RELATIVA",
                         "TABELA_RELATIVA")
         );
 
@@ -182,12 +182,12 @@ public class MedidasVariabilidadeDispersaoData {
         List<Conteudo> desvioPadrao = new ArrayList<>();
 
         desvioPadrao.add(
-                new Conteudo("DESVIO_PADRAO_CONCEITO",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_DESVIO_PADRAO_CONCEITO",
                         "DESVIO_PADRAO_CONCEITO")
         );
 
         desvioPadrao.add(
-                new Conteudo("COMPARACAO_GRUPOS",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_COMPARACAO_GRUPOS",
                         "COMPARACAO_GRUPOS")
         );
 
@@ -203,12 +203,12 @@ public class MedidasVariabilidadeDispersaoData {
         List<Conteudo> coeficienteVariacao = new ArrayList<>();
 
         coeficienteVariacao.add(
-                new Conteudo("CV_CONCEITO",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_CV_CONCEITO",
                         "CV_CONCEITO")
         );
 
         coeficienteVariacao.add(
-                new Conteudo("CV_PROPRIEDADES",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_CV_PROPRIEDADES",
                         "CV_PROPRIEDADES")
         );
 
@@ -224,12 +224,12 @@ public class MedidasVariabilidadeDispersaoData {
         List<Conteudo> varianciaRelativa = new ArrayList<>();
 
         varianciaRelativa.add(
-                new Conteudo("VR_CONCEITO",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_VR_CONCEITO",
                         "VR_CONCEITO")
         );
 
         varianciaRelativa.add(
-                new Conteudo("VR_PROPRIEDADES",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_VR_PROPRIEDADES",
                         "VR_PROPRIEDADES")
         );
 
@@ -245,12 +245,12 @@ public class MedidasVariabilidadeDispersaoData {
         List<Conteudo> resumosBolso = new ArrayList<>();
 
         resumosBolso.add(
-                new Conteudo("RESUMO_BOLSO_1",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_RESUMO_BOLSO_1",
                         "RESUMO_BOLSO_1")
         );
 
         resumosBolso.add(
-                new Conteudo("RESUMO_BOLSO_2",
+                new Conteudo("MEDIDAS_VARIABILIDADE_ESTATISTICA_RESUMO_BOLSO_2",
                         "RESUMO_BOLSO_2")
         );
 

@@ -20,4 +20,12 @@ public class Disciplina {
     public List<Secao> getCategorias() {
         return secaos;
     }
+
+    @Override
+    public String toString() {
+        return "Disciplina{" +
+                "nome='" + nome + '\'' +
+                ", secaos=" + secaos +
+                '}';
+    }
 }

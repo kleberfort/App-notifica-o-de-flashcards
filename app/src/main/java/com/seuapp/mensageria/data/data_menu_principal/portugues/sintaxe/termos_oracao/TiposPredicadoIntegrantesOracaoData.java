@@ -19,10 +19,10 @@ public class TiposPredicadoIntegrantesOracaoData {
 
         List<Conteudo> conteudosVideo08 = new ArrayList<>();
 
-        conteudosVideo08.add(new Conteudo("VERBOS_TRANSITIVIDADE", "VERBOS_TRANSITIVIDADE"));
-        conteudosVideo08.add(new Conteudo("CLASSIFICACAO_VERBOS", "CLASSIFICACAO_VERBOS"));
-        conteudosVideo08.add(new Conteudo("MACETE_MENINO", "MACETE_MENINO"));
-        conteudosVideo08.add(new Conteudo("CILADA_VL", "CILADA_VL"));
+        conteudosVideo08.add(new Conteudo("TIPOS_PREDICADO_VERBOS_TRANSITIVIDADE", "VERBOS_TRANSITIVIDADE"));
+        conteudosVideo08.add(new Conteudo("TIPOS_PREDICADO_CLASSIFICACAO_VERBOS", "CLASSIFICACAO_VERBOS"));
+        conteudosVideo08.add(new Conteudo("TIPOS_PREDICADO_MACETE_MENINO", "MACETE_MENINO"));
+        conteudosVideo08.add(new Conteudo("TIPOS_PREDICADO_CILADA_VL", "CILADA_VL"));
 
         secoes.add(new Secao("📘 Predicação Verbal", conteudosVideo08));
 
@@ -33,17 +33,17 @@ public class TiposPredicadoIntegrantesOracaoData {
         List<Conteudo> conteudosVideo09 = new ArrayList<>();
 
         conteudosVideo09.add(
-                new Conteudo("PREDICADO_ESTADO_ACAO",
+                new Conteudo("TIPOS_PREDICADO_PREDICADO_ESTADO_ACAO",
                         "PREDICADO_ESTADO_ACAO")
         );
 
         conteudosVideo09.add(
-                new Conteudo("PN_VS_PV_VS_PVN",
+                new Conteudo("TIPOS_PREDICADO_PN_VS_PV_VS_PVN",
                         "PN_VS_PV_VS_PVN")
         );
 
         conteudosVideo09.add(
-                new Conteudo("CILADA_ANDAR",
+                new Conteudo("TIPOS_PREDICADO_CILADA_ANDAR",
                         "CILADA_ANDAR")
         );
 
@@ -56,12 +56,12 @@ public class TiposPredicadoIntegrantesOracaoData {
         List<Conteudo> conteudosVideo10 = new ArrayList<>();
 
         conteudosVideo10.add(
-                new Conteudo("ESTRATEGIA_FCC",
+                new Conteudo("TIPOS_PREDICADO_ESTRATEGIA_FCC",
                         "ESTRATEGIA_FCC")
         );
 
         conteudosVideo10.add(
-                new Conteudo("FCC_CILADAS",
+                new Conteudo("TIPOS_PREDICADO_FCC_CILADAS",
                         "FCC_CILADAS")
         );
 
@@ -74,12 +74,12 @@ public class TiposPredicadoIntegrantesOracaoData {
         List<Conteudo> conteudosVideo11 = new ArrayList<>();
 
         conteudosVideo11.add(
-                new Conteudo("SUJEITO_PREDICADO",
+                new Conteudo("TIPOS_PREDICADO_SUJEITO_PREDICADO",
                         "SUJEITO_PREDICADO")
         );
 
         conteudosVideo11.add(
-                new Conteudo("TIPOS_SUJEITO",
+                new Conteudo("TIPOS_PREDICADO_TIPOS_SUJEITO",
                         "TIPOS_SUJEITO")
         );
 
@@ -92,17 +92,17 @@ public class TiposPredicadoIntegrantesOracaoData {
         List<Conteudo> conteudosVideo12 = new ArrayList<>();
 
         conteudosVideo12.add(
-                new Conteudo("OD_OI",
+                new Conteudo("TIPOS_PREDICADO_OD_OI",
                         "OD_OI")
         );
 
         conteudosVideo12.add(
-                new Conteudo("OD_PREPOSICIONADO",
+                new Conteudo("TIPOS_PREDICADO_OD_PREPOSICIONADO",
                         "OD_PREPOSICIONADO")
         );
 
         conteudosVideo12.add(
-                new Conteudo("PLEONASMO",
+                new Conteudo("TIPOS_PREDICADO_PLEONASMO",
                         "PLEONASMO")
         );
 
@@ -115,17 +115,17 @@ public class TiposPredicadoIntegrantesOracaoData {
         List<Conteudo> conteudosVideo13 = new ArrayList<>();
 
         conteudosVideo13.add(
-                new Conteudo("TDI_REGENCIA",
+                new Conteudo("TIPOS_PREDICADO_TDI_REGENCIA",
                         "TDI_REGENCIA")
         );
 
         conteudosVideo13.add(
-                new Conteudo("HAVER_VS_EXISTIR",
+                new Conteudo("TIPOS_PREDICADO_HAVER_VS_EXISTIR",
                         "HAVER_VS_EXISTIR")
         );
 
         conteudosVideo13.add(
-                new Conteudo("OI_VS_ADJUNTO",
+                new Conteudo("TIPOS_PREDICADO_OI_VS_ADJUNTO",
                         "OI_VS_ADJUNTO")
         );
 
@@ -138,12 +138,12 @@ public class TiposPredicadoIntegrantesOracaoData {
         List<Conteudo> conteudosVideo14 = new ArrayList<>();
 
         conteudosVideo14.add(
-                new Conteudo("FCC_SUJEITO",
+                new Conteudo("TIPOS_PREDICADO_FCC_SUJEITO",
                         "FCC_SUJEITO")
         );
 
         conteudosVideo14.add(
-                new Conteudo("FCC_OD_OI",
+                new Conteudo("TIPOS_PREDICADO_FCC_OD_OI",
                         "FCC_OD_OI")
         );
 
@@ -156,22 +156,22 @@ public class TiposPredicadoIntegrantesOracaoData {
         List<Conteudo> conteudosVideo15 = new ArrayList<>();
 
         conteudosVideo15.add(
-                new Conteudo("CN_CONCEITO",
+                new Conteudo("TIPOS_PREDICADO_CN_CONCEITO",
                         "CN_CONCEITO")
         );
 
         conteudosVideo15.add(
-                new Conteudo("AP_CONCEITO",
+                new Conteudo("TIPOS_PREDICADO_AP_CONCEITO",
                         "AP_CONCEITO")
         );
 
         conteudosVideo15.add(
-                new Conteudo("CN_AP_DIFERENCA",
+                new Conteudo("TIPOS_PREDICADO_CN_AP_DIFERENCA",
                         "CN_AP_DIFERENCA")
         );
 
         conteudosVideo15.add(
-                new Conteudo("AP_VS_ADJUNTO",
+                new Conteudo("TIPOS_PREDICADO_AP_VS_ADJUNTO",
                         "AP_VS_ADJUNTO")
         );
 
@@ -184,12 +184,12 @@ public class TiposPredicadoIntegrantesOracaoData {
         List<Conteudo> conteudosResumo = new ArrayList<>();
 
         conteudosResumo.add(
-                new Conteudo("TABELA_TERMOS",
+                new Conteudo("TIPOS_PREDICADO_TABELA_TERMOS",
                         "TABELA_TERMOS")
         );
 
         conteudosResumo.add(
-                new Conteudo("MACETES_FINAIS",
+                new Conteudo("TIPOS_PREDICADO_MACETES_FINAIS",
                         "MACETES_FINAIS")
         );
 

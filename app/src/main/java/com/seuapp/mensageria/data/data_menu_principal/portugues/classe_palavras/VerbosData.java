@@ -96,9 +96,9 @@ public class VerbosData {
         // =====================================
 
         List<Conteudo> bancas = new ArrayList<>();
-        bancas.add(new Conteudo("BANCA_FUNDATEC", "Perfil Fundatec - Desinência de Infinitivo"));
-        bancas.add(new Conteudo("BANCA_HOMOFONIA", "Homofonia: Formas Iguais em Tempos Diferentes"));
-        bancas.add(new Conteudo("BANCA_CEBRASPE_FGV", "Perfil Cebraspe e FGV - Semântica"));
+        bancas.add(new Conteudo("VERBOS_BANCA_FUNDATEC", "Perfil Fundatec - Desinência de Infinitivo"));
+        bancas.add(new Conteudo("VERBOS_BANCA_HOMOFONIA", "Homofonia: Formas Iguais em Tempos Diferentes"));
+        bancas.add(new Conteudo("VERBOS_BANCA_CEBRASPE_FGV", "Perfil Cebraspe e FGV - Semântica"));
 
         secoes.add(new Secao("Perfis de Banca", bancas));
 
@@ -108,10 +108,10 @@ public class VerbosData {
         // =====================================
 
         List<Conteudo> resumo = new ArrayList<>();
-        resumo.add(new Conteudo("RESUMO_PALAVRINHAS_MAGICAS", "Palavrinhas Mágicas para Prova"));
-        resumo.add(new Conteudo("RESUMO_CILADAS_MORTAIS", "Três Ciladas Mortais"));
-        resumo.add(new Conteudo("RESUMO_REGRAS_OURO", "Regras de Ouro para Análise"));
-        resumo.add(new Conteudo("RESUMO_FLASHCARDS_ANKI", "Flashcards para Revisão Rápida"));
+        resumo.add(new Conteudo("VERBOS_RESUMO_PALAVRINHAS_MAGICAS", "Palavrinhas Mágicas para Prova"));
+        resumo.add(new Conteudo("VERBOS_RESUMO_CILADAS_MORTAIS", "Três Ciladas Mortais"));
+        resumo.add(new Conteudo("VERBOS_RESUMO_REGRAS_OURO", "Regras de Ouro para Análise"));
+        resumo.add(new Conteudo("VERBOS_RESUMO_FLASHCARDS_ANKI", "Flashcards para Revisão Rápida"));
 
         secoes.add(new Secao("Resumo de Bolso", resumo));
 

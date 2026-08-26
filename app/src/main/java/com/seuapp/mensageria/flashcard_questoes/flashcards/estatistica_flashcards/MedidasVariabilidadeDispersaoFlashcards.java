@@ -12,7 +12,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
         // ===== VÍDEO 01 - CONCEITOS GERAIS =====
         lista.add(new Flashcard(
                 "📊 Estatística - Medidas de Dispersão",
-                "CONCEITOS_GERAIS",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_CONCEITOS_GERAIS",
                 "🧭 Conceitos Fundamentais",
                 "📌 O que são medidas de dispersão?\n" +
                         "🟢 Avaliam se os valores estão concentrados (próximos) ou dispersos (distantes).\n" +
@@ -45,7 +45,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Medidas de Dispersão",
-                "LISTA_COMPLETA",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_LISTA_COMPLETA",
                 "🧭 Principais Medidas de Dispersão",
                 "📌 Lista das principais medidas:\n" +
                         "1️⃣ Amplitude\n" +
@@ -60,7 +60,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Medidas de Dispersão",
-                "FALSIAS_COMUNS",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_FALSIAS_COMUNS",
                 "🧭 Ciladas da Banca",
                 "📌 CV vs Coeficiente Quartílico:\n" +
                         "🔴 São diferentes! CV usa média e desvio padrão.\n" +
@@ -76,7 +76,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
         // ===== VÍDEO 02 - AMPLITUDE TOTAL =====
         lista.add(new Flashcard(
                 "📊 Estatística - Amplitude",
-                "AMPLITUDE_TOTAL",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_AMPLITUDE_TOTAL",
                 "🧭 Cálculo e Interpretação",
                 "📌 Fórmula: H = Xmáx - Xmín.\n" +
                         "📌 Exemplo: 55, 80, 70, 62, 83.\n" +
@@ -89,7 +89,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Amplitude",
-                "VANTAGENS_DESVANTAGENS",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_VANTAGENS_DESVANTAGENS",
                 "🧭 Prós e Contras",
                 "📌 Vantagem: Cálculo fácil e rápido.\n" +
                         "📌 Desvantagem: Só considera extremos.\n" +
@@ -103,7 +103,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
         // ===== VÍDEO 03 - MEDIDAS COM QUARTIS =====
         lista.add(new Flashcard(
                 "📊 Estatística - Quartis",
-                "QUARTIS_REVISAO",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_QUARTIS_REVISAO",
                 "🧭 Relembrando os Quartis",
                 "📌 Q1 (1º Quartil): 25% dos dados.\n" +
                         "📌 Q2 (2º Quartil/Mediana): 50% dos dados.\n" +
@@ -115,7 +115,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Quartis",
-                "MEDIDAS_QUARTIS",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_MEDIDAS_QUARTIS",
                 "🧭 Medidas Derivadas dos Quartis",
                 "📌 Diferença Interquartílica (D): Q3 - Q1.\n" +
                         "🟢 Distância que concentra 50% centrais.\n" +
@@ -128,7 +128,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Quartis",
-                "CILADAS_QUARTIS",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_CILADAS_QUARTIS",
                 "🧭 Ciladas com Quartis",
                 "📌 Q2 não é ponto médio entre Q1 e Q3.\n" +
                         "🔴 Exemplo: Q1=4, Q3=8, ponto médio=6, Q2=5.\n" +
@@ -142,7 +142,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
         // ===== VÍDEO 04 - DESVIOS EM RELAÇÃO À MÉDIA =====
         lista.add(new Flashcard(
                 "📊 Estatística - Desvios",
-                "DESVIO_MEDIA",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_DESVIO_MEDIA",
                 "🧭 Conceito de Desvio",
                 "📌 Desvio: distância de cada valor à média.\n" +
                         "📌 Fórmula: di = Xi - X̄.\n" +
@@ -154,7 +154,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Desvios",
-                "PROPRIEDADE_SOMA",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_PROPRIEDADE_SOMA",
                 "🧭 Soma dos Desvios = Zero",
                 "📌 Propriedade fundamental:\n" +
                         "🟢 Σ(Xi - X̄) = 0.\n" +
@@ -167,7 +167,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
         // ===== VÍDEO 05 - DESVIO ABSOLUTO MÉDIO =====
         lista.add(new Flashcard(
                 "📊 Estatística - Desvio Absoluto Médio",
-                "DESVIO_ABSOLUTO_MEDIO",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_DESVIO_ABSOLUTO_MEDIO",
                 "🧭 Conceito e Cálculo",
                 "📌 Média dos módulos dos desvios.\n" +
                         "📌 D.M. = Σ|Xi - X̄| / n.\n" +
@@ -180,7 +180,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Desvio Absoluto Médio",
-                "DADOS_SIMPLES_TABELA",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_DADOS_SIMPLES_TABELA",
                 "🧭 Cálculo: Dados Simples e Tabela",
                 "📌 Dados simples: D.M. = Σ|di| / n.\n" +
                         "📌 Exemplo: 2,3,5,8,12 | Média=6.\n" +
@@ -193,7 +193,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
         // ===== VÍDEO 06 - VARIÂNCIA =====
         lista.add(new Flashcard(
                 "📊 Estatística - Variância",
-                "VARIANCIA_CONCEITO",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_VARIANCIA_CONCEITO",
                 "🧭 Conceito e Fórmulas",
                 "📌 Média dos quadrados dos desvios.\n" +
                         "📌 Fórmula básica populacional:\n" +
@@ -206,7 +206,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Variância",
-                "POPULACIONAL_AMOSTRAL",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_POPULACIONAL_AMOSTRAL",
                 "🧭 Populacional vs Amostral",
                 "📌 Populacional (σ²): divide por n.\n" +
                         "🟢 Usa TODOS os dados da população.\n" +
@@ -218,7 +218,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Variância",
-                "CILADAS_VARIANCIA",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_CILADAS_VARIANCIA",
                 "🧭 Ciladas da Variância",
                 "📌 Variância NUNCA é negativa.\n" +
                         "🟢 Valor mínimo = 0 (todos os dados iguais).\n" +
@@ -231,7 +231,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
         // ===== VÍDEO 07 - VARIÂNCIA EM TABELAS =====
         lista.add(new Flashcard(
                 "📊 Estatística - Variância em Tabelas",
-                "TABELA_ABSOLUTA",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_TABELA_ABSOLUTA",
                 "🧭 Frequência Absoluta",
                 "📌 Método básico: σ² = Σfi·(Xi-X̄)²/Σfi.\n" +
                         "📌 Exemplo: Xi=20(fi=2), 25(8), 30(10).\n" +
@@ -243,7 +243,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Variância em Tabelas",
-                "TABELA_RELATIVA",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_TABELA_RELATIVA",
                 "🧭 Frequência Relativa/Percentual",
                 "📌 Usar percentuais como pesos (0,10; 0,40...).\n" +
                         "📌 Calcular X̄ = Σ(Xi × %) e X̄².\n" +
@@ -257,7 +257,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
         // ===== VÍDEO 08 - DESVIO PADRÃO =====
         lista.add(new Flashcard(
                 "📊 Estatística - Desvio Padrão",
-                "DESVIO_PADRAO_CONCEITO",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_DESVIO_PADRAO_CONCEITO",
                 "🧭 Conceito e Cálculo",
                 "📌 Raiz quadrada da variância.\n" +
                         "📌 Restaura a unidade original dos dados.\n" +
@@ -270,7 +270,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Desvio Padrão",
-                "COMPARACAO_GRUPOS",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_COMPARACAO_GRUPOS",
                 "🧭 Comparando Grupos",
                 "📌 Médias iguais: compare DP diretamente.\n" +
                         "🟢 Maior DP → maior dispersão.\n" +
@@ -283,7 +283,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
         // ===== VÍDEO 09 - COEFICIENTE DE VARIAÇÃO =====
         lista.add(new Flashcard(
                 "📊 Estatística - Coeficiente de Variação",
-                "CV_CONCEITO",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_CV_CONCEITO",
                 "🧭 Conceito e Cálculo",
                 "📌 Medida de dispersão relativa.\n" +
                         "📌 Expressa DP como % da média.\n" +
@@ -297,7 +297,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Coeficiente de Variação",
-                "CV_PROPRIEDADES",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_CV_PROPRIEDADES",
                 "🧭 Propriedades do CV",
                 "📌 Invariante à escala:\n" +
                         "🟢 Mudar minutos/horas não altera CV.\n" +
@@ -312,7 +312,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
         // ===== VÍDEO 10 - VARIÂNCIA RELATIVA =====
         lista.add(new Flashcard(
                 "📊 Estatística - Variância Relativa",
-                "VR_CONCEITO",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_VR_CONCEITO",
                 "🧭 Conceito e Fórmula",
                 "📌 Dispersão relativa.\n" +
                         "📌 Fórmula: VR = σ²/(X̄)².\n" +
@@ -325,7 +325,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Variância Relativa",
-                "VR_PROPRIEDADES",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_VR_PROPRIEDADES",
                 "🧭 Propriedades da VR",
                 "📌 Adimensional (percentual).\n" +
                         "📌 Invariante à escala.\n" +
@@ -339,7 +339,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
         // ===== RESUMOS DE BOLSO =====
         lista.add(new Flashcard(
                 "📊 Estatística - Resumos",
-                "RESUMO_BOLSO_1",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_RESUMO_BOLSO_1",
                 "🧭 Medidas de Dispersão - Resumo",
                 "📌 Conceito: variabilidade dos dados.\n" +
                         "📌 Principais: Amplitude, Quartis, Desvio Médio,\n" +
@@ -355,7 +355,7 @@ public class MedidasVariabilidadeDispersaoFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Resumos",
-                "RESUMO_BOLSO_2",
+                "MEDIDAS_VARIABILIDADE_ESTATISTICA_RESUMO_BOLSO_2",
                 "🧭 Ciladas - Visão Geral",
                 "📌 CV ≠ Coeficiente Quartílico.\n" +
                         "🟢 CV = σ/X̄; CVq = (Q3-Q1)/(Q3+Q1).\n" +

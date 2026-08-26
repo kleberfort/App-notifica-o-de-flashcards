@@ -16,7 +16,31 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Nomenclatura",
-                "POPULACAO_AMOSTRA",
+                "APRESENTACAO_DADOS_ESTATISTICA_DESCRITIVA",
+                "📋 Estatística Descritiva",
+                "📌 RESPONSABILIDADE: Coleta, organização, descrição e resumo dos dados observados.\n" +
+                        "🔑 MACETE: COLETAR + ORGANIZAR + RESUMIR."
+        ));
+
+        lista.add(new Flashcard(
+                "📊 Estatística - Nomenclatura",
+                "APRESENTACAO_DADOS_ESTATISTICA_PROBABILISTICA",
+                "🎲 Estatística Probabilística",
+                "📌 RESPONSABILIDADE: Estabelecer o modelo matemático adotado para explicar fenômenos aleatórios.\n" +
+                        "🔑 MACETE: MODELO MATEMÁTICO + FENÔMENOS ALEATÓRIOS."
+        ));
+
+        lista.add(new Flashcard(
+                "📊 Estatística - Nomenclatura",
+                "APRESENTACAO_DADOS_ESTATISTICA_INFERENCIAL",
+                "🔎 Estatística Inferencial",
+                "📌 RESPONSABILIDADE: Análise e interpretação dos dados.\n" +
+                        "🔑 MACETE: ANALISAR + INTERPRETAR."
+        ));
+
+        lista.add(new Flashcard(
+                "📊 Estatística - Nomenclatura",
+                "APRESENTACAO_DADOS_POPULACAO_AMOSTRA",
                 "🧭 População vs Amostra",
                 "📌 POPULAÇÃO: Conjunto COMPLETO de todos os elementos.\n" +
                         "📌 AMOSTRA: Subconjunto PRÓPRIO (parte que NÃO é o todo).\n" +
@@ -25,7 +49,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Nomenclatura",
-                "CENSO_AMOSTRAGEM",
+                "APRESENTACAO_DADOS_CENSO_AMOSTRAGEM",
                 "🧭 Censo vs Amostragem",
                 "📌 CENSO: Pesquisa que utiliza TODA a população.\n" +
                         "📌 AMOSTRAGEM: Ato/processo de selecionar e analisar uma AMOSTRA.\n" +
@@ -34,7 +58,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Nomenclatura",
-                "PARAMETRO_ESTATISTICA",
+                "APRESENTACAO_DADOS_PARAMETRO_ESTATISTICA",
                 "🧭 Parâmetro vs Estatística",
                 "📌 PARÂMETRO: Medida numérica que descreve a POPULAÇÃO (valor geralmente DESCONHECIDO).\n\n" +
                         "💡 Exemplo:\n" +
@@ -53,7 +77,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Nomenclatura",
-                "MOTIVOS_AMOSTRAGEM",
+                "APRESENTACAO_DADOS_MOTIVOS_AMOSTRAGEM",
                 "🧭 3 Motivos para usar Amostragem",
                 "💰 ECONÔMICO: Censo é caro.\n" +
                         "⏰ TEMPORAL: Censo é demorado.\n" +
@@ -63,7 +87,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Nomenclatura",
-                "CILADA_POPULACAO",
+                "APRESENTACAO_DADOS_CILADA_POPULACAO",
                 "🧭 População - Cilada",
                 "⚠️ CILADA: Pensar que população NÃO tem características em comum.\n" +
                         "✅ ANTÍDOTO: População tem PELO MENOS UMA característica em comum.\n" +
@@ -72,7 +96,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Estatística - Nomenclatura",
-                "CILADA_AMOSTRA",
+                "APRESENTACAO_DADOS_CILADA_AMOSTRA",
                 "🧭 Amostra - Cilada",
                 "⚠️ CILADA: Achar que amostra pode ser qualquer parte.\n" +
                         "✅ ANTÍDOTO: Amostra é subconjunto PRÓPRIO (NUNCA igual à população).\n" +
@@ -85,7 +109,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Apresentação de Dados",
-                "FORMAS_APRESENTACAO",
+                "APRESENTACAO_DADOS_FORMAS_APRESENTACAO",
                 "🧭 Formas de Apresentar Dados",
                 "📋 FORMA TABULAR: Dados organizados em TABELAS (linhas e colunas).\n" +
                         "📈 FORMA GRÁFICA: Dados representados por GRÁFICOS.\n" +
@@ -94,7 +118,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Apresentação de Dados",
-                "ELEMENTOS_TABELA",
+                "APRESENTACAO_DADOS_ELEMENTOS_TABELA",
                 "🧭 Elementos Obrigatórios da Tabela",
                 "📌 TÍTULO: Responde O QUÊ? QUANDO? ONDE? (obrigatório).\n" +
                         "📌 CABEÇALHO: Parte superior, especifica conteúdo das colunas.\n" +
@@ -106,7 +130,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Apresentação de Dados",
-                "TITULO_TABELA",
+                "APRESENTACAO_DADOS_TITULO_TABELA",
                 "🧭 Título da Tabela",
                 "❓ O Título deve responder a 3 perguntas:\n" +
                         "📌 O QUÊ? (assunto da pesquisa)\n" +
@@ -117,7 +141,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Apresentação de Dados",
-                "ELEMENTOS_OPCIONAIS",
+                "APRESENTACAO_DADOS_ELEMENTOS_OPCIONAIS",
                 "🧭 Elementos Opcionais",
                 "📌 INFORMAÇÕES COMPLEMENTARES: Notas adicionais abaixo da tabela (OPCIONAL).\n" +
                         "📌 LEGENDA (Gráfico): Explicação dos símbolos/cores (OPCIONAL).\n" +
@@ -126,7 +150,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Apresentação de Dados",
-                "CILADA_TABELA",
+                "APRESENTACAO_DADOS_CILADA_TABELA",
                 "🧭 Tabela - Ciladas",
                 "⚠️ CILADA: Achar que fonte é opcional.\n" +
                         "✅ ANTÍDOTO: Fonte é OBRIGATÓRIA (sem fonte = sem credibilidade).\n" +
@@ -142,7 +166,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Métodos Estatísticos",
-                "METODO_EXPERIMENTAL",
+                "APRESENTACAO_DADOS_METODO_EXPERIMENTAL",
                 "🧭 Método Experimental",
                 "🔬 DEFINIÇÃO: Conjunto de procedimentos para verificar uma hipótese.\n\n" +
                         "💡 Exemplo:\n" +
@@ -157,7 +181,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Métodos Estatísticos",
-                "METODO_ESTATISTICO",
+                "APRESENTACAO_DADOS_METODO_ESTATISTICO",
                 "🧭 Método Estatístico",
                 "📊 DEFINIÇÃO: Método usado quando NÃO é possível controlar todas as variáveis.\n" +
                         "📐 CARACTERÍSTICA: Calcula a influência de cada variável.\n" +
@@ -167,7 +191,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Métodos Estatísticos",
-                "VARS_DEPENDENTE_INDEPENDENTE",
+                "APRESENTACAO_DADOS_VARS_DEPENDENTE_INDEPENDENTE",
                 "🧭 Variáveis Dependente vs Independente",
                 "🎯 VARIÁVEL INDEPENDENTE: É a variável que o pesquisador altera ou controla (CAUSA).\n\n" +
                         "🎯 VARIÁVEL DEPENDENTE: É a variável observada, que pode mudar em consequência da independente (EFEITO).\n\n" +
@@ -184,7 +208,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Métodos Estatísticos",
-                "ETAPAS_EXPERIMENTAL",
+                "APRESENTACAO_DADOS_ETAPAS_EXPERIMENTAL",
                 "🧭 Etapas do Método Experimental",
                 "👁️ 1. OBSERVAÇÃO: Percepção inicial de um padrão (VER).\n" +
                         "❓ 2. PROBLEMATIZAÇÃO: Identificar fatores que influenciam (PERGUNTAR).\n" +
@@ -195,7 +219,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Métodos Estatísticos",
-                "ETAPAS_ESTATISTICO",
+                "APRESENTACAO_DADOS_ETAPAS_ESTATISTICO",
                 "🧭 Etapas do Método Estatístico",
                 "📥 1. COLETA: Recolher os dados.\n" +
                         "🔍 2. CRÍTICA: Verificar veracidade (externa) e qualidade da pergunta (interna).\n" +
@@ -206,7 +230,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Métodos Estatísticos",
-                "NIVEIS_MANIPULACAO",
+                "APRESENTACAO_DADOS_NIVEIS_MANIPULACAO",
                 "🧭 Níveis de Manipulação Var Independente",
                 "✅ PRESENÇA/AUSÊNCIA: Com ou sem a variável.\n" +
                         "📊 MAIS DE 2 NÍVEIS: Escalas (ex: 0mg, 50mg, 100mg).\n" +
@@ -216,7 +240,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Métodos Estatísticos",
-                "EXEMPLO_UNICO_MEDICAMENTO",
+                "APRESENTACAO_DADOS_EXEMPLO_UNICO_MEDICAMENTO",
                 "🧭 Exemplo Integrado: Teste de um Novo Medicamento",
                 "🏥 SITUAÇÃO:\n" +
                         "Pesquisadores querem descobrir se um novo medicamento reduz a pressão arterial.\n\n" +
@@ -278,7 +302,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Dados Estatísticos",
-                "DADO_ESTATISTICO",
+                "APRESENTACAO_DADOS_DADO_ESTATISTICO",
                 "🧭 Dado Estatístico",
                 "📌 DEFINIÇÃO: Toda informação coletada ao longo da pesquisa.\n" +
                         "📌 É a MATÉRIA-PRIMA da estatística.\n" +
@@ -288,7 +312,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Dados Estatísticos",
-                "FORMAS_OBTENCAO",
+                "APRESENTACAO_DADOS_FORMAS_OBTENCAO",
                 "🧭 Formas de Obtenção de Dados",
                 "👀 OBSERVAÇÃO/LEVANTAMENTO: Medir ou perguntar algo que JÁ EXISTE (ex: estatura).\n" +
                         "🔬 EXPERIMENTO: CRIAR uma situação para testar (ex: vacina).\n" +
@@ -297,7 +321,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Dados Estatísticos",
-                "CLASSIFICACAO_TEMPO",
+                "APRESENTACAO_DADOS_CLASSIFICACAO_TEMPO",
                 "🧭 Classificação Quanto ao Tempo",
                 "🔄 CONTÍNUA: Ocorre SEM INTERRUPÇÃO (ex: registro de acidentes).\n" +
                         "📅 PERIÓDICA: Ocorre em INTERVALOS REGULARES (ex: Censo a cada 10 anos).\n" +
@@ -307,7 +331,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Dados Estatísticos",
-                "DADO_BRUTO_ROL",
+                "APRESENTACAO_DADOS_DADO_BRUTO_ROL",
                 "🧭 Dado Bruto vs Rol",
                 "📦 DADO BRUTO: Dados coletados do jeito que vieram, DESORGANIZADOS.\n" +
                         "📋 ROL: Dados ORGANIZADOS segundo algum critério (ex: ordem crescente).\n" +
@@ -320,7 +344,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Variáveis Estatísticas",
-                "VARS_QUANTITATIVAS",
+                "APRESENTACAO_DADOS_VARS_QUANTITATIVAS",
                 "🧭 Variáveis Quantitativas",
                 "🔢 DISCRETA: Só assume VALORES INTEIROS (redondos).\n" +
                         "👶 EXEMPLOS: Número de filhos, número de carros.\n" +
@@ -331,7 +355,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Variáveis Estatísticas",
-                "VARS_QUALITATIVAS",
+                "APRESENTACAO_DADOS_VARS_QUALITATIVAS",
                 "🧭 Variáveis Qualitativas",
                 "🏷️ NOMINAL: Categorias SEM ORDEM entre si.\n" +
                         "🎨 EXEMPLOS: Cor preferida, estado civil, time de futebol.\n" +
@@ -342,7 +366,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Variáveis Estatísticas",
-                "PEGADINHA_NUMEROS",
+                "APRESENTACAO_DADOS_PEGADINHA_NUMEROS",
                 "🧭 Pegadinha - Números de Registro",
                 "🚨 NÚMEROS que NÃO são quantitativos (são QUALITATIVOS NORMAIS):\n" +
                         "🆔 CPF, RG, CNH, Título de Eleitor, CEP, Número da Sessão de Votação.\n" +
@@ -352,7 +376,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Variáveis Estatísticas",
-                "ARVORE_DECISORIA",
+                "APRESENTACAO_DADOS_ARVORE_DECISORIA",
                 "🧭 Árvore Decisória - Classificação",
                 "🔢 PASSO 1: É uma QUANTIDADE? → SIM = Quantitativa / NÃO = Qualitativa.\n" +
                         "📊 PASSO 2 (Quantitativa): Aceita número quebrado? → NÃO = Discreta / SIM = Contínua.\n" +
@@ -366,7 +390,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Séries Estatísticas",
-                "SERIE_ESTATISTICA",
+                "APRESENTACAO_DADOS_SERIE_ESTATISTICA",
                 "🧭 Série Estatística",
                 "📋 DEFINIÇÃO: Tabela que apresenta dados em função de 3 fatores:\n" +
                         "⏰ TEMPO (época), 📍 LOCAL (espaço) e 📂 ESPÉCIE (categoria).\n" +
@@ -376,7 +400,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Séries Estatísticas",
-                "TIPOS_SERIE",
+                "APRESENTACAO_DADOS_TIPOS_SERIE",
                 "🧭 Tipos de Séries Estatísticas",
                 "⏰ TEMPORAL (Cronológica ou Histórica): varia o TEMPO.\n" +
                         "Ex.: Número de acidentes de trânsito no Brasil de 2020 a 2025.\n\n" +
@@ -393,7 +417,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Séries Estatísticas",
-                "FATORES_FIXOS",
+                "APRESENTACAO_DADOS_FATORES_FIXOS",
                 "🧭 Fatores Fixos nas Séries",
                 "⏰ TEMPORAL: LOCAL e ESPÉCIE são fixos; TEMPO varia.\n" +
                         "📍 GEOGRÁFICA: TEMPO e ESPÉCIE são fixos; LOCAL varia.\n" +
@@ -407,7 +431,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Distribuições de Frequência",
-                "DISTRIBUICAO_FREQUENCIA",
+                "APRESENTACAO_DADOS_DISTRIBUICAO_FREQUENCIA",
                 "🧭 Distribuição de Frequência",
                 "📋 DEFINIÇÃO: Arranjo/divisão dos valores de uma variável entre categorias.\n" +
                         "📂 CLASSE: Cada categoria ou intervalo da tabela. (linha da tabela)\n" +
@@ -417,17 +441,17 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Distribuições de Frequência",
-                "FREQUENCIA_ABSOLUTA_RELATIVA",
+                "APRESENTACAO_DADOS_FREQUENCIA_ABSOLUTA_RELATIVA",
                 "🧭 Frequência Absoluta vs Relativa",
-                "🔢 FREQUÊNCIA ABSOLUTA (fi): Número de vezes que cada valor aparece (QUANTIDADE).\n" +
-                        "📊 FREQUÊNCIA RELATIVA (fri): Percentual que cada classe representa (fri = fi ÷ total).\n" +
+                "🔢 FREQUÊNCIA ABSOLUTA/PONTUAL (fi): Número de vezes que cada valor aparece (QUANTIDADE).\n" +
+                        "📊 FREQUÊNCIA RELATIVA/INTERVALAR (fri): Percentual que cada classe representa (fri = fi ÷ total).\n" +
                         "📌 Soma das relativas = 1 (100%).\n" +
                         "🔑 MACETE: ABSOLUTA = CONTAGEM; RELATIVA = PERCENTUAL."
         ));
 
         lista.add(new Flashcard(
                 "📊 Distribuições de Frequência",
-                "FREQUENCIA_ACUMULADA",
+                "APRESENTACAO_DADOS_FREQUENCIA_ACUMULADA",
                 "🧭 Frequência Acumulada",
                 "📊 FREQUÊNCIA ACUMULADA (Fi): Soma das frequências de todas as classes anteriores até a atual.\n" +
                         "📌 Última Fi = TOTAL (n).\n" +
@@ -437,7 +461,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Distribuições de Frequência",
-                "DENSIDADE_FREQUENCIA",
+                "APRESENTACAO_DADOS_DENSIDADE_FREQUENCIA",
                 "🧭 Densidade de Frequência",
                 "📐 DEFINIÇÃO: Ajusta a frequência pela amplitude da classe.\n\n" +
 
@@ -455,7 +479,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Distribuições de Frequência",
-                "AMPLITUDE_TOTAL",
+                "APRESENTACAO_DADOS_AMPLITUDE_TOTAL",
                 "🧭 Amplitude Total vs Amplitude da Classe",
                 "📐 AMPLITUDE DA CLASSE (h): ls - li (de UMA classe).\n" +
                         "📊 AMPLITUDE TOTAL (AT): Último ls - Primeiro li (de todas as classes).\n" +
@@ -468,7 +492,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Representações Gráficas",
-                "BASTOES_HISTOGRAMA",
+                "APRESENTACAO_DADOS_BASTOES_HISTOGRAMA",
                 "🧭 Bastões vs Histograma",
                 "📊 GRÁFICO DE BASTÕES: Dados NÃO AGRUPADOS (valores fixos). Hastes SEPARADAS.\n" +
                         "📊 HISTOGRAMA: Dados AGRUPADOS em classes (intervalos). Colunas CONTÍGUAS (coladas).\n" +
@@ -487,7 +511,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Representações Gráficas",
-                "POLIGONO_OGIVA",
+                "APRESENTACAO_DADOS_POLIGONO_OGIVA",
                 "🧭 Polígono vs Ogiva",
                 "📈 POLÍGONO DE FREQUÊNCIA: Liga os PONTOS MÉDIOS de cada classe.\n" +
                         "📈 OGIVA: Liga os LIMITES SUPERIORES com a FREQUÊNCIA ACUMULADA.\n" +
@@ -509,7 +533,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Representações Gráficas",
-                "HISTOGRAMA_AREA",
+                "APRESENTACAO_DADOS_HISTOGRAMA_AREA",
                 "🧭 Área do Histograma",
                 "📊 A soma das áreas das colunas é PROPORCIONAL à soma das frequências.\n" +
                         "📊 Com FREQUÊNCIA RELATIVA, a área total = 1 (100%).\n" +
@@ -534,7 +558,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Representações Gráficas",
-                "GRAFICOS_QUALITATIVOS",
+                "APRESENTACAO_DADOS_GRAFICOS_QUALITATIVOS",
                 "🧭 Gráficos para Variáveis Qualitativas",
                 "📊 GRÁFICO DE COLUNAS: Barras VERTICAIS, separadas (EM PÉ).\n" +
                         "📊 GRÁFICO DE BARRAS: Barras HORIZONTAIS, separadas (DEITADO).\n" +
@@ -544,7 +568,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Representações Gráficas",
-                "GRAFICO_LINHA_DISPERSAO",
+                "APRESENTACAO_DADOS_GRAFICO_LINHA_DISPERSAO",
                 "🧭 Linhas vs Dispersão",
                 "📈 GRÁFICO DE LINHAS: Mostra a evolução de uma variável ao longo do TEMPO.\n" +
                         "📝 Ex.: Vendas mensais de uma loja.\n\n" +
@@ -596,7 +620,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Representações Gráficas",
-                "CARTOGRAMA_PICTOGRAMA",
+                "APRESENTACAO_DADOS_CARTOGRAMA_PICTOGRAMA",
                 "🧭 Cartograma e Pictograma",
                 "🗺️ CARTOGRAMA: Mapa DISTORCIDO conforme a variável estudada.\n" +
                         "🎨 PICTOGRAMA: Desenhos/símbolos substituem números (mantém proporcionalidade).\n" +
@@ -605,7 +629,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Representações Gráficas",
-                "GRAFICO_POLAR_RAMO",
+                "APRESENTACAO_DADOS_GRAFICO_POLAR_RAMO",
                 "🧭 Polar e Ramo-Folhas",
                 "🎯 GRÁFICO POLAR: Círculos concêntricos ligados por linha (dados CÍCLICOS).\n" +
                         "🌿 DIAGRAMA DE RAMO-FOLHAS: Organiza dados quantitativos em RAMO (parte inteira) e FOLHA (decimal).\n" +
@@ -615,7 +639,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Representações Gráficas",
-                "CALCULO_SETORES",
+                "APRESENTACAO_DADOS_CALCULO_SETORES",
                 "🧭 Cálculo do Ângulo - Setores",
                 "📐 FÓRMULA: Ângulo = (fi ÷ Total) × 360°.\n" +
                         "📊 REGRA DE TRÊS: Total está para 360° assim como fi está para x°.\n" +
@@ -629,7 +653,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Representações Gráficas",
-                "CILADAS_GRAFICOS",
+                "APRESENTACAO_DADOS_CILADAS_GRAFICOS",
                 "🧭 Ciladas - Gráficos",
                 "⚠️ CILADA: Achar que setores servem para quantitativas.\n" +
                         "✅ ANTÍDOTO: Setores são para QUALITATIVAS (partes do todo).\n" +
@@ -645,7 +669,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Revisão Rápida",
-                "CONCEITOS_BASE",
+                "APRESENTACAO_DADOS_CONCEITOS_BASE",
                 "🧭 Resumo de Bolso - Conceitos",
                 "👥 POPULAÇÃO: Conjunto COMPLETO / TODOS os elementos.\n" +
                         "📌 AMOSTRA: Subconjunto PRÓPRIO / PARTE (NUNCA é o todo).\n" +
@@ -657,7 +681,7 @@ public class ApresentacaoDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📊 Revisão Rápida",
-                "VARIAVEIS_RESUMO",
+                "APRESENTACAO_DADOS_VARIAVEIS_RESUMO",
                 "🧭 Resumo de Bolso - Variáveis",
                 "🔢 QUANTITATIVA DISCRETA: Só número redondo (filhos, carros).\n" +
                         "📊 QUANTITATIVA CONTÍNUA: Aceita número quebrado (salário, estatura).\n" +

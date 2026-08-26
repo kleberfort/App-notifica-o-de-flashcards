@@ -552,7 +552,7 @@ public class LeiLGPD_13709_2018_Flashcards {
                 "DADOS_CRIANCAS_REGRA",
                 "🧭 Dados de Crianças e Adolescentes",
                 "📌 Art. 14 - REGRA ABSOLUTA:\n" +
-                        "🟢 Consentimento específico e destacado dos PAIS.\n" +
+                        "🟢 Consentimento específico e destacado pelo menos UM dos PAIS ou RESPONSÁVEL.\n" +
                         "🟢 HIPÓTESES DE DISPENSA (apenas 2):\n" +
                         "🟢 1) Para contatar os pais ou responsável.\n" +
                         "🟢 2) Para proteger a criança/adolescente.\n" +

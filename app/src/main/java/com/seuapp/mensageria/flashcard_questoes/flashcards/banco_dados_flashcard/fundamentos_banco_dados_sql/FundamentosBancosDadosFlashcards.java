@@ -13,7 +13,7 @@ public class FundamentosBancosDadosFlashcards {
         // ===================== VÍDEO 01 =====================
         lista.add(new Flashcard(
                 "📘 Fundamentos BD - Dado/Informação",
-                "DADO_INFORMACAO",
+                "BANCO_DADOS_DADO_INFORMACAO",
                 "🧠 Conceitos Fundamentais",
                 "💡 Dado: elemento básico, sem contexto.\n" +
                         "💡 Informação: dado contextualizado com sentido.\n" +
@@ -24,7 +24,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Fundamentos BD - Pirâmide da Informação",
-                "PIRAMIDE_ABSTRACAO",
+                "BANCO_DADOS_PIRAMIDE_ABSTRACAO",
                 "🧠 Do Dado à Inteligência",
                 "⬇️ 1. Dado (base)\n" +
                         "Exemplo: 150\n\n" +
@@ -44,7 +44,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Fundamentos BD - Tipos Conhecimento",
-                "TIPOS_CONHECIMENTO",
+                "BANCO_DADOS_TIPOS_CONHECIMENTO",
                 "🧠 Conhecimento: Explícito vs Tácito",
                 "📋 EXPLÍCITO: formal, codificado, objetivo, racional. " +
                         "Fácil de documentar e compartilhar.\n" +
@@ -55,7 +55,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Fundamentos BD - Transmissão Conhecimento",
-                "TRANSMISSAO_CONHECIMENTO",
+                "BANCO_DADOS_TRANSMISSAO_CONHECIMENTO",
                 "🧠 Formas de Transmissão do Conhecimento:",
                 "🤝 SOCIALIZAÇÃO: troca de experiências (tácito).\n" +
                         "📄 EXTERNALIZAÇÃO: documentação (torna-se explícito).\n" +
@@ -65,7 +65,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Fundamentos BD - Tipos de Dados",
-                "TIPOS_DADOS",
+                "BANCO_DADOS_TIPOS_DADOS",
                 "🧠 Classificação de Dados",
                 "📊 ESTRUTURADO: pré-definido, organizado, SQL.\n" +
                         "🔀 SEMIESTRUTURADO: estrutura definida após existir.\n" +
@@ -77,7 +77,7 @@ public class FundamentosBancosDadosFlashcards {
         // ===================== VÍDEO 02 =====================
         lista.add(new Flashcard(
                 "📘 Dados Abertos - Conceitos",
-                "DADOS_ABERTOS",
+                "BANCO_DADOS_DADOS_ABERTOS",
                 "🧠 Open Data - Definição",
                 "🔓 Dado aberto (OKFN): livre uso, reúso e redistribuição.\n" +
                         "📝 Mínimo: creditar autoria e compartilhar licença.\n" +
@@ -87,7 +87,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Dados Abertos - 3 Leis",
-                "LEIS_DADOS_ABERTOS",
+                "BANCO_DADOS_LEIS_DADOS_ABERTOS",
                 "🧠 Leis (testes de David Eaves)",
                 "🔍 1ª LEI: Encontrar/Indexar na web.\n" +
                         "🤖 2ª LEI: Formato compreensível por máquina.\n" +
@@ -97,7 +97,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Dados Abertos - 8 Princípios",
-                "PRINCIPIOS_DADOS_ABERTOS",
+                "BANCO_DADOS_PRINCIPIOS_DADOS_ABERTOS",
                 "🧠 Mnemônico: CAPA-PAL",
                 "8 Princípios dos Dados aberto:\n " +
                         "1️⃣  Completos (totalidade)\n" +
@@ -112,7 +112,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Dados Abertos - LAI",
-                "LAI_TRANSPARENCIA",
+                "BANCO_DADOS_LAI_TRANSPARENCIA",
                 "🧠 Lei de Acesso à Informação",
                 "🔦 Transparência ativa: obrigatória sem pedido.\n" +
                         "🏛️ Divulgação em site oficial.\n" +
@@ -122,7 +122,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Ciclo de Vida do Dado",
-                "CICLO_VIDA_DADO",
+                "BANCO_DADOS_CICLO_VIDA_DADO",
                 "🧠 Fases: Coletar → Armazenar → Recuperar → Descartar",
                 "🎣 COLETA: obter dados para necessidade específica.\n" +
                         "💾 ARMAZENAMENTO: persistir em algum local.\n" +
@@ -134,7 +134,7 @@ public class FundamentosBancosDadosFlashcards {
         // ===================== VÍDEO 03 =====================
         lista.add(new Flashcard(
                 "📘 BD - Conceitos Básicos",
-                "CONCEITO_BD",
+                "BANCO_DADOS_CONCEITO_BD",
                 "🧠 O que é um Banco de Dados?",
                 "📚 Coleção de dados relacionados/inter-relacionados.\n" +
                         "🌍 Representa um domínio específico do mundo real.\n" +
@@ -145,7 +145,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 SGBD - Conceitos",
-                "CONCEITO_SGBD",
+                "BANCO_DADOS_CONCEITO_SGBD",
                 "🧠 O que é SGBD?",
                 "🧩 Conjunto de programas que gerencia bancos.\n" +
                         "🏗️ Permite criar e manter múltiplos BDs.\n" +
@@ -155,7 +155,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 SGBD - 6 Funcionalidades",
-                "FUNCIONALIDADES_SGBD",
+                "BANCO_DADOS_FUNCIONALIDADES_SGBD",
                 "🧠 Definir, Construir, Manipular, Compartilhar, Proteger, Manter",
                 "📐 DEFINIR: tipos, estruturas e restrições.\n" +
                         "🏗️ CONSTRUIR: armazenar dados (criar BD).\n" +
@@ -167,7 +167,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 SBD - Aplicações",
-                "SBD_APLICACOES",
+                "BANCO_DADOS_SBD_APLICACOES",
                 "🧠 Sistema de Banco de Dados",
                 "🧬 SBD = SGBD + BD + Aplicações.\n" +
                         "📱 Aplicações: programas que acessam o BD.\n" +
@@ -178,7 +178,7 @@ public class FundamentosBancosDadosFlashcards {
         // ===================== VÍDEO 04 =====================
         lista.add(new Flashcard(
                 "📘 SGBD - Detalhamento",
-                "SGBD_DETALHADO",
+                "BANCO_DADOS_SGBD_DETALHADO",
                 "🧠 Recursos e Controles do SGBD",
                 "📐 Definir: tipos, estruturas e restrições.\n" +
                         "💾 Construir: persistência dos dados.\n" +
@@ -190,7 +190,7 @@ public class FundamentosBancosDadosFlashcards {
         // ===================== VÍDEO 05 =====================
         lista.add(new Flashcard(
                 "📘 Características BD Relacional",
-                "CARACTERISTICAS_RELACIONAL",
+                "BANCO_DADOS_CARACTERISTICAS_RELACIONAL",
                 "🧠 4 Características Essenciais",
                 "📋 AUTODESCRIÇÃO: armazena metadados.\n" +
                         "🔄 ISOLAMENTO/ABSTRAÇÃO: mudanças não afetam outras camadas.\n" +
@@ -200,7 +200,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Metadados",
-                "METADADOS",
+                "BANCO_DADOS_METADADOS",
                 "🧠 Dado sobre o dado",
                 "🏷️ Metadado = informação que descreve outros dados.\n" +
                         "📋 Ex: estrutura, formato, restrições, autor, data.\n" +
@@ -210,7 +210,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de BD - Comparativo",
-                "TIPOS_BD",
+                "BANCO_DADOS_TIPOS_BD",
                 "🧠 Arquivo vs Relacional vs Orientado a Objetos",
                 "📄 ARQUIVO: única tabela, gerenciamento manual, mais antigo.\n" +
                         "🔗 RELACIONAL: várias tabelas relacionadas (foco do estudo).\n" +
@@ -221,7 +221,7 @@ public class FundamentosBancosDadosFlashcards {
         // ===================== VÍDEO 06 =====================
         lista.add(new Flashcard(
                 "📘 Questões - Características BD",
-                "QUESTOES_RELACIONAIS",
+                "BANCO_DADOS_QUESTOES_RELACIONAIS",
                 "🧠 Pegadinhas Frequentes",
                 "👥 Acesso concorrente: permitido com controle.\n" +
                         "🔄 Independência: dados e programas são independentes.\n" +
@@ -231,7 +231,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Questões - SGBD",
-                "QUESTOES_SGBD",
+                "BANCO_DADOS_QUESTOES_SGBD",
                 "🧠 SGBD - Definição e Funções",
                 "🧩 Conjunto de programas que gerencia BD.\n" +
                         "🔍 Suporta linguagem de consulta.\n" +
@@ -243,7 +243,7 @@ public class FundamentosBancosDadosFlashcards {
         // ===================== VÍDEO 07 =====================
         lista.add(new Flashcard(
                 "📘 Transações - Propriedades ACID",
-                "ACID",
+                "BANCO_DADOS_ACID",
                 "🧠 Atomicidade, Consistência, Isolamento, Durabilidade",
                 "💣 ATOMICIDADE: 'tudo ou nada' (Commit/Rollback).\n" +
                         "⚖️ CONSISTÊNCIA: estado consistente → estado consistente.\n" +
@@ -253,7 +253,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Transações - Commit e Rollback",
-                "COMMIT_ROLLBACK",
+                "BANCO_DADOS_COMMIT_ROLLBACK",
                 "🧠 Efetivar e Desfazer",
                 "✅ COMMIT: efetiva a transação com sucesso.\n" +
                         "↩️ ROLLBACK: desfaz em caso de falha.\n" +
@@ -264,7 +264,7 @@ public class FundamentosBancosDadosFlashcards {
         // ===================== VÍDEO 08 =====================
         lista.add(new Flashcard(
                 "📘 DBA vs DA",
-                "DBA_AD_COMPARATIVO",
+                "BANCO_DADOS_DBA_AD_COMPARATIVO",
                 "🧠 Administrador de BD vs Administrador de Dados",
                 "🔧 DBA: perfil TÉCNICO (infraestrutura, performance, backup).\n" +
                         "📊 AD perfil GERENCIAL (modelagem, relevância do dado).\n" +
@@ -274,7 +274,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 DBA - Responsabilidades",
-                "DBA_RESPONSABILIDADES",
+                "BANCO_DADOS_DBA_RESPONSABILIDADES",
                 "🧠 Administrador de Banco de Dados",
                 "🖥️ Instalação do SGBD.\n" +
                         "📊 Análise de performance.\n" +
@@ -285,7 +285,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 DA - Responsabilidades",
-                "AD_RESPONSABILIDADES",
+                "BANCO_DADOS_AD_RESPONSABILIDADES",
                 "🧠 Administrador de Dados",
                 "📋 Define quais dados serão armazenados.\n" +
                         "📐 Desenvolve projeto e modelagem.\n" +
@@ -297,7 +297,7 @@ public class FundamentosBancosDadosFlashcards {
         // ===================== VÍDEO 09 =====================
         lista.add(new Flashcard(
                 "📘 Arquitetura ANSI/SPARC",
-                "ANSI_SPARC_NIVEIS",
+                "BANCO_DADOS_ANSI_SPARC_NIVEIS",
                 "🧠 3 Níveis: Externo, Conceitual, Interno",
                 "👁️ EXTERNO: visão do usuário, individual, personalizada.\n" +
                         "🧩 CONCEITUAL: visão geral do banco, unifica visões.\n" +
@@ -307,7 +307,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Esquema vs Instância",
-                "ESQUEMA_INSTANCIA",
+                "BANCO_DADOS_ESQUEMA_INSTANCIA",
                 "🧠 Estrutura vs Dado em si",
                 "📐 ESQUEMA: descrição da estrutura (tabelas, campos).\n" +
                         "🏠 Analogia: tabela profissão, campos: id, nome, especialidade.\n" +
@@ -318,7 +318,7 @@ public class FundamentosBancosDadosFlashcards {
         // ===================== VÍDEO 10 =====================
         lista.add(new Flashcard(
                 "📘 Independência de Dados",
-                "INDEPENDENCIA_DADOS",
+                "BANCO_DADOS_INDEPENDENCIA_DADOS",
                 "🧠 Lógica vs Física",
                 "INDEPENDENCIA DE DADOS - Capacidade de alterar uma camada sem interfeir na outra.\n" +
                         "🧩 LÓGICA: muda conceitual, não afeta externo.\n" +
@@ -330,7 +330,7 @@ public class FundamentosBancosDadosFlashcards {
 
         // ===================== VÍDEO 12 =====================
         lista.add(new Flashcard(
-                "📘 Modelos de Projeto - Conceitual",
+                "BANCO_DADOS_📘 Modelos de Projeto - Conceitual",
                 "MODELO_CONCEITUAL",
                 "🧠 Alto Nível (Usuário)",
                 "🧠 Alto Nível (Usuário).\n" +
@@ -343,7 +343,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Modelos de Projeto - Lógico",
-                "MODELO_LOGICO",
+                "BANCO_DADOS_MODELO_LOGICO",
                 "🧠 Nível Intermediário (Software)",
                 "🧠 Nível Intermediário (Software).\n" +
                         "💻 Depende de software/SGBD.\n" +
@@ -354,7 +354,7 @@ public class FundamentosBancosDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Modelos de Projeto - Físico",
-                "MODELO_FISICO",
+                "BANCO_DADOS_MODELO_FISICO",
                 "🧠 Baixo Nível (Hardware + Software)",
                 "🧠 Baixo Nível (Hardware + Software).\n" +
                         "🖥️ Depende de hardware e software.\n" +
@@ -367,7 +367,7 @@ public class FundamentosBancosDadosFlashcards {
         // ===================== RESUMÃO FINAL =====================
         lista.add(new Flashcard(
                 "📘 Mapa Mental - Conceitos BD",
-                "RESUMO_BD",
+                "BANCO_DADOS_RESUMO_BD",
                 "🧠 Revisão Rápida para Prova",
                 "💡 Dado = básico; Informação = dado + contexto.\n" +
                         "📚 BD = coleção relacionada; SGBD = software que gerencia.\n" +

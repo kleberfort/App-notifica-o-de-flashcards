@@ -12,6 +12,11 @@
         android:icon="@drawable/quiz_24dp"
         android:title="Múltipla Escolha"/>
 
+    <item
+        android:id="@+id/planilha_revisao_conteudo"
+        android:icon="@drawable/outline_assignment_turned_in_24"
+        android:title="Planilha Revisão"/>
+
 
 
 </menu>

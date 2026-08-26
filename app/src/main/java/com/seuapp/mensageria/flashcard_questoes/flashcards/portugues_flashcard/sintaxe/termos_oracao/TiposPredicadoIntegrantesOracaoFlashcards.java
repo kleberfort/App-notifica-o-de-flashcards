@@ -15,7 +15,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
         // ===================== VÍDEO 08 =====================
         lista.add(new Flashcard(
                 "📘 Predicação Verbal",
-                "VERBOS_TRANSITIVIDADE",
+                "TIPOS_PREDICADO_VERBOS_TRANSITIVIDADE",
                 "🧭 Verbos de Ação vs Estado",
                 "📌 Dois grandes grupos verbais:\n" +
                         "⚡ AÇÃO/MOVIMENTO: VI, TD, TI, TDI.\n" +
@@ -24,7 +24,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Predicação Verbal",
-                "CLASSIFICACAO_VERBOS",
+                "TIPOS_PREDICADO_CLASSIFICACAO_VERBOS",
                 "🧭 Passo a Passo para Classificar",
                 "📌 1) Isole o verbo.\n" +
                         "📌 2) Pergunte: Quem? → Sujeito.\n" +
@@ -37,7 +37,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Predicação Verbal",
-                "CLASSIFICACAO_VERBOS",
+                "TIPOS_PREDICADO_CLASSIFICACAO_VERBOS",
                 "🧭 Macetes de Identificação",
                 "📌 Verbo Intrasitivo:\n" +
                         "Pode vir seguido de Info. Acessória(Adj. Adv. OU0 Pred. do suj.\n" +
@@ -48,7 +48,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
         ));
         lista.add(new Flashcard(
                 "📘 Predicação Verbal",
-                "CLASSIFICACAO_VERBOS",
+                "TIPOS_PREDICADO_CLASSIFICACAO_VERBOS",
                 "🧭 Macetes de Identificação",
                 "📌 Verbo Ligação:\n" +
                         "Vem com PREDICATIVO DO SUJEITO (Refere-se ao sujeito, indica estado, geralmente adjetivo, varia em gênero/número).\n" +
@@ -60,7 +60,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Predicação Verbal",
-                "MACETE_MENINO",
+                "TIPOS_PREDICADO_MACETE_MENINO",
                 "🧭 Teste do Menino",
                 "📌 Substitua complemento por MENINO:\n" +
                         "✅ 'o menino' → TD (OD).\n" +
@@ -70,7 +70,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Predicação Verbal",
-                "CILADA_VL",
+                "TIPOS_PREDICADO_CILADA_VL",
                 "🧭 Verbo de Ligação é Cilada!",
                 "📌 VL só é VL se tiver PREDICATIVO + Indica ESTADO.\n" +
                         "📌 Ser, estar, ficar, parecer, permanecer, viver, continuar, virar, andar...\n" +
@@ -82,7 +82,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
         // ===================== VÍDEO 09 =====================
         lista.add(new Flashcard(
                 "📘 Tipos de Predicado",
-                "PREDICADO_ESTADO_ACAO",
+                "TIPOS_PREDICADO_PREDICADO_ESTADO_ACAO",
                 "🧭 Predicado: Estado ou Ação?",
                 "📌 1) Verbo é ESTADO? → NOMINAL (PN).\n" +
                         "📌 2) Verbo é AÇÃO? Tem predicativo?\n" +
@@ -93,7 +93,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Predicado",
-                "PN_VS_PV_VS_PVN",
+                "TIPOS_PREDICADO_PN_VS_PV_VS_PVN",
                 "🧭 Os 3 Tipos de Predicado",
                 "📌 NOMINAL (PN): VL + Predicativo.\n" +
                         "📌 VERBAL (PV): Ação, sem predicativo.\n" +
@@ -104,7 +104,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Predicado",
-                "CILADA_ANDAR",
+                "TIPOS_PREDICADO_CILADA_ANDAR",
                 "🧭 Verbo ANDAR: Cilada",
                 "📌 'Andar' pode ser ação ou estado:\n" +
                         "🏃 Ação: 'Andou na rua' → PV.\n" +
@@ -115,7 +115,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
         // ===================== VÍDEO 10 =====================
         lista.add(new Flashcard(
                 "📘 Predicado - FCC",
-                "ESTRATEGIA_FCC",
+                "TIPOS_PREDICADO_ESTRATEGIA_FCC",
                 "🧭 Método Infalível para FCC",
                 "📌 PASSO 1: Localize verbo principal.\n" +
                         "📌 PASSO 2: Estado? → PN (já era!).\n" +
@@ -127,7 +127,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Predicado - FCC",
-                "FCC_CILADAS",
+                "TIPOS_PREDICADO_FCC_CILADAS",
                 "🧭 Ciladas Mortais da FCC",
                 "📌 Locução verbal: foco no PRINCIPAL(último) que tem a transtividade\n" +
                         "📌 Várias orações: não analise todas.\n" +
@@ -138,7 +138,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
         // ===================== VÍDEO 11 =====================
         lista.add(new Flashcard(
                 "📘 Termos Essenciais",
-                "SUJEITO_PREDICADO",
+                "TIPOS_PREDICADO_SUJEITO_PREDICADO",
                 "🧭 Sujeito e Predicado",
                 "📌 SUJEITO: Pergunte 'QUEM?/O QUÊ?'\n" +
                         "📌 PREDICADO: tudo menos o sujeito.\n" +
@@ -149,7 +149,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Termos Essenciais",
-                "TIPOS_SUJEITO",
+                "TIPOS_PREDICADO_TIPOS_SUJEITO",
                 "🧭 Tipos de Sujeito",
                 "📌 SIMPLES: 1 núcleo.\n" +
                         "📌 COMPOSTO: 2+ núcleos.\n" +
@@ -161,7 +161,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
         // ===================== VÍDEO 12 =====================
         lista.add(new Flashcard(
                 "📘 Complementos Verbais",
-                "OD_OI",
+                "TIPOS_PREDICADO_OD_OI",
                 "🧭 Objeto Direto e Indireto",
                 "📌 OD: sem preposição (ou facultativa).\n" +
                         "📌 OI: com preposição OBRIGATÓRIA.\n" +
@@ -172,7 +172,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Complementos Verbais",
-                "OD_PREPOSICIONADO",
+                "TIPOS_PREDICADO_OD_PREPOSICIONADO",
                 "🧭 Objeto Direto Preposicionado",
                 "📌 OD com preposição FACULTATIVA.\n" +
                         "📌 Ex: 'Admiro a todos' = 'Admiro todos'.\n" +
@@ -182,7 +182,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Complementos Verbais",
-                "PLEONASMO",
+                "TIPOS_PREDICADO_PLEONASMO",
                 "🧭 Pleonasmo do Objeto",
                 "📌 Repetição para ênfase.\n" +
                         "📌 'Os livros, li-os todos.'\n" +
@@ -193,7 +193,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
         // ===================== VÍDEO 13 =====================
         lista.add(new Flashcard(
                 "📘 Bitransitivos",
-                "TDI_REGENCIA",
+                "TIPOS_PREDICADO_TDI_REGENCIA",
                 "🧭 Verbos com Dois Complementos",
                 "📌 TDI = OD + OI (sempre).\n" +
                         "📌 'Oferecemos café aos amigos.'\n" +
@@ -205,7 +205,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Bitransitivos",
-                "HAVER_VS_EXISTIR",
+                "TIPOS_PREDICADO_HAVER_VS_EXISTIR",
                 "🧭 HAVER (existir) vs EXISTIR",
                 "📌 HAVER (existir): Impessoal → OD.\n" +
                         "   'Havia crianças' (OD, singular).\n" +
@@ -216,7 +216,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Bitransitivos",
-                "OI_VS_ADJUNTO",
+                "TIPOS_PREDICADO_OI_VS_ADJUNTO",
                 "🧭 OI ou Adjunto Adverbial?",
                 "📌 OI: verbo exige, não pode retirar.\n" +
                         "📌 Adjunto: circunstância (lugar, tempo, modo).\n" +
@@ -228,7 +228,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
         // ===================== VÍDEO 14 =====================
         lista.add(new Flashcard(
                 "📘 Estratégia FCC",
-                "FCC_SUJEITO",
+                "TIPOS_PREDICADO_FCC_SUJEITO",
                 "🧭 Como a FCC pede SUJEITO",
                 "📌 'Verbo deve sua flexão ao termo' = SUJEITO.\n" +
                         "📌 Elimine: HAVER (existir), termo com preposição, adjetivo.\n" +
@@ -237,7 +237,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Estratégia FCC",
-                "FCC_OD_OI",
+                "TIPOS_PREDICADO_FCC_OD_OI",
                 "🧭 Como a FCC pede OD e OI",
                 "📌 OD: elimine SER/VL, preposição, EXISTIR, adjetivo.\n" +
                         "📌 OI: elimine 'o/a' (pronome), termo sem preposição, VL.\n" +
@@ -248,7 +248,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
         // ===================== VÍDEO 15 =====================
         lista.add(new Flashcard(
                 "📘 Complemento Nominal",
-                "CN_CONCEITO",
+                "TIPOS_PREDICADO_CN_CONCEITO",
                 "🧭 Complemento Nominal (CN)",
                 "📌 Completa NOME (substantivo, adjetivo, advérbio).\n" +
                         "📌 SEMPRE com preposição OBRIGATÓRIA.\n" +
@@ -259,7 +259,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Agente da Passiva",
-                "AP_CONCEITO",
+                "TIPOS_PREDICADO_AP_CONCEITO",
                 "🧭 Agente da Passiva (AP)",
                 "📌 Indica quem pratica a ação na passiva.\n" +
                         "📌 Estrutura: ser + particípio + AP (por/de).\n" +
@@ -270,7 +270,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 CN vs AP",
-                "CN_AP_DIFERENCA",
+                "TIPOS_PREDICADO_CN_AP_DIFERENCA",
                 "🧭 CN x AP: Não Confunda!",
                 "📌 CN: aponta seta para NOME.\n" +
                         "📌 AP: não aponta seta; é agente da passiva.\n" +
@@ -281,7 +281,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 AP vs Adjunto Adverbial",
-                "AP_VS_ADJUNTO",
+                "TIPOS_PREDICADO_AP_VS_ADJUNTO",
                 "🧭 AP ou Adjunto Adverbial?",
                 "📌 Teste: vira sujeito na ativa?\n" +
                         "✅ SIM → AP.\n" +
@@ -293,7 +293,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
         // ===================== RESUMO GERAL =====================
         lista.add(new Flashcard(
                 "📘 Resumo Geral",
-                "TABELA_TERMOS",
+                "TIPOS_PREDICADO_TABELA_TERMOS",
                 "🧭 Tabela dos Termos Integrantes",
                 "📌 OD → Seta para VERBO (prep. facultativa).\n" +
                         "📌 OI → Seta para VERBO (prep. obrigatória).\n" +
@@ -304,7 +304,7 @@ public class TiposPredicadoIntegrantesOracaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Resumo Geral",
-                "MACETES_FINAIS",
+                "TIPOS_PREDICADO_MACETES_FINAIS",
                 "🧭 Macetes de Ouro",
                 "📌 FCC: Sujeito → elimine HAVER, preposição, adjetivo.\n" +
                         "📌 OD → 'o/a' (pronome) é OD.\n" +

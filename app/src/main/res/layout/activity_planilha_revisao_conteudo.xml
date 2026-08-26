@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.PlanilhaRevisaoConteudoActivity">
+
+
+    <!-- ================================================= -->
+    <!-- TÍTULO -->
+    <!-- ================================================= -->
+
+    <TextView
+        android:id="@+id/tituloPlanilha"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="Histórico de Revisões"
+        android:textSize="24sp"
+        android:textStyle="bold"
+
+        android:padding="16dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!-- ================================================= -->
+    <!-- CABEÇALHO DA PLANILHA -->
+    <!-- ================================================= -->
+
+    <LinearLayout
+        android:id="@+id/cabecalhoPlanilha"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+
+        android:padding="8dp"
+
+        android:background="#E0E0E0"
+
+        app:layout_constraintTop_toBottomOf="@id/tituloPlanilha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <!-- =============================== -->
+        <!-- DATA -->
+        <!-- =============================== -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="2"
+
+            android:text="Data"
+            android:textStyle="bold"
+            android:textSize="14sp"
+
+            android:padding="6dp" />
+
+
+        <!-- =============================== -->
+        <!-- ÁREA -->
+        <!-- =============================== -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1.2"
+
+            android:text="Área"
+            android:textStyle="bold"
+            android:textSize="14sp"
+
+            android:padding="6dp" />
+
+
+        <!-- =============================== -->
+        <!-- DISCIPLINA -->
+        <!-- =============================== -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1.5"
+
+            android:text="Disciplina"
+            android:textStyle="bold"
+            android:textSize="14sp"
+
+            android:padding="6dp" />
+
+
+        <!-- =============================== -->
+        <!-- TEMPO -->
+        <!-- =============================== -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:text="Tempo"
+            android:textStyle="bold"
+            android:textSize="14sp"
+
+            android:padding="6dp" />
+
+    </LinearLayout>
+
+
+    <!-- ================================================= -->
+    <!-- LISTA DE REVISÕES -->
+    <!-- ================================================= -->
+
+    <ScrollView
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:fillViewport="true"
+
+        app:layout_constraintTop_toBottomOf="@id/cabecalhoPlanilha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <LinearLayout
+
+            android:id="@+id/layoutListaRevisoes"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -64,7 +64,7 @@ public class PreposicaoFlashcards {
         // ============================================================
         lista.add(new Flashcard(
                 "📘 Classes de Palavras - Preposição",
-                "VALOR_RELACIONAL",
+                "PREPOSICAO_VALOR_RELACIONAL",
                 "🧭 Valor Relacional (Gramatical)",
                 "📌 A preposição é OBRIGATÓRIA por regência. " +
                         "NÃO acrescenta 'sentido' à frase.\n" +
@@ -75,7 +75,7 @@ public class PreposicaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Classes de Palavras - Preposição",
-                "VALOR_NOCIONAL",
+                "PREPOSICAO_VALOR_NOCIONAL",
                 "🧭 Valor Nocional (Semântico)",
                 "📌 A preposição NÃO é obrigatória sintaticamente. " +
                         "Acrescenta uma NOÇÃO/SENTIDO à frase.\n" +
@@ -88,7 +88,7 @@ public class PreposicaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Classes de Palavras - Preposição",
-                "PERGUNTA_CHAVE_VALOR",
+                "PREPOSICAO_PERGUNTA_CHAVE_VALOR",
                 "🧭 Como distinguir os valores?",
                 "📌 Pergunta-chave para diferenciar:\n" +
                         "'Esta preposição é OBRIGATÓRIA por regência OU ela ACRESCENTA uma ideia/valor à frase?'\n" +
@@ -98,7 +98,7 @@ public class PreposicaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Classes de Palavras - Preposição",
-                "IDENTIFICAR_NOCAO",
+                "PREPOSICAO_IDENTIFICAR_NOCAO",
                 "🧭 Como identificar a NOÇÃO?",
                 "📌 Para identificar o valor semântico:\n" +
                         "OLHE para o termo que vem DEPOIS da preposição.\n" +
@@ -113,7 +113,7 @@ public class PreposicaoFlashcards {
         // ============================================================
         lista.add(new Flashcard(
                 "📘 Classes de Palavras - Preposição",
-                "REESCRITA_PREP_CONJ",
+                "PREPOSICAO_REESCRITA_PREP_CONJ",
                 "🧭 Reescrita: Troca Prep. ↔ Conj.",
                 "📌 É possível trocar locução prepositiva por locução conjuntiva de mesmo sentido.\n" +
                         "⚠️ REGRA DE OURO: Deve haver mudança OBRIGATÓRIA na forma do verbo! (Infinitivo para Conjugado, ou vice-versa). \n" +
@@ -126,7 +126,7 @@ public class PreposicaoFlashcards {
         // ============================================================
         lista.add(new Flashcard(
                 "📘 Classes de Palavras - Preposição",
-                "PARA_FINALIDADE",
+                "PREPOSICAO_PARA_FINALIDADE",
                 "🧭 'PARA' - Finalidade",
                 "📌 Indica OBJETIVO / PROPÓSITO.\n" +
                         "🔑 Equivale a 'a fim de'.\n" +
@@ -136,7 +136,7 @@ public class PreposicaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Classes de Palavras - Preposição",
-                "PARA_DIRECAO_LUGAR",
+                "PREPOSICAO_PARA_DIRECAO_LUGAR",
                 "🧭 'PARA' - Direção/Lugar",
                 "📌 Indica DESTINO FÍSICO ou META.\n" +
                         "📌 EXEMPLO: 'Saíram PARA o trabalho.'\n" +
@@ -147,7 +147,7 @@ public class PreposicaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Classes de Palavras - Preposição",
-                "PARA_DESTINATARIO",
+                "PREPOSICAO_PARA_DESTINATARIO",
                 "🧭 'PARA' - Destinatário",
                 "📌 Indica o RECEPTOR da ação.\n" +
                         "📌 EXEMPLO: 'Trouxe flores PARA a namorada.'\n" +
@@ -156,7 +156,7 @@ public class PreposicaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Classes de Palavras - Preposição",
-                "PARA_CONFORMIDADE",
+                "PREPOSICAO_PARA_CONFORMIDADE",
                 "🧭 'PARA' - Conformidade",
                 "📌 Indica OPINIÃO / PONTO DE VISTA.\n" +
                         "🔑 Equivale a 'conforme', 'segundo'.\n" +
@@ -166,7 +166,7 @@ public class PreposicaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Classes de Palavras - Preposição",
-                "PARA_TEMPO",
+                "PREPOSICAO_PARA_TEMPO",
                 "🧭 'PARA' - Tempo",
                 "📌 Indica um momento FUTURO.\n" +
                         "📌 EXEMPLO: 'Adiaram a reunião PARA segunda.'\n" +
@@ -178,7 +178,7 @@ public class PreposicaoFlashcards {
         // ============================================================
         lista.add(new Flashcard(
                 "📘 Classes de Palavras - Preposição",
-                "PARA_CILADA_FINALIDADE",
+                "PREPOSICAO_PARA_CILADA_FINALIDADE",
                 "🧭 CILADA: Todo 'PARA' é finalidade?",
                 "📌 NEM TODO 'PARA' INDICA FINALIDADE!\n" +
                         "🔑 Contexto é fundamental!\n" +
@@ -189,7 +189,7 @@ public class PreposicaoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Classes de Palavras - Preposição",
-                "PARA_PARA_QUE",
+                "PREPOSICAO_PARA_PARA_QUE",
                 "🧭 'PARA' dentro de 'PARA QUE'",
                 "📌 A banca pode destacar o 'para' dentro de 'para que'.\n" +
                         "O valor semântico (ex: finalidade) se mantém!\n" +

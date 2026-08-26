@@ -20,22 +20,22 @@ public class ConjuncaoData {
         List<Conteudo> coordenativas = new ArrayList<>();
 
         coordenativas.add(
-                new Conteudo("CONJ_COORDENATIVAS_VALORES",
+                new Conteudo("CONJUNCAO_CONJ_COORDENATIVAS_VALORES",
                         "CONJ_COORDENATIVAS_VALORES")
         );
 
         coordenativas.add(
-                new Conteudo("CONJ_COORDENATIVAS_POLISSEMICAS",
+                new Conteudo("CONJUNCAO_CONJ_COORDENATIVAS_POLISSEMICAS",
                         "CONJ_COORDENATIVAS_POLISSEMICAS")
         );
 
         coordenativas.add(
-                new Conteudo("CONJ_COORDENATIVAS_CILADAS",
+                new Conteudo("CONJUNCAO_CONJ_COORDENATIVAS_CILADAS",
                         "CONJ_COORDENATIVAS_CILADAS")
         );
 
         coordenativas.add(
-                new Conteudo("CONJ_COORDENATIVAS_REESCRITA",
+                new Conteudo("CONJUNCAO_CONJ_COORDENATIVAS_REESCRITA",
                         "CONJ_COORDENATIVAS_REESCRITA")
         );
 
@@ -52,22 +52,22 @@ public class ConjuncaoData {
         List<Conteudo> subordinativas = new ArrayList<>();
 
         subordinativas.add(
-                new Conteudo("CONJ_SUBORDINATIVAS_MNEMONICO",
+                new Conteudo("CONJUNCAO_CONJ_SUBORDINATIVAS_MNEMONICO",
                         "CONJ_SUBORDINATIVAS_MNEMONICO")
         );
 
         subordinativas.add(
-                new Conteudo("CONJ_SUBORDINATIVAS_TIPOS",
+                new Conteudo("CONJUNCAO_CONJ_SUBORDINATIVAS_TIPOS",
                         "CONJ_SUBORDINATIVAS_TIPOS")
         );
 
         subordinativas.add(
-                new Conteudo("CONJ_SUBORDINATIVAS_CILADAS",
+                new Conteudo("CONJUNCAO_CONJ_SUBORDINATIVAS_CILADAS",
                         "CONJ_SUBORDINATIVAS_CILADAS")
         );
 
         subordinativas.add(
-                new Conteudo("CONJ_SUBORDINATIVAS_CAUSAIS_CONSEC",
+                new Conteudo("CONJUNCAO_CONJ_SUBORDINATIVAS_CAUSAIS_CONSEC",
                         "CONJ_SUBORDINATIVAS_CAUSAIS_CONSEC")
         );
 

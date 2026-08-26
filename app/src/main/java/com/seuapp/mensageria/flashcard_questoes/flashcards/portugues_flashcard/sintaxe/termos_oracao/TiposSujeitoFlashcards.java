@@ -15,7 +15,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Análise Sintática - Conceitos",
-                "CONCEITO",
+                "TIPOS_SUJEITO_CONCEITO",
                 "🧭 Macetes de Acesso Rápido",
                 "📌 FRASE: Qualquer enunciado com sentido.\n" +
                         "🟢 ORAÇÃO: Frase com verbo (TEM QUE TER VERBO).\n" +
@@ -27,7 +27,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Análise Sintática - Conceitos",
-                "CONCEITO",
+                "TIPOS_SUJEITO_CONCEITO",
                 "🧭 Macetes de Acesso Rápido",
                 "📌 SUJEITO: QUEM ou O QUE executa ou Sofre a ação.\n" +
                         "🟢 PODE SER: Ativa ou Passiva.\n" +
@@ -39,7 +39,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Análise Sintática - Conceitos",
-                "MESTRE_DESESPERO",
+                "TIPOS_SUJEITO_MESTRE_DESESPERO",
                 "🧭 Macete Mestre para Achar Sujeito",
                 "📌 'No desespero, vá ao VERBO!':\n" +
                         "🟢 Comece a análise sempre pelo verbo.\n" +
@@ -50,7 +50,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Análise Sintática - Conceitos",
-                "SUJEITO_VS_REFERENTE",
+                "TIPOS_SUJEITO_SUJEITO_VS_REFERENTE",
                 "🧭 Diferença Crucial para Prova",
                 "📌 SUJEITO (sintático): está PRESENTE na oração.\n" +
                         "🔵 REFERENTE (semântico): está FORA da oração.\n" +
@@ -62,7 +62,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Análise Sintática FCC",
-                "MACETE_ELIMINACAO_SUJEITO",
+                "TIPOS_SUJEITO_MACETE_ELIMINACAO_SUJEITO",
                 "🧭 Eliminação Rápida para Sujeito",
                 "📌 Sujeito NUNCA é preposicionado.\n" +
                         "🔵 Sujeito NUNCA é circunstância (tempo, modo, lugar).\n" +
@@ -73,7 +73,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Análise Sintática FCC",
-                "INFINITIVO_RESPETTO",
+                "TIPOS_SUJEITO_INFINITIVO_RESPETTO",
                 "🧭 Tratamento do Infinitivo",
                 "📌 Infinitivo é VERBO DE RESPEITO.\n" +
                         "🟢 Ele tem sujeito e objeto como qualquer verbo.\n" +
@@ -84,7 +84,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Análise Sintática FCC",
-                "SE_PASSIVADOR",
+                "TIPOS_SUJEITO_SE_PASSIVADOR",
                 "🧭 Um SE Muda Tudo (P.A.P.)",
                 "📌 'Um SE muda tudo' - Partícula Apassivadora.\n" +
                         "🟢 Sem SE: Sujeito agente + Objeto Direto.\n" +
@@ -97,7 +97,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
-                "SIMPLES_VS_COMPOSTO",
+                "TIPOS_SUJEITO_SIMPLES_VS_COMPOSTO",
                 "🧭 Núcleo do Sujeito",
                 "📌 Núcleo = substantivo, pronome ou numeral.\n" +
                         "🟢 Núcleo NUNCA vem precedido de preposição.\n" +
@@ -109,7 +109,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
-                "OCULTO_DESINENCIAL_CONTEXTUAL",
+                "TIPOS_SUJEITO_OCULTO_DESINENCIAL_CONTEXTUAL",
                 "🧭 Sujeito Oculto (Elíptico)",
                 "📌 OCULTO DESINENCIAL: Verbo na 1ª = (Sin/Plu) pessoa revela.\n" +
                         "🟢 Ex: 'Estamos felizes' → sujeito = NÓS (desinência -mos).\n" +
@@ -120,7 +120,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
-                "SUJEITO_INDETERMINADO",
+                "TIPOS_SUJEITO_SUJEITO_INDETERMINADO",
                 "🧭 3 Formas de Indeterminar",
                 "📌 Forma 1: Verbo na 3ª pessoa do plural sem referente.\n" +
                         "🟢 Ex: 'Falaram bem de você' (quem? não sei).\n" +
@@ -133,7 +133,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
-                "INFINITIVO_IMPESSOAL",
+                "TIPOS_SUJEITO_INFINITIVO_IMPESSOAL",
                 "🧭 3ª Forma de Indeterminado",
                 "📌 INFINITIVO IMPESSOAL = sujeito INDETERMINADO.\n" +
                         "🟢 Verbo no infinitivo sem sujeito explícito.\n" +
@@ -144,7 +144,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
-                "SUJEITO_INEXISTENTE",
+                "TIPOS_SUJEITO_SUJEITO_INEXISTENTE",
                 "🧭 Verbos Impessoais (Decore!)",
                 "📌 Situações de Sujeito INEXISTENTE - Verbo Impessoal\n" +
                         "🟢 1. Fenômenos da natureza: chover, nevar, ventar.\n" +
@@ -155,7 +155,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
-                "SUJEITO_ORACIONAL",
+                "TIPOS_SUJEITO_SUJEITO_ORACIONAL",
                 "🧭 Macete do ISSO",
                 "📌 Sujeito ORACIONAL = sujeito é uma oração (tem verbo dentro).\n" +
                         "🟢 TESTE: Troque o sujeito por 'ISSO'.\n" +
@@ -168,7 +168,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
-                "FLUXO_DECISAO_SUJEITO",
+                "TIPOS_SUJEITO_FLUXO_DECISAO_SUJEITO",
                 "🧭 Passo a Passo para Classificar",
                 "📌 1º Verbo impessoal? (fenomeno natural, \'faz\' tempo, \'há\' existindo)  → INEXISTENTE. (FIM)\n" +
                         "📌 2º Sujeito NÃO aparece na oração? → OCULTO > Desinência (1° Sin/Plu) (FIM).\n" +
@@ -186,7 +186,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
-                "CILADA_3_PLURAL",
+                "TIPOS_SUJEITO_CILADA_3_PLURAL",
                 "🧭 Verbo na 3ª Plural NÃO é sempre Indeterminado",
                 "📌 MITO: 'Verbo na 3ª plural = indeterminado'.\n" +
                         "🟢 Pode ser SIMPLES: 'Os meninos chegaram' (sujeito aparece).\n" +
@@ -199,7 +199,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
-                "HOUVE_VS_OCORRERAM",
+                "TIPOS_SUJEITO_HOUVE_VS_OCORRERAM",
                 "🧭 Cilada Clássica das Bancas",
                 "📌 'Houve' (sentido existir) → INEXISTENTE (impessoal).\n" +
                         "🟢 Ex: 'Houve algumas rebeliões' → NÃO tem sujeito.\n" +
@@ -210,7 +210,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
-                "VIVA_CADA_VERBO",
+                "TIPOS_SUJEITO_VIVA_CADA_VERBO",
                 "🧭 Frases com 2 ou Mais Verbos",
                 "📌 'Viva cada verbo a seu momento'.\n" +
                         "🟢 Pegue um verbo por vez, classifique seu sujeito.\n" +
@@ -221,7 +221,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
-                "POSICAO_DO_SUJEITO",
+                "TIPOS_SUJEITO_POSICAO_DO_SUJEITO",
                 "🧭 Sujeito Posposto não Muda Classificação",
                 "📌 Sujeito pode vir antes OU depois do verbo.\n" +
                         "🟢 Ex: 'A chama arde' = 'Arde a chama' (mesmo sujeito simples).\n" +
@@ -234,7 +234,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
-                "REVISAO_RAPIDA_01",
+                "TIPOS_SUJEITO_REVISAO_RAPIDA_01",
                 "🧭 Perguntas e Respostas - Parte 1",
                 "📌 Q: O que é uma frase? R: Qualquer enunciado com sentido.\n" +
                         "🟢 Q: O que é uma oração? R: Frase que contém verbo.\n" +
@@ -245,7 +245,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
-                "REVISAO_RAPIDA_02",
+                "TIPOS_SUJEITO_REVISAO_RAPIDA_02",
                 "🧭 Perguntas e Respostas - Parte 2",
                 "📌 Q: Diferença sujeito indeterminado vs oculto? R: Oculto você SABE quem é (desinência). Indeterminado NÃO sabe.\n" +
                         "🟢 Q: Verbo fazer tempo ('faz 2 horas')? R: Sujeito INEXISTENTE (impessoal).\n" +
@@ -255,7 +255,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
-                "REVISAO_RAPIDA_03",
+                "TIPOS_SUJEITO_REVISAO_RAPIDA_03",
                 "🧭 Tabela dos 6 Tipos - Resumo",
                 "📌 SIMPLES: 1 núcleo. 'O menino chegou'.\n" +
                         "🟢 COMPOSTO: 2+ núcleos. 'João e Maria chegaram'.\n" +
@@ -267,7 +267,7 @@ public class TiposSujeitoFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Tipos de Sujeito",
-                "MACETES_FINAIS",
+                "TIPOS_SUJEITO_MACETES_FINAIS",
                 "🧭 Macetes de OURO para Prova",
                 "📌 Núcleo do sujeito NUNCA tem preposição.\n" +
                         "🟢 Trocar por ISSO → revela sujeito oracional.\n" +

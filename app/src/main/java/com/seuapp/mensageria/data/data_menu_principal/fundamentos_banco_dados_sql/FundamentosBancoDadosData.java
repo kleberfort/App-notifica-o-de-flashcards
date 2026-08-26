@@ -20,27 +20,27 @@ public class FundamentosBancoDadosData {
         List<Conteudo> video01 = new ArrayList<>();
 
         video01.add(new Conteudo(
-                "DADO_INFORMACAO",
+                "BANCO_DADOS_DADO_INFORMACAO",
                 "DADO_INFORMACAO"
         ));
 
         video01.add(new Conteudo(
-                "PIRAMIDE_ABSTRACAO",
+                "BANCO_DADOS_PIRAMIDE_ABSTRACAO",
                 "PIRAMIDE_ABSTRACAO"
         ));
 
         video01.add(new Conteudo(
-                "TIPOS_CONHECIMENTO",
+                "BANCO_DADOS_TIPOS_CONHECIMENTO",
                 "TIPOS_CONHECIMENTO"
         ));
 
         video01.add(new Conteudo(
-                "TRANSMISSAO_CONHECIMENTO",
+                "BANCO_DADOS_TRANSMISSAO_CONHECIMENTO",
                 "TRANSMISSAO_CONHECIMENTO"
         ));
 
         video01.add(new Conteudo(
-                "TIPOS_DADOS",
+                "BANCO_DADOS_TIPOS_DADOS",
                 "TIPOS_DADOS"
         ));
 
@@ -56,28 +56,28 @@ public class FundamentosBancoDadosData {
         List<Conteudo> video02 = new ArrayList<>();
 
         video02.add(new Conteudo(
-                "DADOS_ABERTOS",
+                "BANCO_DADOS_DADOS_ABERTOS",
                 "DADOS_ABERTOS"
         ));
 
         video02.add(new Conteudo(
-                "LEIS_DADOS_ABERTOS",
+                "BANCO_DADOS_LEIS_DADOS_ABERTOS",
                 "LEIS_DADOS_ABERTOS"
         ));
 
         video02.add(new Conteudo(
-                "PRINCIPIOS_DADOS_ABERTOS",
+                "BANCO_DADOS_PRINCIPIOS_DADOS_ABERTOS",
                 "PRINCIPIOS_DADOS_ABERTOS"
         ));
 
 
         video02.add(new Conteudo(
-                "LAI_TRANSPARENCIA",
+                "BANCO_DADOS_LAI_TRANSPARENCIA",
                 "LAI_TRANSPARENCIA"
         ));
 
         video02.add(new Conteudo(
-                "CICLO_VIDA_DADO",
+                "BANCO_DADOS_CICLO_VIDA_DADO",
                 "CICLO_VIDA_DADO"
         ));
 
@@ -93,22 +93,22 @@ public class FundamentosBancoDadosData {
         List<Conteudo> video03 = new ArrayList<>();
 
         video03.add(new Conteudo(
-                "CONCEITO_BD",
+                "BANCO_DADOS_CONCEITO_BD",
                 "CONCEITO_BD"
         ));
 
         video03.add(new Conteudo(
-                "CONCEITO_SGBD",
+                "BANCO_DADOS_CONCEITO_SGBD",
                 "CONCEITO_SGBD"
         ));
 
         video03.add(new Conteudo(
-                "FUNCIONALIDADES_SGBD",
+                "BANCO_DADOS_FUNCIONALIDADES_SGBD",
                 "FUNCIONALIDADES_SGBD"
         ));
 
         video03.add(new Conteudo(
-                "SBD_APLICACOES",
+                "BANCO_DADOS_SBD_APLICACOES",
                 "SBD_APLICACOES"
         ));
 
@@ -124,12 +124,12 @@ public class FundamentosBancoDadosData {
         List<Conteudo> video04 = new ArrayList<>();
 
         video04.add(new Conteudo(
-                "CONCEITO_BD",
+                "BANCO_DADOS_CONCEITO_BD",
                 "CONCEITO_BD"
         ));
 
         video04.add(new Conteudo(
-                "SGBD_DETALHADO",
+                "BANCO_DADOS_SGBD_DETALHADO",
                 "SGBD_DETALHADO"
         ));
 
@@ -145,17 +145,17 @@ public class FundamentosBancoDadosData {
         List<Conteudo> video05 = new ArrayList<>();
 
         video05.add(new Conteudo(
-                "CARACTERISTICAS_RELACIONAL",
+                "BANCO_DADOS_CARACTERISTICAS_RELACIONAL",
                 "CARACTERISTICAS_RELACIONAL"
         ));
 
         video05.add(new Conteudo(
-                "METADADOS",
+                "BANCO_DADOS_METADADOS",
                 "METADADOS"
         ));
 
         video05.add(new Conteudo(
-                "TIPOS_BD",
+                "BANCO_DADOS_TIPOS_BD",
                 "TIPOS_BD"
         ));
 
@@ -171,12 +171,12 @@ public class FundamentosBancoDadosData {
         List<Conteudo> video06 = new ArrayList<>();
 
         video06.add(new Conteudo(
-                "QUESTOES_RELACIONAIS",
+                "BANCO_DADOS_QUESTOES_RELACIONAIS",
                 "QUESTOES_RELACIONAIS"
         ));
 
         video06.add(new Conteudo(
-                "QUESTOES_SGBD",
+                "BANCO_DADOS_QUESTOES_SGBD",
                 "QUESTOES_SGBD"
         ));
 
@@ -192,12 +192,12 @@ public class FundamentosBancoDadosData {
         List<Conteudo> video07 = new ArrayList<>();
 
         video07.add(new Conteudo(
-                "ACID",
+                "BANCO_DADOS_ACID",
                 "ACID"
         ));
 
         video07.add(new Conteudo(
-                "COMMIT_ROLLBACK",
+                "BANCO_DADOS_COMMIT_ROLLBACK",
                 "COMMIT_ROLLBACK"
         ));
 
@@ -213,17 +213,17 @@ public class FundamentosBancoDadosData {
         List<Conteudo> video08 = new ArrayList<>();
 
         video08.add(new Conteudo(
-                "DBA_DA_COMPARATIVO",
+                "BANCO_DADOS_DBA_DA_COMPARATIVO",
                 "DBA_DA_COMPARATIVO"
         ));
 
         video08.add(new Conteudo(
-                "DBA_RESPONSABILIDADES",
+                "BANCO_DADOS_DBA_RESPONSABILIDADES",
                 "DBA_RESPONSABILIDADES"
         ));
 
         video08.add(new Conteudo(
-                "DA_RESPONSABILIDADES",
+                "BANCO_DADOS_DA_RESPONSABILIDADES",
                 "DA_RESPONSABILIDADES"
         ));
 
@@ -239,12 +239,12 @@ public class FundamentosBancoDadosData {
         List<Conteudo> video09 = new ArrayList<>();
 
         video09.add(new Conteudo(
-                "ANSI_SPARC_NIVEIS",
+                "BANCO_DADOS_ANSI_SPARC_NIVEIS",
                 "ANSI_SPARC_NIVEIS"
         ));
 
         video09.add(new Conteudo(
-                "ESQUEMA_INSTANCIA",
+                "BANCO_DADOS_ESQUEMA_INSTANCIA",
                 "ESQUEMA_INSTANCIA"
         ));
 
@@ -260,7 +260,7 @@ public class FundamentosBancoDadosData {
         List<Conteudo> video10 = new ArrayList<>();
 
         video10.add(new Conteudo(
-                "INDEPENDENCIA_DADOS",
+                "BANCO_DADOS_INDEPENDENCIA_DADOS",
                 "INDEPENDENCIA_DADOS"
         ));
 
@@ -276,12 +276,12 @@ public class FundamentosBancoDadosData {
         List<Conteudo> video11 = new ArrayList<>();
 
         video11.add(new Conteudo(
-                "ANSI_SPARC_NIVEIS",
+                "BANCO_DADOS_ANSI_SPARC_NIVEIS",
                 "ANSI_SPARC_NIVEIS"
         ));
 
         video11.add(new Conteudo(
-                "INDEPENDENCIA_DADOS",
+                "BANCO_DADOS_INDEPENDENCIA_DADOS",
                 "INDEPENDENCIA_DADOS"
         ));
 
@@ -297,17 +297,17 @@ public class FundamentosBancoDadosData {
         List<Conteudo> video12 = new ArrayList<>();
 
         video12.add(new Conteudo(
-                "MODELO_CONCEITUAL",
+                "BANCO_DADOS_MODELO_CONCEITUAL",
                 "MODELO_CONCEITUAL"
         ));
 
         video12.add(new Conteudo(
-                "MODELO_LOGICO",
+                "BANCO_DADOS_MODELO_LOGICO",
                 "MODELO_LOGICO"
         ));
 
         video12.add(new Conteudo(
-                "MODELO_FISICO",
+                "BANCO_DADOS_MODELO_FISICO",
                 "MODELO_FISICO"
         ));
 
@@ -323,17 +323,17 @@ public class FundamentosBancoDadosData {
         List<Conteudo> video13 = new ArrayList<>();
 
         video13.add(new Conteudo(
-                "MODELO_CONCEITUAL",
+                "BANCO_DADOS_MODELO_CONCEITUAL",
                 "MODELO_CONCEITUAL"
         ));
 
         video13.add(new Conteudo(
-                "MODELO_LOGICO",
+                "BANCO_DADOS_MODELO_LOGICO",
                 "MODELO_LOGICO"
         ));
 
         video13.add(new Conteudo(
-                "MODELO_FISICO",
+                "BANCO_DADOS_MODELO_FISICO",
                 "MODELO_FISICO"
         ));
 
@@ -349,7 +349,7 @@ public class FundamentosBancoDadosData {
         List<Conteudo> resumoFinal = new ArrayList<>();
 
         resumoFinal.add(new Conteudo(
-                "RESUMO_BD",
+                "BANCO_DADOS_RESUMO_BD",
                 "RESUMO_BD"
         ));
 

@@ -3,15 +3,20 @@ package com.seuapp.mensageria.data.data_menu_principal;
 
 
 import com.seuapp.mensageria.flashcard_questoes.flashcards.analise_dados_flashcards.CicloVidaDadoFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.analise_dados_flashcards.DashboardsInterativosPowerBIFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.analise_dados_flashcards.EticaViesesTransparenciaCienciaDadosFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.analise_dados_flashcards.OverfittingUnderfittingValidacaoCruzadaFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.analise_dados_flashcards.ProcessamentoLinguagemNaturalFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosBancosDadosFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosModelagemDadosRelacionalFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosSqlParte1Flashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosSqlParte2Flashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.desenvolvimento_software_flashcard.git.GitFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.direito_flashcard.admnistrativo_flashcard.PrincipiosAdmFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.direito_flashcard.constitucional_flashcard.AplicalidadeHierarquiaNormaFlashcard;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.estatistica_flashcards.AnaliseSeriesTemporaisFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.estatistica_flashcards.ApresentacaoDadosFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.estatistica_flashcards.ClassificacaoPredicaoDadosRegressaoArvoresFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.estatistica_flashcards.MediaMedianaModaFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.estatistica_flashcards.MedidasVariabilidadeDispersaoFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.leis_flashcards.LeiAcessoInformacao_12527_2011_Flashcards;
@@ -42,15 +47,12 @@ public class AppFlashcards {
         // =========================
         // DIREITO ADMINISTRATIVO
         // =========================
-
         todos.addAll(PrincipiosAdmFlashcards.getFlashcards());
 
         // =========================
         // DIREITO CONSTITUCIONAL
         // =========================
-
         todos.addAll(AplicalidadeHierarquiaNormaFlashcard.getFlashcards());
-
 
         // =========================
         // LEIS
@@ -61,22 +63,20 @@ public class AppFlashcards {
         // =========================
         // ESTATÍSTICA
         // =========================
-
         todos.addAll(ApresentacaoDadosFlashcards.getFlashcards());
         todos.addAll(MediaMedianaModaFlashcards.getFlashcards());
         todos.addAll(MedidasVariabilidadeDispersaoFlashcards.getFlashcards());
-
+        todos.addAll(ClassificacaoPredicaoDadosRegressaoArvoresFlashcards.getFlashcards());
+        todos.addAll(AnaliseSeriesTemporaisFlashcards.getFlashcards());
 
         // =========================
         // PORTUGUES
         // =========================
 
-
         //CLASSE DE PALAVRAS
         todos.addAll(PreposicaoFlashcards.getFlashcards());
         todos.addAll(ConjuncaoFlashcards.getFlashcards());
         todos.addAll(VerbosFlashcards.getFlashcards());
-
 
         todos.addAll(TiposSujeitoFlashcards.getFlashcards());
         todos.addAll(TiposPredicadoIntegrantesOracaoFlashcards.getFlashcards());
@@ -99,10 +99,10 @@ public class AppFlashcards {
         // =========================
         // BANCO DE DADOS
         // =========================
+        todos.addAll(FundamentosModelagemDadosRelacionalFlashcards.getFlashcards());
         todos.addAll(FundamentosBancosDadosFlashcards.getFlashcards());
         todos.addAll(FundamentosSqlParte1Flashcards.getFlashcards());
         todos.addAll(FundamentosSqlParte2Flashcards.getFlashcards());
-
 
         // =========================
         // ANALISE DE DADOS
@@ -110,6 +110,8 @@ public class AppFlashcards {
         todos.addAll(CicloVidaDadoFlashcards.getFlashcards());
         todos.addAll(EticaViesesTransparenciaCienciaDadosFlashcards.getFlashcards());
         todos.addAll(OverfittingUnderfittingValidacaoCruzadaFlashcards.getFlashcards());
+        todos.addAll(ProcessamentoLinguagemNaturalFlashcards.getFlashcards());
+        todos.addAll(DashboardsInterativosPowerBIFlashcards.getFlashcards());
 
 
 

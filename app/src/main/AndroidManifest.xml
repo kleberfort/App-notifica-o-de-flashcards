@@ -15,10 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mensageria">
         <activity
-            android:name=".ui.ResponderQuestaoActivity"
+            android:name=".ui.PlanilhaRevisaoConteudoActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.CertoErradoActivity"
+            android:name=".ui.ResponderQuestaoActivity"
             android:exported="false" />
         <activity
             android:name=".ui.MultiplaEscolhaActivity"

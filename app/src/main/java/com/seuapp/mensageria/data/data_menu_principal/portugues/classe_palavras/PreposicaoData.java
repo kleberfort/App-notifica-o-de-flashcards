@@ -53,22 +53,22 @@ public class PreposicaoData {
         List<Conteudo> valoresPreposicao = new ArrayList<>();
 
         valoresPreposicao.add(
-                new Conteudo("VALOR_RELACIONAL",
+                new Conteudo("PREPOSICAO_VALOR_RELACIONAL",
                         "VALOR_RELACIONAL")
         );
 
         valoresPreposicao.add(
-                new Conteudo("VALOR_NOCIONAL",
+                new Conteudo("PREPOSICAO_VALOR_NOCIONAL",
                         "VALOR_NOCIONAL")
         );
 
         valoresPreposicao.add(
-                new Conteudo("PERGUNTA_CHAVE_VALOR",
+                new Conteudo("PREPOSICAO_PERGUNTA_CHAVE_VALOR",
                         "PERGUNTA_CHAVE_VALOR")
         );
 
         valoresPreposicao.add(
-                new Conteudo("IDENTIFICAR_NOCAO",
+                new Conteudo("PREPOSICAO_IDENTIFICAR_NOCAO",
                         "IDENTIFICAR_NOCAO")
         );
 
@@ -84,7 +84,7 @@ public class PreposicaoData {
         List<Conteudo> reescrita = new ArrayList<>();
 
         reescrita.add(
-                new Conteudo("REESCRITA_PREP_CONJ",
+                new Conteudo("PREPOSICAO_REESCRITA_PREP_CONJ",
                         "REESCRITA_PREP_CONJ")
         );
 
@@ -100,27 +100,27 @@ public class PreposicaoData {
         List<Conteudo> valoresPara = new ArrayList<>();
 
         valoresPara.add(
-                new Conteudo("PARA_FINALIDADE",
+                new Conteudo("PREPOSICAO_PARA_FINALIDADE",
                         "PARA_FINALIDADE")
         );
 
         valoresPara.add(
-                new Conteudo("PARA_DIRECAO_LUGAR",
+                new Conteudo("PREPOSICAO_PARA_DIRECAO_LUGAR",
                         "PARA_DIRECAO_LUGAR")
         );
 
         valoresPara.add(
-                new Conteudo("PARA_DESTINATARIO",
+                new Conteudo("PREPOSICAO_PARA_DESTINATARIO",
                         "PARA_DESTINATARIO")
         );
 
         valoresPara.add(
-                new Conteudo("PARA_CONFORMIDADE",
+                new Conteudo("PREPOSICAO_PARA_CONFORMIDADE",
                         "PARA_CONFORMIDADE")
         );
 
         valoresPara.add(
-                new Conteudo("PARA_TEMPO",
+                new Conteudo("PREPOSICAO_PARA_TEMPO",
                         "PARA_TEMPO")
         );
 
@@ -136,12 +136,12 @@ public class PreposicaoData {
         List<Conteudo> ciladasPara = new ArrayList<>();
 
         ciladasPara.add(
-                new Conteudo("PARA_CILADA_FINALIDADE",
+                new Conteudo("PREPOSICAO_PARA_CILADA_FINALIDADE",
                         "PARA_CILADA_FINALIDADE")
         );
 
         ciladasPara.add(
-                new Conteudo("PARA_PARA_QUE",
+                new Conteudo("PREPOSICAO_PARA_PARA_QUE",
                         "PARA_PARA_QUE")
         );
 

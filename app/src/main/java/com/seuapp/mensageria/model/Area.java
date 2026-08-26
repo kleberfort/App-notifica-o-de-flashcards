@@ -11,10 +11,20 @@ public class Area {
         this.nome = nome;
         this.disciplinas = disciplinas;
     }
+
     public String getNome() {
         return nome;
     }
+
     public List<Disciplina> getDisciplinas() {
         return disciplinas;
+    }
+
+    @Override
+    public String toString() {
+        return "Area{" +
+                "nome='" + nome + '\'' +
+                ", disciplinas=" + disciplinas +
+                '}';
     }
 }

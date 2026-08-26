@@ -18,6 +18,7 @@ import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigation;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -55,400 +57,847 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        //PreferenceHelper.limparTudo(this);
 
+        // =====================================================
+        // BOTTOM NAVIGATION
+        // =====================================================
 
         bottomNavigation = findViewById(R.id.bottomNavigation);
 
+
         bottomNavigation.setOnItemSelectedListener(item -> {
-
             if (item.getItemId() == R.id.menu_home) {
-
                 return true;
-
             } else if (item.getItemId() == R.id.menu_multipla) {
-
                 Intent intent = new Intent(this, MultiplaEscolhaActivity.class);
                 startActivity(intent);
-
                 return true;
-
+            } else if(item.getItemId() == R.id.planilha_revisao_conteudo){
+                Intent intent = new Intent(this, PlanilhaRevisaoConteudoActivity.class);
+                startActivity(intent);
+                return true;
             }
-//            else if (item.getItemId() == R.id.menu_certo_errado) {
-//
-//                Intent intent = new Intent(this, CertoErradoActivity.class);
-//                startActivity(intent);
-//
-//                return true;
-//            }
 
             return false;
         });
 
-        layoutContainer = findViewById(R.id.layoutContainer);
-        btnVisualizar = findViewById(R.id.btnVisualizar);
 
-        // =========================
+        // =====================================================
+        // COMPONENTES
+        // =====================================================
+
+        layoutContainer =
+                findViewById(R.id.layoutContainer);
+
+        btnVisualizar =
+                findViewById(R.id.btnVisualizar);
+
+
+        // =====================================================
         // BOTÃO VISUALIZAR
-        // =========================
+        // =====================================================
 
         btnVisualizar.setOnClickListener(v -> {
-            ArrayList<String> assuntosAtivos = new ArrayList<>();
-            List<Area> areas = MenuPrincipalAppData.getAreas();
+
+
+            // =================================================
+            // ASSUNTOS SELECIONADOS
+            // =================================================
+
+            ArrayList<String> assuntosAtivos =
+                    new ArrayList<>();
+
+
+            // =================================================
+            // PERCORRER TODA A ESTRUTURA
+            //
+            // Área
+            //   └── Disciplina
+            //        └── Seção
+            //             └── Conteúdo
+            // =================================================
+
+            List<Area> areas =
+                    MenuPrincipalAppData.getAreas();
+
 
             for (Area area : areas) {
-                for (Disciplina disciplina : area.getDisciplinas()) {
-                    for (Secao secao : disciplina.getCategorias()) {
-                        for (Conteudo conteudo : secao.getAssuntos()) {
-                            boolean ativo = PreferenceHelper.assuntoAtivo(this, conteudo.getId());
+
+                for (Disciplina disciplina :
+                        area.getDisciplinas()) {
+
+                    for (Secao secao :
+                            disciplina.getCategorias()) {
+
+                        for (Conteudo conteudo :
+                                secao.getAssuntos()) {
+
+
+                            // =================================
+                            // VERIFICAR SE O ASSUNTO ESTÁ ATIVO
+                            // =================================
+
+                            boolean ativo =
+                                    PreferenceHelper.assuntoAtivo(
+                                            this,
+                                            conteudo.getId()
+                                    );
+
+
+                            // =================================
+                            // ADICIONAR ASSUNTO SELECIONADO
+                            // =================================
+
                             if (ativo) {
-                                assuntosAtivos.add(conteudo.getId());
+
+                                assuntosAtivos.add(
+                                        conteudo.getId()
+                                );
                             }
                         }
                     }
                 }
             }
 
-            Intent intent = new Intent(this, ConteudoActivity.class);
-            intent.putStringArrayListExtra("ASSUNTOS_ATIVOS", assuntosAtivos);
+
+            // =================================================
+            // VERIFICAR SE EXISTE ALGUM ASSUNTO SELECIONADO
+            // =================================================
+
+            if (assuntosAtivos.isEmpty()) {
+
+                Toast.makeText(
+                        this,
+                        "Nenhum assunto selecionado.",
+                        Toast.LENGTH_LONG
+                ).show();
+
+                return;
+            }
+
+
+            // =================================================
+            // ABRIR CONTEUDO ACTIVITY
+            // =================================================
+
+            Intent intent =
+                    new Intent(
+                            MainActivity.this,
+                            ConteudoActivity.class
+                    );
+
+
+            // =================================================
+            // ENVIAR ASSUNTOS SELECIONADOS
+            //
+            // A ConteudoActivity usará esses IDs para:
+            //
+            // 1. Mostrar os conteúdos
+            // 2. Descobrir as disciplinas
+            // 3. Validar a revisão ao concluir
+            // =================================================
+
+            intent.putStringArrayListExtra(
+                    "ASSUNTOS_ATIVOS",
+                    assuntosAtivos
+            );
+
+
+            // =================================================
+            // ABRIR CONTEUDO ACTIVITY
+            // =================================================
+
             startActivity(intent);
         });
 
-        // =========================
-        // PERMISSÃO NOTIFICAÇÃO
-        // =========================
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS
+        // =====================================================
+        // PERMISSÃO DE NOTIFICAÇÃO
+        // =====================================================
+
+        if (Build.VERSION.SDK_INT >=
+                Build.VERSION_CODES.TIRAMISU) {
+
+            if (ContextCompat.checkSelfPermission(
+                    this,
+                    Manifest.permission.POST_NOTIFICATIONS
             ) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.POST_NOTIFICATIONS}, 1);
+
+
+                ActivityCompat.requestPermissions(
+                        this,
+                        new String[]{
+                                Manifest.permission.POST_NOTIFICATIONS
+                        },
+                        1
+                );
             }
         }
 
-        // =========================
-        // CARREGAR TEMAS
-        // =========================
 
-        List<Area> areas = MenuPrincipalAppData.getAreas();
+        // =====================================================
+        // CARREGAR TEMAS
+        // =====================================================
+
+        List<Area> areas =
+                MenuPrincipalAppData.getAreas();
+
 
         for (Area area : areas) {
+
             criarTema(area);
         }
 
-        // =========================
+
+        // =====================================================
         // WORKMANAGER
-        // =========================
+        // =====================================================
 
-        PeriodicWorkRequest request = new PeriodicWorkRequest.Builder(NotificationWorker.class, 15, TimeUnit.MINUTES).build();
+        PeriodicWorkRequest request =
+                new PeriodicWorkRequest.Builder(
+                        NotificationWorker.class,
+                        15,
+                        TimeUnit.MINUTES
+                ).build();
 
-        WorkManager.getInstance(this).enqueueUniquePeriodicWork("FLASHCARD_WORK", ExistingPeriodicWorkPolicy.UPDATE, request);
+
+        WorkManager
+                .getInstance(this)
+                .enqueueUniquePeriodicWork(
+                        "FLASHCARD_WORK",
+                        ExistingPeriodicWorkPolicy.UPDATE,
+                        request
+                );
     }
 
-    // =========================
+
+    // =====================================================
     // CRIAR TEMA
-    // =========================
+    // =====================================================
 
     private void criarTema(Area area) {
 
-        TextView tituloTema = new TextView(this);
-        tituloTema.setText(area.getNome());
+        TextView tituloTema =
+                new TextView(this);
+
+
+        tituloTema.setText(
+                area.getNome()
+        );
+
+
         tituloTema.setTextSize(26);
-        tituloTema.setTypeface(null, Typeface.BOLD);
 
-        tituloTema.setTextColor(Color.parseColor("#8E24AA"));
 
-        tituloTema.setPadding(20, 40, 20, 30);
+        tituloTema.setTypeface(
+                null,
+                Typeface.BOLD
+        );
 
-        layoutContainer.addView(tituloTema);
 
-        // =========================
+        tituloTema.setTextColor(
+                Color.parseColor("#8E24AA")
+        );
+
+
+        tituloTema.setPadding(
+                20,
+                40,
+                20,
+                30
+        );
+
+
+        layoutContainer.addView(
+                tituloTema
+        );
+
+
+        // =================================================
         // DISCIPLINAS
-        // =========================
+        // =================================================
 
-        for (Disciplina disciplina : area.getDisciplinas()) {
+        for (Disciplina disciplina :
+                area.getDisciplinas()) {
+
             criarDisciplina(disciplina);
         }
     }
 
-    // =========================
+
+    // =====================================================
     // CRIAR DISCIPLINA
-    // =========================
+    // =====================================================
 
-    private void criarDisciplina(Disciplina disciplina) {
+    private void criarDisciplina(
+            Disciplina disciplina) {
 
-        // =========================
+
+        // =================================================
         // LAYOUT PRINCIPAL
-        // =========================
+        // =================================================
 
-        LinearLayout layoutDisciplina = new LinearLayout(this);
-        layoutDisciplina.setOrientation(LinearLayout.VERTICAL);
-        layoutDisciplina.setPadding(0, 10, 0, 10);
+        LinearLayout layoutDisciplina =
+                new LinearLayout(this);
 
-        // =========================
+
+        layoutDisciplina.setOrientation(
+                LinearLayout.VERTICAL
+        );
+
+
+        layoutDisciplina.setPadding(
+                0,
+                10,
+                0,
+                10
+        );
+
+
+        // =================================================
         // HEADER
-        // =========================
+        // =================================================
 
-        LinearLayout header = new LinearLayout(this);
-        header.setOrientation(LinearLayout.HORIZONTAL);
-        header.setGravity(Gravity.CENTER_VERTICAL);
-        header.setPadding(10, 10, 10, 10);
+        LinearLayout header =
+                new LinearLayout(this);
 
-        // =========================
+
+        header.setOrientation(
+                LinearLayout.HORIZONTAL
+        );
+
+
+        header.setGravity(
+                Gravity.CENTER_VERTICAL
+        );
+
+
+        header.setPadding(
+                10,
+                10,
+                10,
+                10
+        );
+
+
+        // =================================================
         // SETA
-        // =========================
+        // =================================================
 
-        TextView seta = new TextView(this);
+        TextView seta =
+                new TextView(this);
+
+
         seta.setText("►");
+
         seta.setTextSize(18);
-        seta.setPadding(10, 0, 20, 0);
 
-        // =========================
+        seta.setPadding(
+                10,
+                0,
+                20,
+                0
+        );
+
+
+        // =================================================
         // TÍTULO
-        // =========================
+        // =================================================
 
-        TextView titulo = new TextView(this);
-        titulo.setText(disciplina.getNome());
+        TextView titulo =
+                new TextView(this);
+
+
+        titulo.setText(
+                disciplina.getNome()
+        );
+
+
         titulo.setTextSize(20);
-        titulo.setTypeface(null, Typeface.BOLD);
-        titulo.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1));
 
-        // =========================
+
+        titulo.setTypeface(
+                null,
+                Typeface.BOLD
+        );
+
+
+        titulo.setLayoutParams(
+                new LinearLayout.LayoutParams(
+                        0,
+                        LinearLayout.LayoutParams.WRAP_CONTENT,
+                        1
+                )
+        );
+
+
+        // =================================================
         // SWITCH
-        // =========================
+        // =================================================
 
-        Switch sw = new Switch(this);
+        Switch sw =
+                new Switch(this);
+
+
         aplicarEstiloSwitch(sw);
 
-        // =========================
-        // HEADER
-        // =========================
+
+        // =================================================
+        // ADICIONAR AO HEADER
+        // =================================================
 
         header.addView(seta);
+
         header.addView(titulo);
+
         header.addView(sw);
 
-        // =========================
+
+        // =================================================
         // CONTEÚDO
-        // =========================
+        // =================================================
 
-        LinearLayout conteudo = new LinearLayout(this);
-        conteudo.setOrientation(LinearLayout.VERTICAL);
-        conteudo.setPadding(70, 10, 0, 10);
+        LinearLayout conteudo =
+                new LinearLayout(this);
 
-        // =========================
+
+        conteudo.setOrientation(
+                LinearLayout.VERTICAL
+        );
+
+
+        conteudo.setPadding(
+                70,
+                10,
+                0,
+                10
+        );
+
+
+        // =================================================
         // CHECKBOXES
-        // =========================
+        // =================================================
 
-        List<CheckBox> checks = new ArrayList<>();
+        List<CheckBox> checks =
+                new ArrayList<>();
 
-        // =========================
+
+        // =================================================
         // CATEGORIAS
-        // =========================
+        // =================================================
 
-        for (Secao secao : disciplina.getCategorias()) {
-            criarCategoria(secao, conteudo, checks, sw);
+        for (Secao secao :
+                disciplina.getCategorias()) {
+
+            criarCategoria(
+                    secao,
+                    conteudo,
+                    checks,
+                    sw
+            );
         }
 
-        // =========================
+
+        // =================================================
         // SWITCH INICIAL
-        // =========================
+        // =================================================
 
-        atualizarSwitch(sw, checks);
+        atualizarSwitch(
+                sw,
+                checks
+        );
 
-        // =========================
+
+        // =================================================
         // EXPANDIR / RECOLHER
-        // =========================
+        // =================================================
 
-        conteudo.setVisibility(View.GONE);
+        conteudo.setVisibility(
+                View.GONE
+        );
 
-        final boolean[] expandido = {false};
+
+        final boolean[] expandido =
+                {false};
 
 
         seta.setOnClickListener(v -> {
 
             if (expandido[0]) {
-                conteudo.setVisibility(View.VISIBLE);
+
+                conteudo.setVisibility(
+                        View.VISIBLE
+                );
+
                 seta.setText("▼");
 
-                Log.d("seta", "Para baixo");
-
             } else {
-                conteudo.setVisibility(View.GONE);
-                seta.setText("►");
 
-                Log.d("seta", "Para o lado");
+                conteudo.setVisibility(
+                        View.GONE
+                );
+
+                seta.setText("►");
             }
 
-            expandido[0] = !expandido[0];
 
-
+            expandido[0] =
+                    !expandido[0];
         });
 
-        // =========================
-        // ADICIONAR
-        // =========================
 
-        layoutDisciplina.addView(header);
-        layoutDisciplina.addView(conteudo);
-        layoutContainer.addView(layoutDisciplina);
+        // =================================================
+        // ADICIONAR À TELA
+        // =================================================
+
+        layoutDisciplina.addView(
+                header
+        );
+
+
+        layoutDisciplina.addView(
+                conteudo
+        );
+
+
+        layoutContainer.addView(
+                layoutDisciplina
+        );
     }
 
-    // =========================
+
+    // =====================================================
     // CRIAR CATEGORIA
-    // =========================
+    // =====================================================
 
-    private void criarCategoria(Secao secao, LinearLayout parent, List<CheckBox> checks, Switch sw) {
+    private void criarCategoria(
+            Secao secao,
+            LinearLayout parent,
+            List<CheckBox> checks,
+            Switch sw) {
 
-        // =========================
-        // TÍTULO CATEGORIA
-        // =========================
 
-        TextView tituloCategoria = new TextView(this);
-        tituloCategoria.setText(secao.getNome());
+        // =================================================
+        // TÍTULO DA CATEGORIA
+        // =================================================
+
+        TextView tituloCategoria =
+                new TextView(this);
+
+
+        tituloCategoria.setText(
+                secao.getNome()
+        );
+
+
         tituloCategoria.setTextSize(18);
-        tituloCategoria.setTypeface(null, Typeface.BOLD);
-        tituloCategoria.setBackgroundColor(Color.parseColor("#F3E5F5"));
-        tituloCategoria.setPadding(10, 20, 10, 20);
-        parent.addView(tituloCategoria);
 
-        // =========================
+
+        tituloCategoria.setTypeface(
+                null,
+                Typeface.BOLD
+        );
+
+
+        tituloCategoria.setBackgroundColor(
+                Color.parseColor("#F3E5F5")
+        );
+
+
+        tituloCategoria.setPadding(
+                10,
+                20,
+                10,
+                20
+        );
+
+
+        parent.addView(
+                tituloCategoria
+        );
+
+
+        // =================================================
         // ASSUNTOS
-        // =========================
+        // =================================================
 
-        for (Conteudo conteudo : secao.getAssuntos()) {
-            criarAssunto(conteudo, parent, checks, sw);
+        for (Conteudo conteudo :
+                secao.getAssuntos()) {
+
+            criarAssunto(
+                    conteudo,
+                    parent,
+                    checks,
+                    sw
+            );
         }
     }
 
-    // =========================
+
+    // =====================================================
     // CRIAR ASSUNTO
-    // =========================
+    // =====================================================
 
-    private void criarAssunto(Conteudo conteudo, LinearLayout parent, List<CheckBox> checks, Switch sw) {
+    private void criarAssunto(
+            Conteudo conteudo,
+            LinearLayout parent,
+            List<CheckBox> checks,
+            Switch sw) {
 
-        CheckBox cb = new CheckBox(this);
-        cb.setText(conteudo.getNome());
+
+        CheckBox cb =
+                new CheckBox(this);
+
+
+        cb.setText(
+                conteudo.getNome()
+        );
+
+
         cb.setTextSize(16);
-        cb.setTag(conteudo);
 
-        // =========================
-        // RECUPERAR ESTADO
-        // =========================
 
-        boolean ativo = PreferenceHelper.assuntoAtivo(this, conteudo.getId());
-        cb.setChecked(ativo);
+        cb.setTag(
+                conteudo
+        );
 
-        // =========================
+
+        // =================================================
+        // RECUPERAR ESTADO SALVO
+        // =================================================
+
+        boolean ativo =
+                PreferenceHelper.assuntoAtivo(
+                        this,
+                        conteudo.getId()
+                );
+
+
+        cb.setChecked(
+                ativo
+        );
+
+
+        // =================================================
         // LISTENER CHECKBOX
-        // =========================
+        // =================================================
 
-        cb.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            Conteudo conteudoCb = (Conteudo) cb.getTag();
-            PreferenceHelper.salvarAssunto(this, conteudoCb.getId(), isChecked);
-            atualizarSwitch(sw, checks);
-                });
+        cb.setOnCheckedChangeListener(
+                (buttonView, isChecked) -> {
+
+
+                    Conteudo conteudoCb =
+                            (Conteudo) cb.getTag();
+
+
+                    PreferenceHelper.salvarAssunto(
+                            this,
+                            conteudoCb.getId(),
+                            isChecked
+                    );
+
+
+                    atualizarSwitch(
+                            sw,
+                            checks
+                    );
+                }
+        );
+
 
         checks.add(cb);
+
         parent.addView(cb);
     }
 
-    // =========================
-    // ESTILO SWITCH
-    // =========================
 
-    private void aplicarEstiloSwitch(Switch sw) {
+    // =====================================================
+    // ESTILO SWITCH
+    // =====================================================
+
+    private void aplicarEstiloSwitch(
+            Switch sw) {
+
 
         ColorStateList thumbStates =
                 new ColorStateList(
+
                         new int[][]{
-                                new int[]{android.R.attr.state_checked},
-                                new int[]{-android.R.attr.state_checked}
+
+                                new int[]{
+                                        android.R.attr.state_checked
+                                },
+
+                                new int[]{
+                                        -android.R.attr.state_checked
+                                }
                         },
+
                         new int[]{
-                                Color.parseColor("#8E24AA"),
-                                Color.parseColor("#BDBDBD")
+
+                                Color.parseColor(
+                                        "#8E24AA"
+                                ),
+
+                                Color.parseColor(
+                                        "#BDBDBD"
+                                )
                         }
                 );
+
 
         ColorStateList trackStates =
                 new ColorStateList(
+
                         new int[][]{
-                                new int[]{android.R.attr.state_checked},
-                                new int[]{-android.R.attr.state_checked}
+
+                                new int[]{
+                                        android.R.attr.state_checked
+                                },
+
+                                new int[]{
+                                        -android.R.attr.state_checked
+                                }
                         },
+
                         new int[]{
-                                Color.parseColor("#CE93D8"),
-                                Color.parseColor("#E0E0E0")
+
+                                Color.parseColor(
+                                        "#CE93D8"
+                                ),
+
+                                Color.parseColor(
+                                        "#E0E0E0"
+                                )
                         }
                 );
 
-        sw.setThumbTintList(thumbStates);
-        sw.setTrackTintList(trackStates);
+
+        sw.setThumbTintList(
+                thumbStates
+        );
+
+
+        sw.setTrackTintList(
+                trackStates
+        );
     }
 
-    // =========================
-    // ATUALIZAR SWITCH
-    // =========================
 
-    private void atualizarSwitch(Switch sw, List<CheckBox> checks) {
-        boolean todosMarcados = true;
+    // =====================================================
+    // ATUALIZAR SWITCH
+    // =====================================================
+
+    private void atualizarSwitch(
+            Switch sw,
+            List<CheckBox> checks) {
+
+
+        boolean todosMarcados =
+                true;
+
 
         for (CheckBox cb : checks) {
+
             if (!cb.isChecked()) {
-                todosMarcados = false;
+
+                todosMarcados =
+                        false;
+
                 break;
             }
         }
 
-        // =========================
+
+        // =================================================
         // REMOVER LISTENER
-        // =========================
+        // =================================================
 
-        sw.setOnCheckedChangeListener(null);
+        sw.setOnCheckedChangeListener(
+                null
+        );
 
-        // =========================
+
+        // =================================================
         // ESTADO VISUAL
-        // =========================
+        // =================================================
 
-        sw.setChecked(todosMarcados);
+        sw.setChecked(
+                todosMarcados
+        );
 
-        // =========================
+
+        // =================================================
         // LISTENER SWITCH
-        // =========================
+        // =================================================
 
-        sw.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            for (CheckBox cb : checks) {
+        sw.setOnCheckedChangeListener(
+                (buttonView, isChecked) -> {
 
-                        // =========================
+
+                    for (CheckBox cb : checks) {
+
+
+                        // =================================
                         // REMOVER LISTENER
-                        // =========================
+                        // =================================
 
-                        cb.setOnCheckedChangeListener(null);
+                        cb.setOnCheckedChangeListener(
+                                null
+                        );
 
-                        // =========================
+
+                        // =================================
                         // ALTERAR CHECKBOX
-                        // =========================
+                        // =================================
 
-                        cb.setChecked(isChecked);
+                        cb.setChecked(
+                                isChecked
+                        );
 
-                        // =========================
+
+                        // =================================
                         // SALVAR
-                        // =========================
+                        // =================================
 
-                        Conteudo conteudo = (Conteudo) cb.getTag();
-                        PreferenceHelper.salvarAssunto(this, conteudo.getId(), isChecked);
+                        Conteudo conteudo =
+                                (Conteudo) cb.getTag();
 
-                        // =========================
+
+                        PreferenceHelper.salvarAssunto(
+                                this,
+                                conteudo.getId(),
+                                isChecked
+                        );
+
+
+                        // =================================
                         // RESTAURAR LISTENER
-                        // =========================
+                        // =================================
 
-                        cb.setOnCheckedChangeListener((buttonView1, checked) -> {
-                            Conteudo conteudoCb = (Conteudo) cb.getTag();
+                        cb.setOnCheckedChangeListener(
+                                (buttonView1, checked) -> {
 
-                                    PreferenceHelper.salvarAssunto(this, conteudoCb.getId(), checked);
-                                    atualizarSwitch(sw, checks);
-                                });
+
+                                    Conteudo conteudoCb =
+                                            (Conteudo) cb.getTag();
+
+
+                                    PreferenceHelper.salvarAssunto(
+                                            this,
+                                            conteudoCb.getId(),
+                                            checked
+                                    );
+
+
+                                    atualizarSwitch(
+                                            sw,
+                                            checks
+                                    );
+                                }
+                        );
                     }
-                });
+                }
+        );
     }
 }

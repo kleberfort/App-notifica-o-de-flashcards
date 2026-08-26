@@ -1,17 +1,22 @@
 package com.seuapp.mensageria.data.data_menu_principal;
 
 import com.seuapp.mensageria.data.data_menu_principal.analise_dados.CicloVidaDadoData;
+import com.seuapp.mensageria.data.data_menu_principal.analise_dados.DashboardsInterativosPowerBIData;
 import com.seuapp.mensageria.data.data_menu_principal.analise_dados.EticaViesesTransparenciaCienciaDadosData;
 import com.seuapp.mensageria.data.data_menu_principal.analise_dados.OverfittingUnderfittingValidacaoCruzadaData;
+import com.seuapp.mensageria.data.data_menu_principal.analise_dados.ProcessamentoLinguagemNaturalData;
 import com.seuapp.mensageria.data.data_menu_principal.desenvolvimento_software.GitData;
 import com.seuapp.mensageria.data.data_menu_principal.direito.administrativo.PrincipiosAdmExpressoImplicitoData;
 import com.seuapp.mensageria.data.data_menu_principal.direito.constitucional.AplicabilidadeHierarquiaNormaData;
 import com.seuapp.mensageria.data.data_menu_principal.engenharia_software.ScrumData;
 import com.seuapp.mensageria.data.data_menu_principal.engenharia_software.XpData;
+import com.seuapp.mensageria.data.data_menu_principal.estatistica.AnaliseSeriesTemporaisData;
 import com.seuapp.mensageria.data.data_menu_principal.estatistica.ApresentacaoDadosData;
+import com.seuapp.mensageria.data.data_menu_principal.estatistica.ClassificacaoPredicaoDadosRegressaoArvoresData;
 import com.seuapp.mensageria.data.data_menu_principal.estatistica.MediaMedianaModaData;
 import com.seuapp.mensageria.data.data_menu_principal.estatistica.MedidasVariabilidadeDispersaoData;
 import com.seuapp.mensageria.data.data_menu_principal.fundamentos_banco_dados_sql.FundamentosBancoDadosData;
+import com.seuapp.mensageria.data.data_menu_principal.fundamentos_banco_dados_sql.FundamentosModelagemDadosRelacionalData;
 import com.seuapp.mensageria.data.data_menu_principal.fundamentos_banco_dados_sql.FundamentosSqlParte1Data;
 import com.seuapp.mensageria.data.data_menu_principal.fundamentos_banco_dados_sql.FundamentosSqlParte2Data;
 import com.seuapp.mensageria.data.data_menu_principal.leis.LeiAcessoInformacao_12527_2011_Data;
@@ -24,6 +29,7 @@ import com.seuapp.mensageria.data.data_menu_principal.portugues.classe_palavras.
 import com.seuapp.mensageria.data.data_menu_principal.portugues.classe_palavras.VerbosData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.sintaxe.termos_oracao.TiposPredicadoIntegrantesOracaoData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.sintaxe.termos_oracao.TiposSujeitoData;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosModelagemDadosRelacionalFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosSqlParte1Flashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosSqlParte2Flashcards;
 import com.seuapp.mensageria.model.Conteudo;
@@ -42,15 +48,14 @@ public class MenuPrincipalAppData {
 
         List<Area> areas = new ArrayList<>();
 
-
         // =====================================
         // ENGENHARIA DE SOFTWARE
         // =====================================
 
         List<Disciplina> disciplinasEngenhariaSoftware = new ArrayList<>();
-
         disciplinasEngenhariaSoftware.add(XpData.getDisciplina());
         disciplinasEngenhariaSoftware.add(ScrumData.getDisciplina());
+
         areas.add(new Area("Engenharia de Software", disciplinasEngenhariaSoftware));
 
 
@@ -60,9 +65,11 @@ public class MenuPrincipalAppData {
 
         List<Disciplina> disciplinasBancoDados = new ArrayList<>();
 
+        disciplinasBancoDados.add(FundamentosModelagemDadosRelacionalData.getDisciplina());
         disciplinasBancoDados.add(FundamentosBancoDadosData.getDisciplina());
         disciplinasBancoDados.add(FundamentosSqlParte1Data.getDisciplina());
         disciplinasBancoDados.add(FundamentosSqlParte2Data.getDisciplina());
+
         areas.add(new Area("Banco de Dados", disciplinasBancoDados));
 
 
@@ -73,6 +80,8 @@ public class MenuPrincipalAppData {
         disciplinasAnaliseDados.add(CicloVidaDadoData.getDisciplina());
         disciplinasAnaliseDados.add(EticaViesesTransparenciaCienciaDadosData.getDisciplina());
         disciplinasAnaliseDados.add(OverfittingUnderfittingValidacaoCruzadaData.getDisciplina());
+        disciplinasAnaliseDados.add(ProcessamentoLinguagemNaturalData.getDisciplina());
+        disciplinasAnaliseDados.add(DashboardsInterativosPowerBIData.getDisciplina());
         areas.add(new Area("Análise de Dados", disciplinasAnaliseDados));
 
         // =====================================
@@ -130,6 +139,9 @@ public class MenuPrincipalAppData {
         disciplinasEstatistica.add(ApresentacaoDadosData.getDisciplina());
         disciplinasEstatistica.add(MediaMedianaModaData.getDisciplina());
         disciplinasEstatistica.add(MedidasVariabilidadeDispersaoData.getDisciplina());
+        disciplinasEstatistica.add(ClassificacaoPredicaoDadosRegressaoArvoresData.getDisciplina());
+        disciplinasEstatistica.add(AnaliseSeriesTemporaisData.getDisciplina());
+
 
         areas.add(new Area("Estatística", disciplinasEstatistica));
 

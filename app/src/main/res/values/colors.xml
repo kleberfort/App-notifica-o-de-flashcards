@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="cinza">#F5BCDC9C</color>
     <color name="purple_500">#9C27B0</color>
+    <color name="fundo_cronometro">#D6E4F0</color>
 </resources>

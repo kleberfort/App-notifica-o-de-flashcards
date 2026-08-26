@@ -496,8 +496,9 @@ public class EticaViesesTransparenciaCienciaDadosFlashcards {
                 "IA_FRACA_VS_FORTE",
                 "🧭 Simular vs Atingir",
                 "📌 IA FRACA vs IA FORTE (John Searle):\n" +
-                        "🛠️ FRACA: SIMULA o raciocínio humano (ferramenta, tarefas específicas).\n" +
-                        "🧠 FORTE: ATINGE estado cognitivo (tem consciência, crenças, intenções)."
+                        "🛠️ FRACA/ESTREITA/RESTRITA: SIMULA o raciocínio humano (ferramenta, tarefas específicas).\n" +
+                        "🧠 FORTE: ATINGE estado cognitivo (tem consciência, crenças, intenções).\n"+
+                        "🧠 FORTE Migrou para IA GERAL."
         ));
 
         lista.add(new Flashcard(
@@ -505,8 +506,8 @@ public class EticaViesesTransparenciaCienciaDadosFlashcards {
                 "AGI_E_SUPERINTELIGENCIA",
                 "🧭 Evoluções Modernas",
                 "📌 AGI e SUPERINTELIGÊNCIA:\n" +
-                        "🎯 AGI: Ampla gama de tarefas, SEM exigir consciência (evolução da Forte).\n" +
-                        "🚀 SUPERINTELIGÊNCIA (ASI): Intelecto muito acima do humano em TUDO.\n" +
+                        "🎯 AGI(IA GERAL): Ampla gama de tarefas, SEM exigir consciência (evolução da Forte).\n" +
+                        "🚀 SUPERINTELIGÊNCIA (ASI): Evolução da AGI - Intelecto muito acima do humano em TUDO.\n" +
                         "🦍 Gorila Problem: Superinteligência poderia nos eliminar sem percebermos."
         ));
 
@@ -613,7 +614,7 @@ public class EticaViesesTransparenciaCienciaDadosFlashcards {
 
         lista.add(new Flashcard(
                 "📘 Ética da Inteligência Artificial",
-                "CILADA_BIAS_INCAPACIDADE",
+                "CILADA_VIES_INCAPACIDADE",
                 "🧭 Antídotos para Ciladas",
                 "📌 CILADA sobre Viés:\n" +
                         "❌ Viés = incapacidade de aprender? NÃO!\n" +

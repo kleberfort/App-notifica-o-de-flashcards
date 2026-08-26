@@ -1,21 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="32dp"
-    android:layout_marginLeft="8dp"
-    android:layout_marginRight="8dp"
-    android:layout_marginBottom="64dp">
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!-- ========================================= -->
+    <!-- CRONÔMETRO                                -->
+    <!-- ========================================= -->
 
     <LinearLayout
-        android:id="@+id/layoutConteudo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/cinza"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|end"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="@color/fundo_cronometro">
 
-        android:orientation="vertical"
-        android:padding="16dp"/>
+        <TextView
+            android:id="@+id/textoCronometro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-</ScrollView>
+        <Button
+            android:id="@+id/btnPausar"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="6dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="Pausar"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+
+    <!-- ========================================= -->
+    <!-- CONTEÚDO                                  -->
+    <!-- ========================================= -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/layoutConteudo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/cinza"
+            android:padding="16dp" />
+
+    </ScrollView>
+
+</LinearLayout>
