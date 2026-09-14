@@ -35,6 +35,7 @@ import com.seuapp.mensageria.model.Conteudo;
 import com.seuapp.mensageria.model.Secao;
 import com.seuapp.mensageria.model.Disciplina;
 import com.seuapp.mensageria.model.Area;
+import com.seuapp.mensageria.rag.CarregarPdf;
 import com.seuapp.mensageria.worker.NotificationWorker;
 
 import java.util.ArrayList;
@@ -44,10 +45,11 @@ import java.util.concurrent.TimeUnit;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnVisualizar;
-
     private LinearLayout layoutContainer;
-
     private BottomNavigationView bottomNavigation;
+
+    //valores adicionado para testa a classe CarregarPDF
+    private Button btnTestarPdf;
 
 
     @Override
@@ -56,6 +58,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+
+
+        //valores adicionado para testa a classe CarregarPDF
+        btnTestarPdf = findViewById(R.id.btnTestarPdf);
+        btnTestarPdf.setOnClickListener(v -> {
+
+
+            //Tente executar o código dentro do Try, se der erro, vai para o catch
+            //possíveis erros: 1 - pdf não exisitr; 2 - caminho estar errado; 3 - pdf estar comrropido; 4 - PDFBox não conseguir interpretar o arquivo; 5 - Problema de Leitura.
+            try {
+                CarregarPdf carregaPdf = new CarregarPdf(this);
+                String texto = carregaPdf.extrairTexto("Fundamento de ciência de dados-completo.pdf");
+                Log.d("RAG_TESTE", "PDF CARREGADO COM SUCESSO");
+                Log.d("RAG_TESTE", "Quantidade de caracteres: " + texto.length());
+                Log.d("RAG_TESTE", texto.substring(0, Math.min(3000, texto.length())));
+                Toast.makeText(this, "PDF carregado com sucesso!", Toast.LENGTH_LONG).show();
+            } catch (Exception e) {
+                //server para rastrear o erro no carregamento do arquivo
+                Log.e("RAG_TESTE", "ERRO AO CARREGAR PDF", e);
+                Toast.makeText(this, "Erro ao carregar PDF: " + e.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
 
 
         // =====================================================

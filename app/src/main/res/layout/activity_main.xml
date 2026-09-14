@@ -52,6 +52,16 @@
             android:text="Visualizar conteúdos marcados"
             android:layout_margin="16dp"/>
 
+        <Button
+            android:id="@+id/btnTestarPdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Testar leitura do PDF"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"/>
+
+
     </LinearLayout>
 
     <!-- NAVIGATION BAR -->

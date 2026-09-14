@@ -130,6 +130,20 @@ public class ConteudoActivity extends AppCompatActivity {
 
 
         // =================================================
+        // ID DO CONTEÚDO VINDO DA NOTIFICAÇÃO
+        // =================================================
+        //
+        // Futuramente, se a notificação também enviar
+        // o ID do conteúdo, o RAG poderá identificar
+        // diretamente o PDF correspondente.
+        //
+        // =================================================
+
+        String idConteudoNotificacao =
+                getIntent().getStringExtra("ID_CONTEUDO");
+
+
+        // =================================================
         // ABRIR CONTEÚDO ÚNICO
         // =================================================
 
@@ -137,6 +151,7 @@ public class ConteudoActivity extends AppCompatActivity {
                 conteudoNotificacao != null) {
 
             mostrarConteudoUnico(
+                    idConteudoNotificacao,
                     tituloNotificacao,
                     conteudoNotificacao
             );
@@ -235,7 +250,10 @@ public class ConteudoActivity extends AppCompatActivity {
 
 
                 // Permite selecionar o nome da matéria
-                tituloMateria.setTextIsSelectable(true);
+
+                tituloMateria.setTextIsSelectable(
+                        true
+                );
 
 
                 tituloMateria.setPadding(
@@ -258,10 +276,22 @@ public class ConteudoActivity extends AppCompatActivity {
 
 
             // ---------------------------------------------
-            // ADICIONAR FLASHCARD
+            // ADICIONAR CONTEÚDO
+            // ---------------------------------------------
+            //
+            // card.getAssunto() é o ID do Conteudo.
+            //
+            // Portanto estamos passando:
+            //
+            // ID + TÍTULO + CONTEÚDO
+            //
+            // para que o botão IA saiba exatamente
+            // qual conteúdo foi selecionado.
+            //
             // ---------------------------------------------
 
             adicionarFlashcard(
+                    card.getAssunto(),
                     card.getTitulo(),
                     card.getConteudo()
             );
@@ -281,10 +311,12 @@ public class ConteudoActivity extends AppCompatActivity {
     // =====================================================
 
     private void mostrarConteudoUnico(
+            String idConteudo,
             String tituloTexto,
             String conteudoTexto) {
 
         adicionarFlashcard(
+                idConteudo,
                 tituloTexto,
                 conteudoTexto
         );
@@ -292,15 +324,38 @@ public class ConteudoActivity extends AppCompatActivity {
 
 
     // =====================================================
-    // ADICIONAR FLASHCARD
+    // ADICIONAR CONTEÚDO + BOTÃO IA
     // =====================================================
 
     private void adicionarFlashcard(
+            String idConteudo,
             String tituloTexto,
             String conteudoTexto) {
 
+
         // =================================================
-        // TEXTVIEW ÚNICO
+        // CONTAINER DO CONTEÚDO
+        // =================================================
+
+        LinearLayout containerConteudo =
+                new LinearLayout(this);
+
+
+        containerConteudo.setOrientation(
+                LinearLayout.VERTICAL
+        );
+
+
+        containerConteudo.setLayoutParams(
+                new LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.MATCH_PARENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT
+                )
+        );
+
+
+        // =================================================
+        // TEXTVIEW DO CONTEÚDO
         // =================================================
 
         TextView textoCompleto =
@@ -331,7 +386,10 @@ public class ConteudoActivity extends AppCompatActivity {
                 tituloTexto.length();
 
 
-        // Negrito
+        // =================================================
+        // NEGRITO
+        // =================================================
+
         spannable.setSpan(
                 new StyleSpan(Typeface.BOLD),
                 inicioTitulo,
@@ -340,7 +398,10 @@ public class ConteudoActivity extends AppCompatActivity {
         );
 
 
-        // Tamanho do título
+        // =================================================
+        // TAMANHO DO TÍTULO
+        // =================================================
+
         spannable.setSpan(
                 new RelativeSizeSpan(1.25f),
                 inicioTitulo,
@@ -379,7 +440,9 @@ public class ConteudoActivity extends AppCompatActivity {
         // PERMITIR SELEÇÃO
         // =================================================
 
-        textoCompleto.setTextIsSelectable(true);
+        textoCompleto.setTextIsSelectable(
+                true
+        );
 
 
         // =================================================
@@ -389,18 +452,220 @@ public class ConteudoActivity extends AppCompatActivity {
         textoCompleto.setPadding(
                 20,
                 30,
+                20,
+                10
+        );
+
+
+        // =================================================
+        // ADICIONAR TEXTO AO CONTAINER
+        // =================================================
+
+        containerConteudo.addView(
+                textoCompleto
+        );
+
+
+        // =================================================
+        // BOTÃO DA INTELIGÊNCIA ARTIFICIAL
+        // =================================================
+
+        Button btnIA =
+                new Button(this);
+
+
+        btnIA.setText(
+                "🤖 Perguntar à IA"
+        );
+
+
+        btnIA.setTextSize(
+                14
+        );
+
+
+        // =================================================
+        // TAMANHO E MARGENS DO BOTÃO IA
+        // =================================================
+
+        LinearLayout.LayoutParams paramsIA =
+                new LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.MATCH_PARENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT
+                );
+
+
+        paramsIA.setMargins(
+                20,
                 0,
+                20,
                 30
         );
 
 
+        btnIA.setLayoutParams(
+                paramsIA
+        );
+
+
         // =================================================
-        // ADICIONAR NA TELA
+        // AÇÃO DO BOTÃO IA
+        // =================================================
+
+        btnIA.setOnClickListener(v -> {
+
+            abrirAssistenteIA(
+                    idConteudo,
+                    tituloTexto,
+                    conteudoTexto
+            );
+
+        });
+
+
+        // =================================================
+        // ADICIONAR BOTÃO IA
+        // =================================================
+
+        containerConteudo.addView(
+                btnIA
+        );
+
+
+        // =================================================
+        // ADICIONAR CONTAINER À TELA
         // =================================================
 
         layoutConteudo.addView(
-                textoCompleto
+                containerConteudo
         );
+    }
+
+
+    // =====================================================
+    // ABRIR ASSISTENTE DE IA
+    // =====================================================
+
+    private void abrirAssistenteIA(
+            String idConteudo,
+            String titulo,
+            String conteudo) {
+
+
+        // =================================================
+        // VERIFICAR ID DO CONTEÚDO
+        // =================================================
+
+        if (idConteudo == null ||
+                idConteudo.trim().isEmpty()) {
+
+            Toast.makeText(
+                    this,
+                    "ID do conteúdo não encontrado.",
+                    Toast.LENGTH_SHORT
+            ).show();
+
+            return;
+        }
+
+
+        // =================================================
+        // VERIFICAR TÍTULO
+        // =================================================
+
+        if (titulo == null ||
+                titulo.trim().isEmpty()) {
+
+            Toast.makeText(
+                    this,
+                    "Título do conteúdo não encontrado.",
+                    Toast.LENGTH_SHORT
+            ).show();
+
+            return;
+        }
+
+
+        // =================================================
+        // VERIFICAR CONTEÚDO
+        // =================================================
+
+        if (conteudo == null ||
+                conteudo.trim().isEmpty()) {
+
+            Toast.makeText(
+                    this,
+                    "Conteúdo não encontrado.",
+                    Toast.LENGTH_SHORT
+            ).show();
+
+            return;
+        }
+
+
+        // =================================================
+        // ABRIR TELA DO ASSISTENTE
+        // =================================================
+
+        Intent intent =
+                new Intent(
+                        ConteudoActivity.this,
+                        IAAssistenteActivity.class
+                );
+
+
+        // =================================================
+        // ENVIAR ID DO CONTEÚDO
+        // =================================================
+        //
+        // ESTA É A INFORMAÇÃO MAIS IMPORTANTE
+        // PARA O NOSSO RAG.
+        //
+        // Exemplo:
+        //
+        // ID_CONTEUDO = "ML_001"
+        //
+        // Posteriormente:
+        //
+        // ML_001
+        //    ↓
+        // overfitting.pdf
+        //    ↓
+        // RAG
+        //
+        // =================================================
+
+        intent.putExtra(
+                "ID_CONTEUDO",
+                idConteudo
+        );
+
+
+        // =================================================
+        // ENVIAR TÍTULO
+        // =================================================
+
+        intent.putExtra(
+                "TITULO_CONTEUDO",
+                titulo
+        );
+
+
+        // =================================================
+        // ENVIAR CONTEÚDO
+        // =================================================
+
+        intent.putExtra(
+                "CONTEUDO",
+                conteudo
+        );
+
+
+        // =================================================
+        // ABRIR ACTIVITY
+        // =================================================
+
+        startActivity(intent);
     }
 
 
@@ -581,7 +846,9 @@ public class ConteudoActivity extends AppCompatActivity {
         );
 
 
-        btnConcluir.setTextSize(16);
+        btnConcluir.setTextSize(
+                16
+        );
 
 
         btnConcluir.setOnClickListener(
@@ -628,6 +895,7 @@ public class ConteudoActivity extends AppCompatActivity {
     // =====================================================
 
     private void concluirRevisao() {
+
 
         // =================================================
         // VERIFICAR SE EXISTEM ASSUNTOS
@@ -721,6 +989,10 @@ public class ConteudoActivity extends AppCompatActivity {
         }
 
 
+        // =================================================
+        // LOG
+        // =================================================
+
         Log.d(
                 "DISCIPLINAS",
                 "Quantidade: " +
@@ -736,6 +1008,7 @@ public class ConteudoActivity extends AppCompatActivity {
                     "Nome: " +
                             disciplina.getNome()
             );
+
 
             Log.d(
                     "DISCIPLINAS",
@@ -935,6 +1208,8 @@ public class ConteudoActivity extends AppCompatActivity {
 
         super.onDestroy();
 
-        handler.removeCallbacksAndMessages(null);
+        handler.removeCallbacksAndMessages(
+                null
+        );
     }
 }

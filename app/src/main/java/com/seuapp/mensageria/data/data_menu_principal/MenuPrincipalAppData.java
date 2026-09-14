@@ -1,5 +1,6 @@
 package com.seuapp.mensageria.data.data_menu_principal;
 
+import com.seuapp.mensageria.data.data_menu_principal.Ingles.IntroducaoScammingSkimmingData;
 import com.seuapp.mensageria.data.data_menu_principal.analise_dados.CicloVidaDadoData;
 import com.seuapp.mensageria.data.data_menu_principal.analise_dados.DashboardsInterativosPowerBIData;
 import com.seuapp.mensageria.data.data_menu_principal.analise_dados.EticaViesesTransparenciaCienciaDadosData;
@@ -27,11 +28,15 @@ import com.seuapp.mensageria.data.data_menu_principal.linguagem_programacao.Pyth
 import com.seuapp.mensageria.data.data_menu_principal.portugues.classe_palavras.ConjuncaoData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.classe_palavras.PreposicaoData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.classe_palavras.VerbosData;
+import com.seuapp.mensageria.data.data_menu_principal.portugues.sintaxe.pontuacao.PontuacaoData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.sintaxe.termos_oracao.TiposPredicadoIntegrantesOracaoData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.sintaxe.termos_oracao.TiposSujeitoData;
+import com.seuapp.mensageria.data.data_menu_principal.raciocionio_logico.EstruturaLogica_1_Data;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosModelagemDadosRelacionalFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosSqlParte1Flashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosSqlParte2Flashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.portugues_flashcard.sintaxe.pontuacao.PontuacaoFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.raciocinio_logico_flashcards.EstruturaLogica_1_Flashcards;
 import com.seuapp.mensageria.model.Conteudo;
 import com.seuapp.mensageria.model.Secao;
 import com.seuapp.mensageria.model.Disciplina;
@@ -83,6 +88,14 @@ public class MenuPrincipalAppData {
         disciplinasAnaliseDados.add(ProcessamentoLinguagemNaturalData.getDisciplina());
         disciplinasAnaliseDados.add(DashboardsInterativosPowerBIData.getDisciplina());
         areas.add(new Area("Análise de Dados", disciplinasAnaliseDados));
+
+
+        // =====================================
+        // Inglês
+        // =====================================
+        List<Disciplina> disciplinasIngles = new ArrayList<>();
+        disciplinasIngles.add(IntroducaoScammingSkimmingData.getDisciplina());
+        areas.add(new Area("Inglês", disciplinasIngles));
 
         // =====================================
         // ENGENHARIA DE SOFTWARE
@@ -159,10 +172,21 @@ public class MenuPrincipalAppData {
 
         disciplinasPortugues.add(VerbosData.getDisciplina());
 
+        disciplinasPortugues.add(PontuacaoData.getDisciplina());
         disciplinasPortugues.add(TiposSujeitoData.getDisciplina());
         disciplinasPortugues.add(TiposPredicadoIntegrantesOracaoData.getDisciplina());
 
         areas.add(new Area("Português", disciplinasPortugues));
+
+
+
+
+        // =====================================
+        // RACIOCINIO LOGICO
+        // =====================================
+        List<Disciplina> disciplinasRacionioLogico = new ArrayList<>();
+        disciplinasRacionioLogico.add(EstruturaLogica_1_Data.getDisciplina());
+        areas.add(new Area("Raciocínio Lógico", disciplinasRacionioLogico));
 
 
 

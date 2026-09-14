@@ -37,6 +37,9 @@ android {
 
 dependencies {
 
+    //Biblioteca utlizada para realizar a leitura do pdf
+    implementation(libs.pdfbox.android)
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -56,6 +59,7 @@ dependencies {
 
     // cardView
     implementation("androidx.cardview:cardview:1.0.0")
+
 
 
 }
