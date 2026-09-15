@@ -19,17 +19,20 @@ import com.seuapp.mensageria.flashcard_questoes.flashcards.estatistica_flashcard
 import com.seuapp.mensageria.flashcard_questoes.flashcards.estatistica_flashcards.ClassificacaoPredicaoDadosRegressaoArvoresFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.estatistica_flashcards.MediaMedianaModaFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.estatistica_flashcards.MedidasVariabilidadeDispersaoFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.ingles_flashcards.CognatesFalseCognateIdiomsFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.ingles_flashcards.IntroducaoScammingSkimmingFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.leis_flashcards.LeiAcessoInformacao_12527_2011_Flashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.leis_flashcards.LeiLGPD_13709_2018_Flashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.linguagem_programacao_flashcards.LinguagemPythonFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.linguagem_programacao_flashcards.LinguagemRFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.linguagem_programacao_flashcards.PythonBibliotecasVariadasFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.portugues_flashcard.classe_palavras.ConceitoTodasClassesPalavrasFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.portugues_flashcard.classe_palavras.ConjuncaoFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.portugues_flashcard.classe_palavras.PreposicaoFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.portugues_flashcard.classe_palavras.VerbosFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.engenharia_software_flashcard.scrum.ScrumFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.engenharia_software_flashcard.xp.XpFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.portugues_flashcard.sintaxe.coordencacao_subordinacao.CoordenacaoSubordinacaoOracaoFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.portugues_flashcard.sintaxe.pontuacao.PontuacaoFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.portugues_flashcard.sintaxe.termos_oracao.TiposPredicadoIntegrantesOracaoFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.portugues_flashcard.sintaxe.termos_oracao.TiposSujeitoFlashcards;
@@ -80,10 +83,14 @@ public class AppFlashcards {
         // =========================
 
         //CLASSE DE PALAVRAS
+
+        todos.addAll(ConceitoTodasClassesPalavrasFlashcards.getFlashcards());
+
         todos.addAll(PreposicaoFlashcards.getFlashcards());
         todos.addAll(ConjuncaoFlashcards.getFlashcards());
         todos.addAll(VerbosFlashcards.getFlashcards());
 
+        todos.addAll(CoordenacaoSubordinacaoOracaoFlashcards.getFlashcards());
         todos.addAll(PontuacaoFlashcards.getFlashcards());
         todos.addAll(TiposSujeitoFlashcards.getFlashcards());
         todos.addAll(TiposPredicadoIntegrantesOracaoFlashcards.getFlashcards());
@@ -126,6 +133,7 @@ public class AppFlashcards {
         // INGLÊS
         // =========================
         todos.addAll(IntroducaoScammingSkimmingFlashcards.getFlashcards());
+        todos.addAll(CognatesFalseCognateIdiomsFlashcards.getFlashcards());
 
 
         // =========================

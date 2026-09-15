@@ -28,6 +28,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+
+
 public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
 
     // =====================================================
@@ -109,6 +111,7 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
         // =================================================
 
         carregarHistorico();
+
     }
 
 
@@ -180,6 +183,7 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
                 disciplina,
                 tempo
         );
+
     }
 
 
@@ -274,6 +278,7 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
                 novaLista.put(
                         lista.getJSONObject(i)
                 );
+
             }
 
 
@@ -293,7 +298,9 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
         } catch (JSONException e) {
 
             e.printStackTrace();
+
         }
+
     }
 
 
@@ -335,15 +342,19 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
                 TextView vazio =
                         new TextView(this);
 
+
                 vazio.setText(
                         "Nenhuma revisão registrada."
                 );
 
+
                 vazio.setTextSize(16);
+
 
                 vazio.setGravity(
                         Gravity.CENTER
                 );
+
 
                 vazio.setPadding(
                         20,
@@ -357,7 +368,9 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
                         vazio
                 );
 
+
                 return;
+
             }
 
 
@@ -396,13 +409,16 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
                         disciplina,
                         tempo
                 );
+
             }
 
 
         } catch (JSONException e) {
 
             e.printStackTrace();
+
         }
+
     }
 
 
@@ -425,13 +441,16 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
         LinearLayout linha =
                 new LinearLayout(this);
 
+
         linha.setOrientation(
                 LinearLayout.HORIZONTAL
         );
 
+
         linha.setGravity(
                 Gravity.CENTER_VERTICAL
         );
+
 
         linha.setPadding(
                 8,
@@ -451,9 +470,11 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
                         2.0f
                 );
 
+
         textoData.setGravity(
                 Gravity.CENTER
         );
+
 
         textoData.setBackground(
                 criarFundoCelula("#ECEFF1")
@@ -470,12 +491,20 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
                         1.2f
                 );
 
+
         textoArea.setGravity(
                 Gravity.CENTER
         );
 
+
+        // =================================================
+        // COR DINÂMICA DA ÁREA
+        // =================================================
+
         textoArea.setBackground(
-                criarFundoCelula("#E3F2FD")
+                criarFundoCelula(
+                        obterCorArea(area)
+                )
         );
 
 
@@ -489,9 +518,11 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
                         1.5f
                 );
 
+
         textoDisciplina.setGravity(
                 Gravity.CENTER
         );
+
 
         textoDisciplina.setBackground(
                 criarFundoCelula("#E8F5E9")
@@ -508,9 +539,11 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
                         1.0f
                 );
 
+
         textoTempo.setGravity(
                 Gravity.CENTER
         );
+
 
         textoTempo.setBackground(
                 criarFundoCelula("#FFF3E0")
@@ -525,13 +558,16 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
                 textoData
         );
 
+
         linha.addView(
                 textoArea
         );
 
+
         linha.addView(
                 textoDisciplina
         );
+
 
         linha.addView(
                 textoTempo
@@ -545,12 +581,14 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
         View divisor =
                 new View(this);
 
+
         divisor.setLayoutParams(
                 new LinearLayout.LayoutParams(
                         LinearLayout.LayoutParams.MATCH_PARENT,
                         1
                 )
         );
+
 
         divisor.setBackgroundColor(
                 Color.LTGRAY
@@ -564,6 +602,7 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
         layoutListaRevisoes.addView(
                 linha
         );
+
 
         layoutListaRevisoes.addView(
                 divisor
@@ -600,11 +639,71 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
                                 excluirRevisao(
                                         indice
                                 );
+
                             }
                     )
 
                     .show();
+
         });
+
+    }
+
+
+    // =====================================================
+    // OBTER COR DA ÁREA
+    // =====================================================
+
+    private String obterCorArea(String area) {
+
+        switch (area.trim().toLowerCase(Locale.ROOT)) {
+
+            case "inglês":
+            case "ingles":
+                return "#E3F2FD"; // Azul-claro
+
+            case "banco de dados":
+                return "#E8F5E9"; // Verde-claro
+
+            case "análise de dados":
+            case "analise de dados":
+                return "#FFF9C4"; // Amarelo-claro
+
+            case "língua portuguesa":
+            case "lingua portuguesa":
+                return "#F3E5F5"; // Lilás
+
+            case "raciocínio lógico":
+            case "raciocinio logico":
+                return "#FFF3E0"; // Laranja-claro
+
+            case "ciência de dados":
+            case "ciencia de dados":
+                return "#E0F7FA"; // Ciano-claro
+
+            case "programação":
+            case "programacao":
+                return "#FCE4EC"; // Rosa-claro
+
+            case "direito constitucional":
+                return "#EDE7F6"; // Roxo-claro
+
+            case "direito administrativo":
+                return "#EFEBE9"; // Marrom-claro
+
+            case "matemática":
+            case "matematica":
+                return "#E8EAF6"; // Índigo-claro
+
+            case "informática":
+            case "informatica":
+                return "#F1F8E9"; // Verde-lima-claro
+
+            default:
+                return "#F5F5F5"; // Cinza padrão
+
+        }
+
     }
 
 
@@ -615,23 +714,29 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
     private GradientDrawable criarFundoCelula(
             String cor) {
 
+
         GradientDrawable fundo =
                 new GradientDrawable();
+
 
         fundo.setColor(
                 Color.parseColor(cor)
         );
 
+
         fundo.setCornerRadius(
                 16f
         );
+
 
         fundo.setStroke(
                 1,
                 Color.parseColor("#DDDDDD")
         );
 
+
         return fundo;
+
     }
 
 
@@ -667,6 +772,7 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
                     indice >= lista.length()) {
 
                 return;
+
             }
 
 
@@ -704,7 +810,9 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
                     "Erro ao excluir a revisão.",
                     Toast.LENGTH_SHORT
             ).show();
+
         }
+
     }
 
 
@@ -759,5 +867,7 @@ public class PlanilhaRevisaoConteudoActivity extends AppCompatActivity {
 
 
         return textView;
+
     }
+
 }

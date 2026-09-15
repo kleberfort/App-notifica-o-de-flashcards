@@ -1,5 +1,6 @@
 package com.seuapp.mensageria.data.data_menu_principal;
 
+import com.seuapp.mensageria.data.data_menu_principal.Ingles.CognatesFalseCognateIdiomsData;
 import com.seuapp.mensageria.data.data_menu_principal.Ingles.IntroducaoScammingSkimmingData;
 import com.seuapp.mensageria.data.data_menu_principal.analise_dados.CicloVidaDadoData;
 import com.seuapp.mensageria.data.data_menu_principal.analise_dados.DashboardsInterativosPowerBIData;
@@ -25,9 +26,11 @@ import com.seuapp.mensageria.data.data_menu_principal.leis.LeiLGPD_13709_2018_Da
 import com.seuapp.mensageria.data.data_menu_principal.linguagem_programacao.LinguagemPythonData;
 import com.seuapp.mensageria.data.data_menu_principal.linguagem_programacao.LinguagemRData;
 import com.seuapp.mensageria.data.data_menu_principal.linguagem_programacao.PythonBibliotecasVariadasData;
+import com.seuapp.mensageria.data.data_menu_principal.portugues.classe_palavras.ConceitoTodasClassesPalavrasData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.classe_palavras.ConjuncaoData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.classe_palavras.PreposicaoData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.classe_palavras.VerbosData;
+import com.seuapp.mensageria.data.data_menu_principal.portugues.sintaxe.coordenacao_subordincacao.CoordenacaoSubordinacaoOracaoData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.sintaxe.pontuacao.PontuacaoData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.sintaxe.termos_oracao.TiposPredicadoIntegrantesOracaoData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.sintaxe.termos_oracao.TiposSujeitoData;
@@ -95,6 +98,7 @@ public class MenuPrincipalAppData {
         // =====================================
         List<Disciplina> disciplinasIngles = new ArrayList<>();
         disciplinasIngles.add(IntroducaoScammingSkimmingData.getDisciplina());
+        disciplinasIngles.add(CognatesFalseCognateIdiomsData.getDisciplina());
         areas.add(new Area("Inglês", disciplinasIngles));
 
         // =====================================
@@ -167,11 +171,14 @@ public class MenuPrincipalAppData {
 
         List<Disciplina> disciplinasPortugues = new ArrayList<>();
 
+        disciplinasPortugues.add(ConceitoTodasClassesPalavrasData.getDisciplina());
+
         disciplinasPortugues.add(PreposicaoData.getDisciplina());
         disciplinasPortugues.add(ConjuncaoData.getDisciplina());
 
         disciplinasPortugues.add(VerbosData.getDisciplina());
 
+        disciplinasPortugues.add(CoordenacaoSubordinacaoOracaoData.getDisciplina());
         disciplinasPortugues.add(PontuacaoData.getDisciplina());
         disciplinasPortugues.add(TiposSujeitoData.getDisciplina());
         disciplinasPortugues.add(TiposPredicadoIntegrantesOracaoData.getDisciplina());
