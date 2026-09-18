@@ -23,6 +23,7 @@ import com.seuapp.mensageria.data.data_menu_principal.fundamentos_banco_dados_sq
 import com.seuapp.mensageria.data.data_menu_principal.fundamentos_banco_dados_sql.FundamentosSqlParte2Data;
 import com.seuapp.mensageria.data.data_menu_principal.leis.LeiAcessoInformacao_12527_2011_Data;
 import com.seuapp.mensageria.data.data_menu_principal.leis.LeiLGPD_13709_2018_Data;
+import com.seuapp.mensageria.data.data_menu_principal.leis.LeiMarcoCivilDaInternet_12965_2014_Data;
 import com.seuapp.mensageria.data.data_menu_principal.linguagem_programacao.LinguagemPythonData;
 import com.seuapp.mensageria.data.data_menu_principal.linguagem_programacao.LinguagemRData;
 import com.seuapp.mensageria.data.data_menu_principal.linguagem_programacao.PythonBibliotecasVariadasData;
@@ -34,7 +35,12 @@ import com.seuapp.mensageria.data.data_menu_principal.portugues.sintaxe.coordena
 import com.seuapp.mensageria.data.data_menu_principal.portugues.sintaxe.pontuacao.PontuacaoData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.sintaxe.termos_oracao.TiposPredicadoIntegrantesOracaoData;
 import com.seuapp.mensageria.data.data_menu_principal.portugues.sintaxe.termos_oracao.TiposSujeitoData;
+import com.seuapp.mensageria.data.data_menu_principal.raciocionio_logico.DiagramasLogicosData;
+import com.seuapp.mensageria.data.data_menu_principal.raciocionio_logico.EquivalenciasNegacaoLogicasData;
 import com.seuapp.mensageria.data.data_menu_principal.raciocionio_logico.EstruturaLogica_1_Data;
+import com.seuapp.mensageria.data.data_menu_principal.raciocionio_logico.EstruturaLogica_2_Data;
+import com.seuapp.mensageria.data.data_menu_principal.raciocionio_logico.LogicaArgumentacaoData;
+import com.seuapp.mensageria.data.data_menu_principal.raciocionio_logico.LogicaPrimeiraOrdemData;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosModelagemDadosRelacionalFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosSqlParte1Flashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.banco_dados_flashcard.fundamentos_banco_dados_sql.FundamentosSqlParte2Flashcards;
@@ -146,6 +152,7 @@ public class MenuPrincipalAppData {
         List<Disciplina> disciplinasLeiGerais = new ArrayList<>();
         disciplinasLeiGerais.add(LeiAcessoInformacao_12527_2011_Data.getDisciplina());
         disciplinasLeiGerais.add(LeiLGPD_13709_2018_Data.getDisciplina());
+        disciplinasLeiGerais.add(LeiMarcoCivilDaInternet_12965_2014_Data.getDisciplina());
         areas.add(new Area("Leis Gerais", disciplinasLeiGerais));
 
 
@@ -193,6 +200,11 @@ public class MenuPrincipalAppData {
         // =====================================
         List<Disciplina> disciplinasRacionioLogico = new ArrayList<>();
         disciplinasRacionioLogico.add(EstruturaLogica_1_Data.getDisciplina());
+        disciplinasRacionioLogico.add(EstruturaLogica_2_Data.getDisciplina());
+        disciplinasRacionioLogico.add(EquivalenciasNegacaoLogicasData.getDisciplina());
+        disciplinasRacionioLogico.add(DiagramasLogicosData.getDisciplina());
+        disciplinasRacionioLogico.add(LogicaPrimeiraOrdemData.getDisciplina());
+        disciplinasRacionioLogico.add(LogicaArgumentacaoData.getDisciplina());
         areas.add(new Area("Raciocínio Lógico", disciplinasRacionioLogico));
 
 

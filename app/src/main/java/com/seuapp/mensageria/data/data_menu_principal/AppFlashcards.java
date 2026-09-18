@@ -23,6 +23,7 @@ import com.seuapp.mensageria.flashcard_questoes.flashcards.ingles_flashcards.Cog
 import com.seuapp.mensageria.flashcard_questoes.flashcards.ingles_flashcards.IntroducaoScammingSkimmingFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.leis_flashcards.LeiAcessoInformacao_12527_2011_Flashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.leis_flashcards.LeiLGPD_13709_2018_Flashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.leis_flashcards.LeiMarcoCivilDaInternet_12965_2014_Flashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.linguagem_programacao_flashcards.LinguagemPythonFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.linguagem_programacao_flashcards.LinguagemRFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.linguagem_programacao_flashcards.PythonBibliotecasVariadasFlashcards;
@@ -36,7 +37,12 @@ import com.seuapp.mensageria.flashcard_questoes.flashcards.portugues_flashcard.s
 import com.seuapp.mensageria.flashcard_questoes.flashcards.portugues_flashcard.sintaxe.pontuacao.PontuacaoFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.portugues_flashcard.sintaxe.termos_oracao.TiposPredicadoIntegrantesOracaoFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.portugues_flashcard.sintaxe.termos_oracao.TiposSujeitoFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.raciocinio_logico_flashcards.DiagramasLogicosFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.raciocinio_logico_flashcards.EquivalenciasNegacaoLogicasFlashcards;
 import com.seuapp.mensageria.flashcard_questoes.flashcards.raciocinio_logico_flashcards.EstruturaLogica_1_Flashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.raciocinio_logico_flashcards.EstruturaLogica_2_Flashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.raciocinio_logico_flashcards.LogicaArgumentacaoFlashcards;
+import com.seuapp.mensageria.flashcard_questoes.flashcards.raciocinio_logico_flashcards.LogicaPrimeiraOrdemFlashcards;
 import com.seuapp.mensageria.model.Flashcard;
 
 import java.util.ArrayList;
@@ -65,6 +71,7 @@ public class AppFlashcards {
         // =========================
         todos.addAll(LeiAcessoInformacao_12527_2011_Flashcards.getFlashcards());
         todos.addAll(LeiLGPD_13709_2018_Flashcards.getFlashcards());
+        todos.addAll(LeiMarcoCivilDaInternet_12965_2014_Flashcards.getFlashcards());
 
         // =========================
         // ESTATÍSTICA
@@ -140,6 +147,11 @@ public class AppFlashcards {
         // RACIOCÍNIO LÓGICO
         // =========================
         todos.addAll(EstruturaLogica_1_Flashcards.getFlashcards());
+        todos.addAll(EstruturaLogica_2_Flashcards.getFlashcards());
+        todos.addAll(EquivalenciasNegacaoLogicasFlashcards.getFlashcards());
+        todos.addAll(DiagramasLogicosFlashcards.getFlashcards());
+        todos.addAll(LogicaPrimeiraOrdemFlashcards.getFlashcards());
+        todos.addAll(LogicaArgumentacaoFlashcards.getFlashcards());
 
 
 
